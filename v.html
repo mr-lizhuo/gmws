@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电视频道</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+
+<style>
+
+ 															/*--  李卓  --*/
+   				
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #3A3E47;}
+    h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:blue;font-weight: bold;}
+
+    #L-box1{width: 1000px;height: 100px;margin: 5px auto;background: white;}
+        #L-box1 img{width: 1000px;height: 100px;}
+
+    #L-box2{width: 1000px;height: 50px;margin: 5px auto;background: white;}
+        #L-box2 li{float: left;margin-left: 30px;margin-top: 7px; font-size: 20px;}
+        #L-box2 ul{list-style-type: none}
+
+    #L-box3{width: 1000px;height: 650px;margin: 5px auto;background: white;}
+        #L-box3-1{width: 1000px;height: 500px;background: none;}
+
+        #L-box3-2{width: 1000px;height: 150px;background: none;}
+            #L-box3-2 img{margin-left: 50px;float: left;margin-top: 20px;width: 144px;height: 100px;}
+            #L-box3-2 b{margin-left: 40px;}
+
+    #L-box4{width: 1000px;height: 390px; margin: 5px auto; background: white;}
+    #L-box4-1{width: 660px;height: 390px;background: none;float: left;}
+        #L-box4-1-1{width: 660px;height: 50px;background: none;}
+        #L-box4-1-2{width: 660px;height: 160px;background: none;}
+            #L-box4-1-2 img{width: 144px;height: 100px;margin-left: 10px;margin-top: 15px;}
+        #L-box4-1-3{width: 660px;height: 160px;background: none;}
+            #L-box4-1-3 img{width: 144px;height: 100px;margin-left: 10px;margin-top: 15px;}
+    #L-box4-2{width: 330px;height: 390px;background: none;float: right;}
+        #L-box4-2 img{float: left;width: 120px;height: 90px;}
+        #L-box4-2 span{float: left;width: 210px;}
+
+        #L-box5{width: 1000px;height: 370px; margin: 5px auto; background: white;}
+    #L-box5-1{width: 660px;height: 370px;background: none;float: left;}
+        #L-box5-1-1{width: 660px;height: 50px;background: none;}
+        #L-box5-1-2{width: 660px;height: 160px;background: none;}
+            #L-box5-1-2 img{width: 144px;height: 100px;margin-left: 10px;margin-top: 15px;}
+        #L-box5-1-3{width: 660px;height: 160px;background: none;}
+            #L-box5-1-3 img{width: 144px;height: 100px;margin-left: 10px;margin-top: 15px;}
+    #L-box5-2{width: 330px;height: 370px;background: none;float: right;}
+        #L-box5-2 img{width: 320px;}
+        #L-box5-2 li{margin-top: 10px;}
+
+        #L-box6{width: 1000px;height: 370px; margin: 5px auto; background: white;}
+    #L-box6-1{width: 660px;height: 370px;background: none;float: left;}
+        #L-box6-1-1{width: 660px;height: 50px;background: none;}
+        #L-box6-1-2{width: 660px;height: 160px;background: none;}
+             #L-box6-1-2 img{width: 144px;height: 100px;margin-left: 10px;margin-top: 15px;}
+        #L-box6-1-3{width: 660px;height: 160px;background: none;}
+             #L-box6-1-3 img{width: 144px;height: 100px;margin-left: 10px;margin-top: 15px;}
+    #L-box6-2{width: 330px;height: 370px;background: none;float: right;}
+        #L-box6-2 img{width: 300px;height: 130px;margin-left: 15px;}
+        #L-box6-2 li{margin-top: 10px;}
+
+    #L-box7{width: 1000px;height: 330px;margin: 5px auto;background: white;}
+        #L-box7-A{width: 1000px;height: 50px;background: none;}
+        #L-box7-1{width: 520px;height: 280px;background: none;float: left;}
+            #L-box7-1 img{float: left;}
+            #L-box7-1 span{width: 250px;float: right;}
+        #L-box7-2{width: 480px;height: 280px;background: none;float: left;}
+            #L-box7-2 img{float: left;}
+            #L-box7-2 span{width: 330px;float: right;}
+
+    #L-box8{width: 1000px;height: 500px;margin: 5px auto;background: white;}
+        #L-box8-1{width: 740px;height: 500px;background: none;float: left;}
+            #L-box8-1-A{width: 740px;height: 50px;background: none;}
+            #L-box8-1-1{width: 740px;height: 150px;background: none;}
+                #L-box8-1-1-1{width: 370px;height: 150px;float: left;background: none;}
+                   #L-box8-1-1-1 img{float: left;}
+                   #L-box8-1-1-1 span{width: 200px;float: right;}
+                #L-box8-1-1-2{width: 370px;height: 150px;float: left;background: none;}
+                   #L-box8-1-1-2 img{float: left;}
+                   #L-box8-1-1-2 span{width: 200px;float: right;}
+            #L-box8-1-2{width: 740px;height: 100px;background: none;}
+                #L-box8-1-2 ul{float: left;}
+            #L-box8-1-3{width: 740px;height: 200px;background: none;}
+                #L-box8-1-3 img{width: 140px;height: 100px;margin-left: 30px;margin-top: 10px;}
+        #L-box8-2{width: 250px;height: 500px;background: none;float: right;}
+            #L-box8-2 img{margin-left: 15px;}
+
+
+
+
+                                        /*版权页*/
+        
+    #L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+    #L-boxA p{text-align: center;}
+</style>
+	
+</head>
+
+
+
+<body>
+
+
+					<!-- 电视频道没有可用的 公共DIV-->
+	<!-- GTV标题 -->
+	<div id="L-box1">
+		<img src="./L-v-img/80411152922.jpg" alt="">
+
+		
+
+	</div>
+	
+	<!-- 9个小标题 -->
+	<div id="L-box2">
+		<ul>
+			<li>首页</li>
+			<li>治国理政</li>
+			<li>之江新语</li>
+			<li>新闻视野</li>
+			<li>名家访谈</li>
+			<li>视点</li>
+			<li>文化娱乐</li>
+			<li>电影短片</li>
+			<li>光明讲坛</li>
+		</ul>
+	</div>
+
+	<!-- 视频播放器+下面的五个小视频 -->
+	<div id="L-box3">
+		<!-- 大的视频播放器 -->
+		<div id="L-box3-1">
+		<div id="videos">
+			<embed src="http://player.youku.com/player.php/sid/XNjMwOTAxNzcy/v.swf" width="1000" height="500" type="application/x-shockwave-flash" autostart="true"
+			</embed>
+		</div>
+		<!-- autostart="true" 自动播放失败 -->
+		<!-- 调用bilibili 的视频播放代码真难用 -->
+
+
+		</div>
+		<!-- 五个小视频 -->
+		<div id="L-box3-2">
+			<img src="./L-v-img/f44d305ea45b1c35048405.jpg" alt="">
+			
+			<img src="./L-v-img/ac9e1785367f1be3540d28.jpg" alt="">
+			
+			<img src="./L-v-img/ac9e1785367f1c0af43601.jpg" alt="">
+		
+			<img src="./L-v-img/ac9e178534911bebaefd19.jpg" alt="">
+			
+			<img src="./L-v-img/ac9e178534911bf8a8a114.jpg" alt="">
+
+			<HR  style="border:0 solid #7f6743" width="95%" SIZE=3>
+			
+			
+		</div>
+	</div>
+
+	<!-- 新闻视野+名家访谈 -->
+	<div id="L-box4">
+		<!-- 新闻视野 -->
+		<div id="L-box4-1">
+			<!-- 标题 -->
+			<div id="L-box4-1-1">
+				<h4>新闻视野>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			</div>
+			<!-- 第一排图片 -->
+			<div id="L-box4-1-2">
+				<img src="./L-v-img/ac9e1785349118ddc08204.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8ac2015.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8ace116.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8af0717.jpg" alt="">
+			</div>
+			<!-- 第二排图片 -->
+			<div id="L-box4-1-3">
+				<img src="./L-v-img/ac9e178534911bf8b05318.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8c8e136.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8c49f32.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8c73b34.jpg" alt="">
+			</div>
+		</div>
+		<!-- 名家访谈 -->
+		<div id="L-box4-2">
+			<h4>名家访谈>></h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<b>王珮瑜：另类方式带你玩转国粹</b>
+			<img src="./L-v-img/ac9e178534911bf8c27230.jpg" alt="">
+			<span>
+
+			<p>　“一种人喜欢京剧，另一种人还不知道自己喜欢京剧。”</p>
+			</span>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<b>黄俊鹏：这些相遇恰逢其时&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+			<img src="./L-v-img/ac9e178534911bf8c49f32.jpg" alt="">
+			<span>
+
+			<p>“我眼中的演艺生涯就如我的生活，从激情澎湃到归于平静。”</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+				<b>聂震宁：你的阅读习惯可能因此而改变</b>
+			<img src="./L-v-img/ac9e178534911bf8c42931.jpg" alt="">
+			<span>
+
+			<p>　“阅读这是一个细水长流甚至静水深流的过程。”</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+
+
+		</div>
+	</div>
+
+	<!-- 光明讲坛+之江新语 -->
+	<div id="L-box5">
+		<!-- 光明讲坛 -->
+		<div id="L-box5-1">
+			<!-- 标题 -->
+			<div id="L-box5-1-1">
+				<h4>光明讲坛>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			</div>
+			<!-- 第一排 -->
+			<div id="L-box5-1-2">
+				<img src="./L-v-img/ac9e178534911bf8c80335.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8cb6f38.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8cf863a.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8d1fb3b.jpg" alt="">
+			</div>
+			<!-- 第二排 -->
+			<div id="L-box5-1-3">
+				<img src="./L-v-img/ac9e178534911bf89a3a11.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf89d7612.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8967310.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c1c6b2418.jpg" alt="">
+			</div>
+		</div>
+		<!-- 之江新语 -->
+		<div id="L-box5-2">
+			<h4>之江新语·语音版>></h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-v-img/jiangyu.jpg" alt="">
+			<ul>
+				<li>调研工作务求“深、实、细、准、效”</li>
+				<li>不能在“温室”里培养干部</li>
+				<li>不求“官”有多大，但求无愧于民</li>
+				<li>凡是为民造福的事一定要千方百计办好</li>
+				<li>务必统筹城乡兴“三农”</li>
+				<li>实施素质教育是建设创新型国家的基础</li>
+				<li>弘扬法治精神，形成法治风尚</li>
+			</ul>
+
+		</div>	
+	</div>
+
+	<!-- 文化娱乐+专题报道 -->
+	<div id="L-box6">
+		<!-- 文化娱乐 -->
+		<div id="L-box6-1">
+			<div id="L-box6-1-1">
+				<h4>文化娱乐>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			</div>
+			<div id="L-box6-1-2">
+				<img src="./L-v-img/ac9e178534911bf89d7612.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911bf8967310.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c1c6b2418.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c2bd6b403.jpg" alt="">
+
+			</div>
+			<div id="L-box6-1-3">
+				<img src="./L-v-img/ac9e178534911c2bd9ef05.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c2bd21b01.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c2bd53e02.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c2bd92604.jpg" alt="">
+			</div>
+		</div>
+		<!--  专题报道-->
+		<div id="L-box6-2">
+			<h4>专题报道>></h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-v-img/10bf488307a419af0b0a02.jpg" alt="">
+				<ul>
+				<li>央企之光 明鉴辉煌</li>
+				<li>首届“健康圆梦”杯科普创作大赛</li>
+				<li>文艺名家讲故事</li>
+				<li>文艺名家讲故事</li>
+				<li>网络公益广告联播</li>
+				<li>寻找最美接种医生</li>
+			
+			</ul>
+		
+
+		</div>
+	</div>
+
+	<!-- 影视纵横 -->
+	<div id="L-box7">
+		<!-- 标题 -->
+		<div id="L-box7-A">
+			<h4>影视纵横>></h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+		</div>
+		<!-- left	 -->
+		<div id="L-box7-1">
+			<img src="./L-v-img/ac9e178534911bf8967310.jpg" alt="">
+			<span>
+				<br>
+				<b>《我说的都是真的》定档 小沈阳陈意涵组CP</b>
+				<p>&nbsp&nbsp&nbsp&nbsp由刘仪伟担任导演执导，小沈阳和陈意涵以及吴樾、罗海琼等主演的《我说的都是真的》正式宣布了影片上映的日期。</p>
+			</span>
+		</div>
+		<!-- right -->
+		<div id="L-box7-2">
+			<img src="./L-v-img/ac9e178534911bf89a3a11.jpg" alt="">
+
+			<span>
+				
+				<b>《我说的都是真的》定档 小沈阳陈意涵组CP</b>
+				<p>&nbsp&nbsp&nbsp&nbsp由刘仪伟担任导演执导，小沈阳和陈意涵以及吴樾、罗海琼等主演的《我说的都是真的》正式宣布了影片上映的日期。</p>
+				<br>
+				<br>
+			</span>
+
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+			<br>
+
+			<img src="./L-v-img/ac9e178534911bf89d7612.jpg" alt="">
+			<span>
+				
+				<b>《我说的都是真的》定档 小沈阳陈意涵组CP</b>
+				<p>&nbsp&nbsp&nbsp&nbsp由刘仪伟担任导演执导，小沈阳和陈意涵以及吴樾、罗海琼等主演的《我说的都是真的》正式宣布了影片上映的日期。</p>
+			</span>
+
+		</div>
+	</div>
+
+	<!-- 聆听杂志+视点 -->
+	<div id="L-box8">
+		<!-- 聆听杂志 -->
+		<div id="L-box8-1">
+			<div id="L-box8-1-A">
+				<h4>聆听杂志>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			</div>
+			<!-- first -->
+			<div id="L-box8-1-1">
+				<div id="L-box8-1-1-1">
+					<img src="./L-v-img/ac9e1785367f1a1794f705.jpg" alt="">
+					
+			<span>
+				
+				<p>&nbsp&nbsp&nbsp&nbsp　《习近平谈治国理政百集连播（语音版）》紧紧围绕《习近平谈治国理政》一书，借助互联网传播，将全书以音频的形式整理播诵。</p>
+			</span>
+
+				</div>
+				<div id="L-box8-1-1-2">
+						<img src="./L-v-img/ac9e1785367f1a17935c03.jpg" alt="">
+					
+			<span>
+				
+				<p>&nbsp&nbsp&nbsp&nbsp　《之江新语》收录了习近平同志担任中共浙江省省委书记期间自2003年2月至2007年3月在《浙江日报》“之江新语”专栏发表的232篇短论。</p>
+			</span>
+				</div>
+			</div>
+			<!-- sencend -->
+			<div id="L-box8-1-2">
+				<ul>
+					<li>努力走向社会主义生态文明新时代 </li>
+					<li>始终把人民群众生命安全放在第一位  </li>
+					<li>切实维护国家安全和社会安定  </li>
+				</ul>
+				<ul style="margin-left: 60px;">
+					<li>不能在“温室”里培养干部  </li>
+					<li>调研工作务求“深、实、细、准、效”   </li>
+					<li>不求“官”有多大，但求无愧于民   </li>
+				</ul>
+			</div>
+			<!-- third -->
+			<div id="L-box8-1-3">
+				<h4>电影短评>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+				<img src="./L-v-img/ac9e178534911c27d54b01.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c135a6928.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c195e6f01.jpg" alt="">
+				<img src="./L-v-img/ac9e178534911c196bea07.jpg" alt="">
+
+
+			</div>
+		</div>
+		<!-- 视点 -->
+		<div id="L-box8-2">
+			<h4>电影短评>></h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-v-img/ac9e178534911bf8a8a114.jpg" alt="">
+
+			<ul>
+				<li>听说张艺兴要当制片人了</li>
+				<li>为周杰伦这段采访疯狂打call</li>
+				<li>粉丝给爱豆打国际电话太疯狂了</li>
+				<li>面对刁难他七个字就让对方哑口无言</li>
+				<li>她离开央视两年后再次甜美亮相</li>
+				<li>于晓光学韩语的样子真搞笑</li>
+				<li>这个组合里的女孩每个都很厉害</li>
+				<li>·练习生太苦 每天训练到膝盖流血</li>
+				<li>练习生唱《听海》一开口秒杀原唱</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+<!-- 版权页 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+	<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			  <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img  onclick="myFunction()"  class="btn1" src="./L-public/img/left-img7.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+	
+</body>
+</html>

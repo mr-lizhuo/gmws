@@ -1,0 +1,106 @@
+/*通用*/
+body{background:#ebeded;font-family:"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,button,textarea,p,th,td{margin:0;padding:0;border:0;}
+h1{font-size:22px;color:#000;font-weight:bold;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+textarea,input{font-size:12px;line-height:15px;margin:0;padding:0;}
+button {font-family:"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{text-decoration:underline;}
+ul,ol {list-style:none;}
+img {vertical-align:top;border:0 none;}
+input,button {border:0 none;}
+.mb20 {margin-bottom:20px;}
+.pt20 {padding-top:20px;}
+.newPoint li { background:url(../../images/point.png) no-repeat left; padding-left:14px;}
+
+/*顶部通栏*/
+.topbar {width:100%;background-color:#7a93a9;border-top:1px solid #c5d4dd;border-bottom:1px solid #3d4954;}
+.topbar_nav {width:960px;margin:0 auto;font-size:12px;height:25px;line-height:25px;padding:0 20px;}
+.loginbox {float:left;height:25px;}
+.login_mail {float:left;overflow:hidden;zoom:1;margin-right:10px;}
+.login_mail span {float:left;color:#fff;}
+.login_mail .pass_w {width:36px;}
+.login_mail input {width:90px;height:14px;line-height:14px;border:1px solid #ccc;color:#484848;position:relative;top:5px;+top:-2px;_top:4px;padding:0 2px;}
+.loginbox button {float:left;background:url(../../images/spr_bg.png) -136px -92px no-repeat;width:60px;height:18px;border:0 none;cursor:pointer;margin-top:4px;margin-right:10px;}
+.loginbox a {float:left;color:#fff;}
+.c_fr {float:right;}
+.c_fr a {float:left;width:60px;height:25px;color:#fff;padding-left:20px;}
+.c_fr .for_index {background:url(../../images/spr_bg.png) -256px -20px no-repeat;}
+.c_fr .clt {background:url(../../images/spr_bg.png) -256px 4px no-repeat;}
+
+/*登录后*/
+.loginbox a,.loginbox .hello,.f_more {float:left;margin-right:15px;color:#fff;}
+.bread_crumb b {font-weight:400;padding-left:5px;color:#434343;}
+
+/*导航*/
+.header_box {background:url(../images/hbg.png) center 0 no-repeat;overflow:hidden;zoom:1;width:100%;height:86px;}
+.header_box .header {width:1000px;margin:0 auto;}
+.logobox {float:left;padding:15px 0 0 40px;}
+.navbox {float:left;padding:36px 0 0 80px;}
+.navbox a {float:left;width:60px;padding:0 25px;height:14px;text-indent:-9999px;text-align:center;background-image:url(../../images/spr_bg.png);background-repeat:no-repeat;outline:none;hide-focus: expression(this.hideFocus=true);}
+.navbox a.t1 {background-position:30px -132px;width:32px;}
+.navbox a.t2 {background-position:-90px -132px;}
+.navbox a.t3 {background-position:30px -179px;}
+.navbox a.t4 {background-position:30px -226px;width:95px;}
+.navbox a.t5 {background-position:-210px -177px;width:32px;}
+.navbox a.t6 {background-position:-85px -178px;}
+.navbox a.t7 {background-position:-110px -226px; padding-right:1px;}
+.navbox a.t7:hover {background-position:-113px -251px;}
+.navbox a.t1:hover {background-position:30px -156px;}
+.navbox a.t2:hover {background-position:-90px -156px;}
+.navbox a.t3:hover {background-position:30px -203px;}
+.navbox a.t4:hover {background-position:30px -251px;}
+.navbox a.t5:hover {background-position:-210px -201px;}
+.navbox a.t6:hover {background-position:-85px -201px;}
+
+/*主体*/
+#Main{ width:970px; padding:20px 15px; background:#fff; margin:0 auto;}
+.area {overflow:hidden;zoom:1;}
+
+/*列表*/
+.left_area {float:left;width:560px;padding:0 20px;}
+.left_area .standard {background:url(../../images/spr_bg.png) 0 -272px repeat-x;_background-position:0 -276px;width:579px;height:20px;text-align:center;margin:5px 0 15px;}
+.standard span {background:#fff;padding:0 10px;font-size:14px;}
+.standard a {color:#0285cb;}
+.list {margin-bottom:20px;}
+
+/*列表与文章右侧*/
+.rig_area {float:right;width:334px;padding-right:15px;border-left:1px solid #ccc;display:inline;overflow:hidden;}
+.rig_area .box {padding:20px 0 5px 19px;border-top:1px solid #ccc;}
+.rig_area .ban_box {padding-top:0;border:0 none;}
+.ban {display:block;}
+.box h2,.box h2 a {font-size:18px;font-weight:400;color:#0186cb;}
+.box h2 .adv {padding-left:10px;}
+.box h2 .adv,.box h2 .adv a {font-size:12px;color:#333;}
+.searchbox {width:315px;padding:15px 0 25px 0;overflow:hidden;zoom:1;}
+.searchbox input {float:left;width:228px;height:20px;font:12px/21px '\5FAE\8F6F\96C5\9ED1';color:#333;background:url(../../images/spr_bg.png) 0 0 no-repeat;padding:4px 8px 6px;}
+.searchbox button {float:right;width:59px;height:27px;line-height:27px;font-size:14px;color:#fff;background:#0186cb;border:0 none;cursor:pointer;margin-top:1px;}
+.hd_recom {background:url(../../images/spr_bg.png) 0 -288px repeat-x;height:24px;_background-position:0 -294px;_height:18px;overflow:hidden;}
+.hd_recom h2 {background-color:#fff;padding:0 10px 0 5px;float:left;}
+.box_pic {overflow:hidden;zoom:1;}
+.box_pic ul {width:352px;padding:20px 0 0;margin-right:-36px;overflow:hidden;}
+.box_pic li {float:left;width:140px;margin-right:36px;margin-bottom:20px;}
+.box_pic li p {text-align:center;height:24px;overflow:hidden;padding-top:2px;}
+
+/*面包屑*/
+.bread_crumb {height:30px;line-height:30px;font-size:12px;background:#f9f9f9;padding:0 20px;font-family:"\5b8b\4f53",Arial;}
+.bread_crumb .pic_home {float:left;background:url(../../images/spr_bg.png) -256px -40px no-repeat;padding-left:15px;}
+.bread_crumb a {color:#434343;padding:0 5px;}
+
+/*分页*/
+.paging {text-align:center;height:24px;line-height:24px;padding:20px 0;}
+.paging a {font-size:12px;padding:3px 7px;margin-right:6px;font-family:Arial;border:1px solid #c8c8c8;background-color:#f0eeef;color:#666;}
+.paging .up {display:inline-block;vertical-align:middle;border:0 none;background:url(../../images/spr_bg.png) -156px -38px no-repeat;+background-position:-156px -35px;width:15px;height:22px;padding:0;}
+.paging .down {display:inline-block;vertical-align:middle;border:0 none;background:url(../../images/spr_bg.png) -180px -38px no-repeat;+background-position:-180px -35px;width:15px;height:22px;padding:0;}
+.paging span {margin-right:6px;}
+.paging a.current {background-color:#1479c5;color:#fff;border:1px solid #006ec8;}
+.paging a.slid_l {background-position:-156px -64px;_background-position:-156px -61px;}/*左箭头可切换时用此样式*/
+.paging a.slid_r {background-position:-180px -64px;_background-position:-180px -61px;}/*右箭头可切换时用此样式*/
+
+/*底部*/
+.footer {width:1000px;margin:10px auto;}
+.footer p {font-size:12px;line-height:24px;text-align:center;color:#484848;}
+.footer p a {color:#484848;padding:0 5px;}

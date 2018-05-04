@@ -1,0 +1,25 @@
+
+	/*漂浮*/
+
+		.L-right{ width: 90px; position: fixed; top: 150px; left: 50%;  margin-left: 520px;}
+		.L-right p{ text-align:center; padding:5px 0px;}
+		.L-right li{list-style-image:url(title.png);}
+
+		.L-left{ width: 90px; position: fixed; top: 200px; right: 50%;  margin-right: 620px;}
+		.L-left p{ text-align:center; padding:5px 0px;}
+		.L-left img{width: 200px;}
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+

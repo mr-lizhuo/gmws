@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>出错啦！</title>
+<style type="text/css">
+html,body{ margin:0; padding:0; background:#fff; line-height:200%;}
+.container{ width:400px; padding:50px 0 0 400px; margin:100px auto 0; height:300px; background:url(http://img.gmw.cn/pic/404error.png) no-repeat;}
+</style>
+</head>
+<body>
+<div class="container">
+	<h3>很抱歉，你要访问的页面不存在</h3>
+	<ol>
+		<li>请检查您输入的网址是否正确。</li>
+		<li>点此返回<a href="http://pic.gmw.cn/">光明图片首页</a>。</li>
+		<form id="form2" name="form2" method="post" target="_blank" onSubmit="change()">
+		<table border="0" cellpadding="0" cellspacing="5" style="margin-left:-40px;">
+        </table>
+		</form>
+	</ol>
+	
+</div>
+<script type="text/javascript" src="http://img.gmw.cn/js/haf_gmw.js"></script>
+</body>
+</html>

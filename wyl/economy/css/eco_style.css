@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 专题策划 财经眼 经济舆情 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,button,input,textarea,select,option,th,td{ margin:0; padding:0;}
+ol,ul,li{ list-style:none;}
+table{ border-collapse:collapse; border-spacing:0;}
+body{ color:#2b2c2b; font-size:14px; font-family:"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;}
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+fieldset,img{ border:0;}
+a{color:#2b2c2b; text-decoration: none;}
+a:hover{ text-decoration: none;}
+.clearfix:after{ display:block; clear:both; content:""; visibility:hidden; height:0; font-size:0;}
+.clearfix{ zoom:1}
+.pos-re{ position:relative;}
+.pos-ab{ position:absolute;}
+.bg-white{ background:#FFFFFF;}
+.fl{ float:left;}
+.fr{ float:right;}
+.inner1000{ width:1000px; margin:0 auto;}
+.text-left{ text-align:left;}
+.text-center{ text-align:center;}
+.text-right{ text-align:right;}
+/* 通用模块 */
+.arc_list_t1 li{ height: 40px; line-height: 40px; background:url(../images/gray_point.png) no-repeat left center; text-indent: 15px;}
+.title_t1{ border-bottom: solid 1px #e3dab5; padding:1px 0px 4px 0px;}
+.title_t1 h2{color: #c1182c; font-size: 18px; height: 20px; line-height: 20px;}
+.title_t1 .more{ width: 20px; margin-top: 3px;}
+.title_t1 .more li{  height: 3px; background:#b69b4a; border-radius: 1px; margin-bottom: 3px;}
+.title_t1 .more a{ display: block; line-height: 0; font-size: 0;}
+
+.page {width:1000px;margin:0 auto;font-family:"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;}
+#header{padding:10px 0px 25px 0px;}
+#channelName{width:500px; float:left; height:45px;line-height:45px;color:#991513; font-size:28px;margin:0 10px 0 20px; }
+#channelName span{ margin-right:10px;}
+#slogan{ background:url("../images/spirit.png") no-repeat; height: 24px; width: 214px; margin: 25px 0px 0px 10px;}
+#searchBar{margin-top:12px;width:370px; height:30px; float:right;}
+#nav_nengyuan{ background: #b69b4a;}
+#nav_nengyuan ul li{ float:left; height: 40px; line-height: 40px; }
+#nav_nengyuan ul li:first-child{ margin-left: 60px;}
+#nav_nengyuan ul li a{ display: block; padding: 0px 40px; color: #FFFFFF; font-size: 20px; height: 40px;}
+#nav_nengyuan ul li a:hover{ background: #8d6c0b;}
+#subnav_nengyuan{ width:1000px; height:24px; margin:0 auto 10px; border-bottom:1px solid #c5c5c5; border-top:1px solid #fff; background:#f5f5f5; text-indent:10px;}
+
+.part1{ padding: 30px 0px 20px 0px; background: #fafafa;}
+.part1 .part_left{ float: left; width: 450px;}
+.part1 .part_left .arc_list li{ margin-bottom: 20px;}
+.part1 .part_left .arc_list blockquote{ height: 24px; line-height: 24px; font-size: 20px; padding-left: 15px; background:url(../images/gray_point.png) no-repeat left center;}
+.part1 .part_left .pic_box{ border: solid 1px #c3c3c3; font-size: 0px; line-height: 100%; margin-left: 15px; width: 438px;}
+.part1 .part_left .arc_list p{ line-height: 30px; padding: 5px 0px 0px 15px; color: #747474;}
+.part1 .slider1{width:500px; height: 300px; overflow: hidden; position: relative; float: right;}
+.part1 .slider1 .slides{ width:500px; height: 300px; overflow: hidden; float: left;}
+.part1 .slider1 .slides li{ position: relative;}
+.part1 .slider1 .slides li p{ height: 45px; line-height: 45px; filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);background:rgba(0,0,0,0.5); color: #FFFFFF; text-indent: 15px; position: absolute; left: 0px; bottom: 0px; width: 500px;}
+.part1 .slider1 .slides li p a{color: #FFFFFF;}
+.part1 .slider1 .flex-control-nav{ width: 95px; position: absolute; right: 0px; bottom: 15px;}
+.part1 .slider1 .flex-control-nav li{ width: 10px; float: left; margin-right: 7px;}
+.part1 .slider1 .flex-control-nav li a{ display: block; width: 14px; height: 14px; background: #FFFFFF; overflow: hidden; text-indent: -9999px; border-radius: 50%;}
+.part1 .slider1 .flex-control-nav .flex-active{ background: #b69b4a;}
+
+.part2{ margin-top: 35px;}
+.part2 .part_left{ width: 660px; float: left;}
+.part2 .part_left .title_left{ padding-bottom: 6px; border-bottom: solid 1px #e3dab5;}
+.part2 .part_left .title_left h2{ background:url("../images/spirit.png") no-repeat 0px -24px; height: 20px; line-height: 20px; color: #c1182c; font-size: 18px; text-indent: 35px; margin-left: 3px;}
+.part2 .part_left .title_left .more{ line-height: 20px; color: #8a8a8a; font-size: 12px;}
+.part2 .part_left .arc_list_t1 li{ width: 50%; float: left;}
+.part2 .part_left .arc_list_t1{ padding: 20px 0px;}
+.part2 .part_left .arc_pic_list li{ padding: 25px 0px; border-top: dashed 1px #f3f3f3;}
+.part2 .part_left .arc_pic_list img{ float: left; margin-right: 20px;}
+.part2 .part_left .arc_pic_list blockquote{ font-size: 20px; margin-bottom: 10px;}
+.part2 .part_left .arc_pic_list p{line-height: 30px; color: #737373; text-indent: 2em; }
+.part2 .part_right{ width: 300px; float: right;}
+.part2 .part_right .block_right1 .title_t1{ margin-bottom: 20px;}
+.part2 .part_right .block_right1 .pic_box{ margin: 0px 0px 10px 0px; position: relative;}
+.part2 .part_right .block_right1 .pic_box p{ width: 100%; height: 36px; line-height: 36px; text-indent: 10px; position: absolute; left: 0px; bottom: 0px; filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);background:rgba(0,0,0,0.5); font-size: 16px; color: #FFFFFF;}
+.part2 .part_right .block_right1 .pic_box a{ display: block;}
+.part2 .part_right .block_right1{ padding-bottom: 20px;}
+#mtop1{ width: 300px; height: 160px; overflow: hidden;}
+
+.flink{ padding: 20px 0px; border-top: solid 1px #bfa861;}
+.flink h2{font-size: 20px; color: #c1182c; margin-bottom: 10px;}
+.flink p{ line-height: 30px;}
+.flink p a{margin-right: 12px;}
+
+.leftAD-box{ margin-bottom:10px;}
+

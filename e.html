@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	
+
+	<meta charset="UTF-8">
+	<title>娱乐频道</title>
+
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+
+	<!-- 多文本框显示 -->
+	 <script src="./L-public/js/jquery.tabs.js"></script>
+	 <script src="./L-public/js/jquery1.4.2.js"></script>
+
+
+
+
+
+<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/query.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js">
+   </script>  
+<!-- 文字播报 -->
+
+	<link rel="stylesheet" type="text/css" href="./L-public/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./L-public/css/default.css">
+	<link rel="stylesheet" href="./L-public/css/liMarquee.css">
+
+	<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+
+
+<style>
+
+
+
+
+    /*--  李卓  --*/
+   
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+   *{margin: 0 ;}/*设置全局变量*/
+   a{text-decoration:none;color:black;}/*去除超链接的颜色和下划线*/
+   body{background: #f8f8f8;}
+   h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:blue;font-weight: bold;}
+
+	
+
+
+	
+	#L-box1{width: 1000px;height: 63px;margin:0px auto;}
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+	#L-box3{width: 1000px;height: 50px;margin:5px auto;background: red;}
+		#L-box3 li{list-style-type:none;float: left;padding-left: 20px; padding-top: 8px;font-size: 20px;color:white;}
+		#L-box3 a{color: white}
+
+    #L-box4{width: 1000px;height: 400px;margin: 5px auto;background: none;}
+      #L-box4-1{width: 660px;height: 400px;background: none;float: left;}
+        #L-box4-1 img{width: 660px;height: 400px;}
+      #L-box4-2{width: 330px;height: 400px;background: none;float: right;}
+        #L-box4-2 ul{;padding-left: 15px;}
+
+
+    #L-box5{width: 1000px;height: 50px;margin: 5px auto;background: none;}
+      #L-box5 a{font-size: 20px;}
+
+    #L-big{width: 1000px;height: 2261px;margin: 5px auto;background: none;}
+      #L-box6{width: 660px;height: 2261px;background: none;float: left;}
+        .L-box6-ul1{list-style-type: none}
+        .L-box6-ul1 li{float: left;font-size: 25px;margin-left: 25px;}
+        #L-box6 span{width: 400px;float: right;}
+        #L-box6 img{width: 240px;height: 170px;float: left;margin-bottom: 5px;}
+          #L-box6-spans{width: 660px;height: 160px;}
+          #L-box6-spans img{width: 200px;height: 160px;margin-left: 15px;}
+      #L-box7{width: 330px;height: 2261px;background: none;float: right;}
+        #L-box7 img{width: 330px;}
+        #L-box7 ol{color:red;font-size: 20px;}
+        
+        
+    #L-box8{width: 1000px;height: 400px;margin: 5px auto;background: none;}
+      #L-box8 img{width: 1000px;}
+    #L-box9{width: 1000px;height: 100px;margin: 5px auto;background: none;}
+
+
+#L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+  #L-boxA p{text-align: center;}
+
+
+
+
+</style>
+	
+
+
+ <script src="./L-public/js/jquery-2.1.1.min.js"></script>
+
+	<script src="./L-public/js/jquery.liMarquee.js"></script>
+	<script> 
+
+
+
+	
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+
+      //文字轮播
+
+    $(window).load(function(){
+		$('.str1').liMarquee();
+		$('.str2').liMarquee({
+			direction: 'right'	
+		});
+		var stringEl = $('.str3').liMarquee();
+		$('.speedChange').on('click',function(){
+			var speedChange = $(this);
+			var dataSpeed = speedChange.data('scrollamount');
+
+			stringEl.trigger('mouseenter');
+			stringEl.data({scrollamount:dataSpeed});
+			stringEl.trigger('mouseleave');
+			
+			return false;	
+		});
+		$('.str4').liMarquee({
+			drag: false	
+		});
+		$('.str5').liMarquee({	
+			hoverstop: false
+		});
+		$('.str6').liMarquee();
+		$('.btnPause').on('click',function(){
+			$('.str6').liMarquee('pause');
+		});
+		$('.btnPlay').on('click',function(){
+			$('.str6').liMarquee('play');
+		})
+		});
+  
+
+</script>  
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+				<!-- box1，box2,box3,boxA为固定模式 -->
+<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+            <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-e-img/e.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>品位诠释态度 </p>
+		</div>
+		<div id="L-box2-3">
+			<img src="./L-legal-img/ico_rss.gif">RSS</img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+
+	<div id="L-box3">
+		<ul>
+	<li><a href="http://mil.gmw.cn/node_8986.htm" target="_blank">光明娱论</a></li>
+	<li><a href="http://mil.gmw.cn/node_8981.htm" target="_blank">资讯</a></li>
+	<li><a href="http://mil.gmw.cn/node_8984.htm" target="_blank">光明V影评</a></li>
+	<li><a href="http://mil.gmw.cn/node_8982.htm" target="_blank">视频播报</a></li>
+	<li><a href="http://mil.gmw.cn/node_11178.htm" target="_blank">本周热映</a></li>
+	<li><a href="http://mil.gmw.cn/node_8978.htm" target="_blank">大视野</a></li>
+	<li><a href="http://mil.gmw.cn/node_8979.htm" target="_blank">独家策划</a></li>
+	<li><a href="http://topics.gmw.cn/node_4979.htm" target="_blank">名家访谈</a></li>
+	<li><a href="http://mil.gmw.cn/node_8972.htm" target="_blank">光明电视</a></li>
+	
+
+		</ul>
+	</div>
+
+<!-- 图片轮播+文字 -->
+	<div id="L-box4">
+		<!-- 图片轮播 -->
+		<div id="L-box4-1">
+
+			<div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-e-img/f44d305ea4881c26b32504.jpg" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-e-img/f44d305ea4881c26b79d28.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-e-img/f44d305ea4881c37c1d454.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-e-img/f44d305ea4881c27d1db05.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+		</div>
+		<!-- 文字 -->
+		<div id="L-box4-2">
+			<h4 style="font-size: 25px;">电影创作需要精神引领</h4>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+				<ul>
+				<p style="font-size: 20px;">2017年度中国青年医生公益征集</p>
+				<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+				<p>拷问部分网络视频平台:无底线,流量成流毒</p>
+				<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+				<p>网络大电影为何佳作欠奉 层次难提升</p>
+				<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+				<p>何冰重返话剧舞台：感动于生命悲凉</p>
+				<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+			</ul>
+		</div>
+	</div>
+
+<!-- 文字轮播 -->
+	<div id="L-box5" class="str4 str_wrap">
+		<!-- 即时播报 实现了文字轮播-->
+	
+		
+			<a href="">电影《动物世界》定档 李易峰不惧后起之秀...&nbsp&nbsp&nbsp</a>
+			<a href="">《冒险王卫斯理之支离人》余文乐婚后首剧上演科幻冒险风&nbsp&nbsp&nbsp</a>
+			<a href="">《时尚大师》与文化美学 &nbsp&nbsp&nbsp</a>
+			<a href="">《热血街舞团》多项数据表现抢眼 &nbsp&nbsp&nbsp</a>
+			<a href=""> 《远大前程》口碑不佳 男主角演技浮夸失真&nbsp&nbsp&nbsp</a>
+			<a href="">抖音变“抖商”，娱乐成生意？ &nbsp&nbsp&nbsp</a>
+			<a href=""> 中英电视人牵手迈向“创意春天”&nbsp&nbsp&nbsp</a>
+			<a href="">意大利影院限时半价吸引观众&nbsp&nbsp&nbsp</a>
+			<a href=""> 拷问部分网络视频平台：没有底线，流量就成流毒！&nbsp&nbsp&nbsp</a>
+			<a href=""> 网络大电影为何佳作欠奉 商业模式不变层次难提升	&nbsp&nbsp&nbsp</a>
+			
+		
+		
+	</div>
+
+<!-- 把下面的两个大的div包起来 -->
+	<div id="L-big">
+
+<!-- 左面的大块div -->
+		<div id="L-box6">
+			<ul class="L-box6-ul1">
+				<li>咨询</li>
+				<li>明星</li>
+				<li>电影</li>
+				<li>电视剧</li>
+				<li>综艺</li>
+				<li>音乐</li>
+				<li>演出</li>
+			</ul>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-e-img/f44d305ea4881c38f73717.jpg" alt="">
+			<span>
+				<b>《时尚大师》与文化美学</b>
+				<br><br>
+				<p>近期于央视财经频道播出的《时尚大师》便通过一个新的切口关照了“传统”，为“文化美学”的电视表达创新再添一种重要视角。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-e-img/f44d305ea4881c37c7533d.jpg" alt="">
+			<span>
+				<b>《热血街舞团》多项数据表现抢眼 领跑3月综艺市场</b>
+				<br><br>
+				<p>3月份，我国大陆地区共有89档综艺节目在播，其中网络综艺节目18档，省级卫视综艺节目71档，《热血街舞团》领跑综艺节目热度排行榜，网络传播热度指数为51.96。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-e-img/f44d305ea4881c37b75b45.jpg" alt="">
+			<span>
+				<b>《远大前程》口碑不佳 男主角演技浮夸失真</b>
+				<br><br>
+				<p>这部倾注了陈思诚五年心血的58集电视剧播出之后，口碑却不如预期，豆瓣评分仅为5.9分。大部分观众把“砖”拍向了男主角陈思诚，认为他是“蹦着演”洪三元一角，几十位“老戏骨”的精彩演技都没能拯救他的“油腻”。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+			<div id="L-box6-spans">
+				<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp何冰重返话剧舞台：感动于生命悲凉 </b>
+				<br>
+				<br>
+				<img src="./L-e-img/f44d305ea4881c37c7cd44.jpg" alt="">
+				<img src="./L-e-img/f44d305ea4881c37c7da51.jpg" alt="">
+				<img src="./L-e-img/f44d305ea4881c37af5149.jpg" alt="">
+			</div>
+
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+			<img src="./L-e-img/f44d305ea4881c37b5e029.jpg" alt="">
+			<span>
+				<b>抖音变“抖商”，娱乐成生意？ </b>
+				<br><br>
+				<p>说起抖音这个短视频App相信读者绝不陌生，刚刚成立一年便实现了让人眼红的商业变现。Sensor Tower近日提供给的一份统计2018年Q1 App Store各个榜单的数据显示，抖音已连续数周占据了下载榜头名的位置。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<div id="L-box6-spans">
+				<b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp现实主义剧 贵在名副其实 </b>
+				<br>
+				<br>
+				<img src="./L-e-img/f44d305ea4881c37afda5b.jpg" alt="">
+				<img src="./L-e-img/f44d305ea4881c37afe707.jpg" alt="">
+				<img src="./L-e-img/f44d305ea4881c37affa17.jpg" alt="">
+			</div>
+
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-e-img/f44d305ea4881c37b53125.jpg" alt="">
+			<span>
+				<b>中英电视人牵手迈向“创意春天” </b>
+				<br><br>
+				<p>一个名叫“洛宝贝”的“中国女孩”在国际电视荧屏上火了。２０１８年农历新年，《洛宝贝》动画片在澳大利亚电视台亮相。美国、法国、加拿大等多个国家相继购买“洛宝贝”动漫形象版权。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-e-img/f44d305ea4881c37b0d627.jpeg" alt="">
+			<span>
+				<b>意大利影院限时半价吸引观众 </b>
+				<br><br>
+				<p>当地媒体９日报道，为应对影院观众持续下降和响应意大利文化部的电影日活动倡议，意全国大部分影院决定在今年４月至１０月间推出共１５天半价观影优惠日。。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-e-img/f44d305ea4881c37acff1c.jpg" alt="">
+			<span>
+				<b>拷问部分网络视频平台：没有底线，流量就成流毒！ </b>
+				<br><br>
+				<p>在流量越来越便宜的科技社会，网络视频给公众带来新鲜体验的同时，也因为部分内容的无底线，一些流量成为流毒在毒害公众，尤其是年轻人。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-e-img/f44d305ea4881c3691c24c.jpg" alt="">
+			<span>
+				<b>赵薇示范春日时髦穿搭 黑白拼接优雅得体 </b>
+				<br><br>
+				<p>赵薇一组浪漫春日写真曝光。片中她身着黑白拼接裙，搭配黑色高跟鞋，垫肩设计凸显干练率性一面，置身于明媚春光下，优雅灵动，笑容迷人。或在亮红光影的映衬下，轻抚下颌，神秘成熟与从容得体并存。</p>
+			</span>
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+		
+
+
+		</div>
+
+<!-- 右面的大块div -->
+		<div id="L-box7">
+			<h4>光明影评</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<img class=	"L-box7-img1" src="./L-e-img/f44d305ea4881c27d1db05.jpg" alt="">
+			<ol>
+				<li>《红海行动》美国热映的背后</li>
+				<li>“中国奇迹”：纪录片镜头中的大国形象</li>
+				<li>治愈动画“大坏狐狸”吹来法式清新风</li>
+			</ol>
+
+			<h4>视频播报</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-e-img/ac9e178534911bda55a10d.jpg" alt="">
+
+			<h4>本周热映</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-e-img/f44d305ea4881c25470412.jpg" alt="">
+
+			<p><b>《狂暴巨兽》将上映 巨石强森"驯服"变异巨兽</b></p>
+			<p>由巨石强森主演的好莱坞怪兽灾难片《狂暴巨兽》即将上映。浩劫当前，硬汉强森能否“驯服”惊天巨兽，成为影迷在网上猜测的话题。</p>
+
+			<h4>大视野</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-e-img/0180412112206.jpg" alt="">
+
+			<br>	<br>	
+			<h4>独家策划</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img class=	"L-box7-img1" src="./L-e-img/f44d305ea4881a74c8ee60.jpg" alt="">
+			<ol>
+				<li>中国十大妇幼天使公益征集</li>
+				<li>光明V影评</li>
+				<li>清明假期上映7部影片 中小成本口碑佳作同台竞争</li>
+				<li> 国产动画片《猫与桃花源》：思考父亲角色的重要和伟大</li>
+			</ol>
+
+			
+
+
+
+		</div>
+
+	</div>
+
+	<!-- 名家访谈 -->
+	<div id="L-box8">
+		<h4>名家访谈</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+		<img src="./L-e-img/80412112559.jpg" alt="">
+	</div>
+
+	<!-- 友情链接 -->
+	<div id="L-box9">
+		<h3>友情链接</h3>
+		<b>新华娱乐&nbsp&nbsp&nbsp&nbsp人民网娱乐&nbsp&nbsp&nbsp&nbsp中新娱乐&nbsp&nbsp&nbsp&nbsp娱新网&nbsp&nbsp&nbsp&nbsp国际在线娱乐&nbsp&nbsp&nbsp&nbsp新浪娱乐&nbsp&nbsp&nbsp&nbsp央视网综艺&nbsp&nbsp&nbsp&nbsp搜狐娱乐&nbsp&nbsp&nbsp&nbsp网易娱乐&nbsp&nbsp&nbsp&nbsp腾讯娱乐&nbsp&nbsp&nbsp&nbsp齐鲁网娱乐&nbsp&nbsp&nbsp&nbsp大公网娱乐&nbsp&nbsp&nbsp&nbsp7706娱乐&nbsp&nbsp&nbsp&nbsp&nbsp中国娱乐网</b>
+	</div>
+
+
+<!-- 版权部分 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+
+
+<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	         <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img   onclick="myFunction()" class="btn1"  src="./L-public/img/left-img.png" alt="">
+
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+	
+</body>
+</html>

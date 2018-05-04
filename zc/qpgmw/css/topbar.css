@@ -1,0 +1,10 @@
+
+.topBar { background: url(../images/topbarbg.jpg) 0 0 repeat-x; height: 30px; font: 12px  Arial,"\5B8B\4F53", Helvetica, sans-serif; color: #666; }
+.topBarCon { width: 950px; margin: 0 auto; line-height: 28px; }
+.topLogo { margin-left: 80px; float: left; }
+.topLinks { float: right;  }
+
+.topLinks a { color: #666; text-decoration: none; line-height: 28px;vertical-align:middle;}
+.topLinks a:hover { text-decoration: underline; }
+.topLinks .colorReg { color: #ff6c00; }
+.topLinks .topLogin { background: url(../images/topLogin.png) 0 0 no-repeat; width: 38px; height: 20px; line-height: 20px; color: #fff; text-align: center; display: inline-block;margin: 4px 5px; }

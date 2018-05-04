@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>科普频道</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script>  
+
+  <style>
+  	/*--  李卓  --*/
+   				
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #f8f8f8;}
+    h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:blue;font-weight: bold;}
+
+ 						/*从box1-box2-boxA为固定模式*/
+
+ #L-box1{width: 1000px;height: 63px;margin:0px auto;} 
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+    #L-box3{width: 1000px;height: 50px;margin: 5px auto;background: blue;}
+        #L-box3 select{float: right;}
+
+    #L-box4{width: 1000px;height: 540px;margin: 5px auto;background: none;}
+        #L-box4-1{width: 660px;height: 540px;background: none;float: left;}
+            #L-box4-1 img{width: 660px; height: 380px;}
+            #L-box4-1 p{font-size: 20px;color: blue}
+        #L-box4-2{width: 330px;height: 540px;background: none;float: right;}
+
+    #L-box5{width: 1000px;height: 2000px;margin: 5px auto;background: none;}
+        #L-box5-1{width: 660px;height: 2000px;background: none;float: left;}
+            #L-box5-1 img {float: left;margin-right:10px;width: 180px;height: 130px;}
+           
+        #L-box5-2{width: 330px;height: 2000px;background: none;float: right;}
+            #L-box5-2 img{width: 330px;}
+
+    #L-box6{width: 1000px;height: 450px;margin: 5px auto;background: none;}
+        #L-box6-1{width: 660px;height: 450px;background: none;float: left;}
+        #L-box6-2{width: 330px;height: 450px;background: none;float: right;}
+
+    #L-box7{width: 1000px;height: 60px;margin: 5px auto;background: none;}
+
+
+        /*版权页*/
+    #L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+    #L-boxA p{text-align: center;}
+</style>
+
+	<script> 
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+   </script>
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+<!-- /*从box1-box2-boxA为固定模式*/ -->
+
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+			 <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+<!-- 
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-health-img/health.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>专业医药资讯<br> 多元健康服务</p>
+		</div>
+		<div id="L-box2-3">
+			<img src="./L-legal-img/ico_rss.gif">RSS</img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div> -->
+
+
+	<!-- 蓝色的标题  ps：后面的栏目导航是一个很长的select -->
+	<div id="L-box3">
+		<img src="./L-kepu-img/Logo(1).png" alt="">
+
+		<select>
+				<option value="0">站内搜索</option>
+				<option value="1">光明网</option>
+			 	<option value="2">光明报系</option>
+			 	<option value="3">科普中国</option>
+			 	<option value="4">焦点新闻</option>
+			 	<option value="5">科普头条</option>
+			 	<option value="6">光明动科普</option>
+			 	<option value="7">科学之子</option>
+			 	<option value="8">除谣记</option>
+			 	<option value="9">科普评论</option>
+			 	<option value="10">图个明白</option>
+			 	<option value="11">食品健康</option>
+			 	<option value="12">天文地理</option>
+			 	<option value="13">军事论剑</option>
+			 	<option value="14">科普影视</option>
+			 	<option value="15">科普阅读</option>
+			 	<option value="16">科普专题</option>
+			 	<option value="16">科学问答</option>
+			 	<option value="17">滚动</option>
+		</select>
+
+ 		
+   
+
+
+
+	</div>
+
+	<!-- 图片轮播+光明动科普 -->
+	<div id="L-box4">
+		<!-- 图片轮播 -->
+				<div id="L-box4-1">
+					 <div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-kepu-img/94c69122e49f1c35060948.jpg" alt="First slide">  
+         <p>世界首例神经疾病基因敲入猪模型诞生</p>
+         <b>由暨南大学粤港澳中枢神经再生研究院教授李晓江、中国科学院广州生物医药与健康研究院研究员赖良学和美国埃默里大学教授李世华领衔的团队，首次成功地利用基因编辑技术和体细胞核移植技术制备了亨廷顿疾病猪基因敲入猪模型。</b>
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-kepu-img/94c69122e4b71c2e776b4d.jpg" alt="Second slide"> 
+         <p>压力会传染吗？</p>
+         <b>压力会传染，会导致“无辜者”大脑中的神经突触发生变化，并可能持续数日</b> 
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-kepu-img/94c69122e49f1c37a98b1c.jpg" alt="Third slide">  
+         <p>追忆高原杂交稻之父李铮友</p>
+         <b>2018年4月4日，清明节前夕，一个噩耗在水稻界迅速传开：我国杂交粳稻开创者李铮友在云南昆明因病去世，享年82岁。</b>
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-kepu-img/94c69122e49f1c33b10610.jpg" alt="fourth slide"> 
+         <p>人血能“毒杀”蚊子？科学证明：这是真的！</p>
+         <b>英国研究人员牵头的一个小组在肯尼亚用药物让人血对蚊子具有致命毒性，所获结果有望用于开发防治疟疾的新方法。研究人员让另一组48名志愿者服用300毫克伊维菌素，做相同实验，蚊子的死亡率有所降低。</b> 
+      </div>   
+   </div>  
+
+
+				</div>
+		<!--光明动科普  -->
+				<div id="L-box4-2">
+					<h4>光明科普活动>></h4>
+						<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+						<img src="./L-kepu-img/94c69122e49f1c1f1abf04.jpg" alt="">
+						<br><br>
+						<p>世界气象日来了，你知道什么是“智慧气象”吗？听我慢慢道来！</p>
+						<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+						<ul>
+							<li>“空天飞机”要来了，你准备好上太空了吗？</li>
+							<li>我国又一超级工程 深空探测能力将提升100倍</li>
+							<li>微动画：永别了，霍金先生！</li>
+							<li>2+26”城市大气重污染成因是什么？</li>
+							<li>动画|重磅！北京优化国际人才发展环境出实招</li>
+							<li>动画|2018年北京市将为你做哪些民生实事？</li>
+						</ul>
+				</div>
+	</div>
+
+	<!-- 科普头条+....+ 知识分子-->
+	<div id="L-box5">
+		<!-- left -->
+		<div id="L-box5-1">
+				<h4>科普头条>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e4b71c37ace001.jpg" alt="">
+					<ul>
+						<b>沙尘天这么多 三北防护林说“我不背锅”</b>
+						<br>
+						<a >4月10日，大风吹走了北京等地的沙尘，这已是今年出现的第7次沙尘天气过程。有传言说，三北防护林阻挡了风，导致京津冀雾霾天增多；由于三北防护林的树被砍了，所以沙尘天增加，“背锅”的总是防护林。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+				<img src="./L-kepu-img/94c69122e49f1c37aa6f1d.jpg" alt="">
+					<ul>
+						<b> 你知道生物武器给人类造成了多大的灾难吗？</b>
+						<br>
+						<a >1942年夏，又在浙赣铁路沿线投放了霍乱弧菌、鼠疫杆菌、伤寒杆菌等病菌，污染水源和食物，造成疫病流行，致使大量中国平民死亡。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+
+				<img src="./L-kepu-img/94c69122e49f1c37a91915.jpg" alt="">
+					<ul>
+						<b> 遥感三十一号01组卫星成功发射</b>
+						<br>
+						<a >4月10日12时25分，我国在酒泉卫星发射中心用长征四号丙运载火箭，成功将遥感三十一号01组卫星和微纳技术试验卫星发射升空，卫星进入预定轨道。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c37a80f0e.jpg" alt="">
+					<ul>
+						<b>扁桃体不是想切就能切 特定条件下才可切除 </b>
+						<br>
+						<a >春季昼夜温差较大，忽冷忽热的天气让不少人的扁桃体开始发炎。点击下载本组图片2017年6月30日，江西省金溪县医护党员为小孩检查口腔和扁桃体。扁桃体并非对身体全都是积极意义，据《金陵晚报》报道，如果扁桃体总是发炎，就会形成“病灶”。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c37a7e609.jpg" alt="">
+					<ul>
+						<b> 无导航、无路标？看候鸟千里往返如何定向识途</b>
+						<br>
+						<a >天气逐渐变暖，又到了候鸟从南方飞回北方的季节，大家或许会疑惑候鸟是如何在迁徙途中精准地找到飞行方位和路线，科学家们又是如何研究鸟类迁徙规律及其习性的，接下来就为大家来解读。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c37a61a07.jpg" alt="">
+					<ul>
+						<b>美研究称“发脾气”受生物钟调控</b>
+						<br>
+						<a >美国科学家进行的一项小鼠实验发现，生物钟参与了调控动物的“进攻性”行为。论文高级作者、哈佛大学医学院克利福德·塞珀教授说，小鼠在黄昏时最好斗，在清晨时最温顺，这表明进攻性行为接受光照后逐渐增强，在黄昏达到顶峰。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c37a5a206.jpg" alt="">
+					<ul>
+						<b>新研究发现脂肪细胞为肿瘤供能的机制 </b>
+						<br>
+						<a >美国《癌细胞》杂志９日发表的一项研究解释了脂肪组织如何为肿瘤提供能量。研究人员指出，目前哺乳动物雷帕霉素靶蛋白抑制剂被应用在很多癌症的治疗上，而这项研究正好可以解释这种抑制剂是如何发挥抗癌功效的。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c37a3f601.jpg" alt="">
+					<ul>
+						<b>52小时内连续下潜4次 “深海勇士”号精彩首秀 </b>
+						<br>
+						<a >深海勇士精彩首秀“深海勇士”号在进行载人深潜试验。在本航次中，“深海勇士”号首次实现了52小时内连续下潜4次的纪录。“深海勇士”号还拥有目前世界先进的控制系统，这套控制系统可以扩展到其它载人潜水器中去并可被其它类潜水器所借鉴。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c36565118.png" alt="">
+					<ul>
+						<b> “三无”吸管是用废塑料制作的？长期使用或可致癌</b>
+						<br>
+						<a >“三无”塑料吸管的生产原料可能是工业级聚乙烯或废塑料等，长期使用会影响人体肝脏，导致血液疾病或神经系统疾病。</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c3655e715.jpg" alt="">
+					<ul>
+						<b>还在沉迷自拍？小心“自拍成瘾”找上门 </b>
+						<br>
+						<a >不仅是“自拍成瘾”的人存在问题，经常看到别人发自拍的人，其心理也有可能受到影响，这又是怎么造成的呢？</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+				<img src="./L-kepu-img/94c69122e49f1c36554313.jpg" alt="">
+					<ul>
+						<b> 洗牙会导致牙缝变宽、牙齿松动？这锅“洗牙”不背</b>
+						<br>
+						<a >近年来，越来越多的人开始注重口腔护理，很多人都会定时去牙科进行洗牙，然而不少人对于洗牙却持怀疑态度，担心洗牙会给牙齿造成伤害，认为洗牙后会让牙缝变宽、牙齿松动</a>
+					</ul>
+					<br><br>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+		</div>
+		<!-- right -->
+		<div id="L-box5-2">
+				<h4>科学之子>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+				<img src="./L-kepu-img/f44d30758a7c1be4e9102b.jpg" alt="">
+				<br><br>
+				<p><b>朱日祥：快乐科研，为华北克拉通破坏求解</b></p>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+				<ul>
+					<li>“把论文变成药”：屠呦呦团队的新年期望</li>
+					<li>黄旭华院士：我的一生属于核潜艇属于祖国</li>
+					<li>许智宏：转基因讨论要回归科学的维度</li>
+
+				</ul>
+				
+				<br><br>
+				<h4>科普评论>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+				<ul>
+					<li>应重视基础研究在科学普及中的作用</li>
+					<li>用科普文章撬动职称评价体系改革</li>
+					<li>从科学的角度追剧</li>
+					<li>从科学研究的视角看我们为啥发朋友圈</li>
+					<li>做科研需要怎样的心态</li>
+				</ul>
+
+				<br><br>
+				<h4>图个明白>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+				<img src="./L-kepu-img/94c69122e6f11c280c7c18.jpg" alt="">
+				<br><br>
+				<p><b>沙尘暴和雾霾同时来袭，怎么办？</b></p>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+				<ul>
+					<li>揭秘“智慧气象”的前世今生</li>
+					<li>霍金简史</li>
+					<li>一图了解我国五年来科技创新巡礼</li>
+
+				</ul>
+
+				<br><br>
+				<h4>科普专题>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+				<ul>
+					<li>典赞·2017科普中国</li>
+					<li>2017年度国家科技奖励大会</li>
+					<li>硬科技助力强军	</li>
+					<li>2017年全国科普日</li>
+				</ul>
+				<br><br>
+
+				<h4>除谣记>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+				<img src="./L-kepu-img/94c69122e49f1c03501722.gif" alt="">
+				<br><br>
+				<p><b>2月除谣榜：海绵“变不出”八宝粥！</b></p>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+				<ul>
+					<li>2017年旧谣重现“江湖”，你信了吗？</li>
+					<li>12月除谣榜：“隐身衣”系特效合成</li>
+					<li>11月除谣榜：勿信奉“春捂秋冻</li>
+
+				</ul>
+
+				<br><br>
+				<h4>知识分子>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+				<ul>
+					<li>原创研究引领创新产业何时在中国开花结果</li>
+					<li>美国退出《巴黎协定》：带来负面冲击？</li>
+					<li>新政下的新药研发，专家怎么看	</li>
+					
+				</ul>
+
+
+
+
+		</div>
+	</div>
+
+	<!-- 左边的视频播放器+右边的科普影视 -->
+	<div id="L-box6">
+		<!-- left  一个视频播放框 -->
+		<div id="L-box6-1">
+
+			<!-- 这里调用了优酷的播放地址。但是优酷有广告，体验不好，下一步将调用bilibil的视频播放地址 -->
+			<embed src="http://player.youku.com/player.php/sid/XMzI2NTc4NTMy/v.swf" width="660" height="400" type="application/x-shockwave-flash">
+</embed>
+		</div>
+		<!-- rigth -->
+		<div id="L-box6-2">
+			<h4>科普影视>></h4>
+				<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+				<img src="./L-kepu-img/d02788d8df101bafd6df03.jpg" alt="">
+				<br><br>
+				<p><b>2月除谣榜：海绵“变不出”八宝粥！</b></p>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+				<ul>
+					<li>特高压输电 清洁能源利用不再愁</li>
+					<li>我们为啥要走向深空？</li>
+					<li>超炫酷超导磁悬浮演示实验</li>
+
+				</ul>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- 版权部分 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+	<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			  <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+		</ul>
+</div>
+<div class="L-left">
+	<img  onclick="myFunction()" class="btn1" src="./L-public/img/left-img6.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game2.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+	
+</body>
+</html>

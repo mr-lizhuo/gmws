@@ -1,0 +1,72 @@
+    /*--  李卓  --*/
+   
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+   *{margin: 0 ;}/*设置全局变量*/
+   a{text-decoration:none;color:black;}/*去除超链接的颜色和下划线*/
+   body{background: #f8f8f8;}
+     h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:blue;font-weight: bold;}
+	
+	#L-box1{width: 1000px;height: 63px;margin:0px auto;}
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+	#L-box3{width: 1000px;height: 50px;margin:5px auto;background: red;}
+		#L-box3 li{list-style-type:none;float: left;padding-left: 8px; padding-top: 8px;font-size: 20px;color:white;}
+		#L-box3 a{color: white}
+
+    #L-box4{width: 1000px;height: 400px;margin: 5px auto;background: red;}
+      #L-box4-1{width: 660px;height: 400px;background: green;float: left;}
+      #L-box4-2{width: 330px;height: 400px;background: yellow;float: right;}
+
+    #L-box5{width: 1000px;height: 50px;margin: 5px auto;background: red;}
+
+    #L-big{width: 1000px;height: 2261px;margin: 5px auto;background: red;}
+      #L-box6{width: 660px;height: 2261px;background: green;float: left;}
+      #L-box7{width: 330px;height: 2261px;background: yellow;float: right;}
+
+    #L-box8{width: 1000px;height: 400px;margin: 5px auto;background: red;}
+    #L-box9{width: 1000px;height: 50px;margin: 5px auto;background: red;}
+
+
+#L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+  #L-boxA p{text-align: center;}

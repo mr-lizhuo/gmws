@@ -1,0 +1,102 @@
+/* CSS Document */
+*{margin:0; padding:0;}
+.clearfloat{clear:both; overflow:hidden;}
+.divleft{float:left;}
+.divright{float:right;}
+a{text-decoration:none; color:#000;}
+a img{border:none;}
+a:focus{outline:none;}
+img{border:0;}
+input,select,textarea{outline:0;}
+textarea{resize:none;}
+table{border-collapse:collapse;border-spacing:0;}
+th,strong,var,em{font-weight:normal;font-style:normal;}
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+body{font-family:"Microsoft YaHei"; font-size:14px; color:#000;}
+.w1000{width:1000px; margin:0 auto;}
+#channelName {width: 500px; float: left; height: 45px; line-height: 45px; color: #991513; font-size: 28px; margin: 0 10px 0 20px;}
+#searchBar {margin-top: 12px; width: 370px; height: 30px; float: right;}
+/*导航*/
+.navs{background:url(../images/nav_bg.png) center no-repeat; width:100%; height:61px; position:relative; z-index:999;}
+.nav_ul{overflow:hidden; list-style:none; width:1000px;}
+.nav_top{position:fixed; bottom:0; left:0; top:0; z-index:999;}
+.nav_ul li{float:left; font-size:16px; line-height:60px; padding:0 33px; background:url(../images/line.png) left no-repeat;}
+.nav_ul li:first-child{margin-left:0; background:none;}
+.nav_ul li:first-child a{border-left:none;}
+.nav_ul li a{color:#fff;}
+
+/*内容*/
+.w640{width:640px;}
+.mt45{margin-top:45px;}
+.mr35{margin-right:30px;}
+.w265{width:270px;}
+/*今日关注*/
+.span1{font-size:20px; color:#31352e; margin-bottom:20px;}
+.toutiao{padding-bottom:10px;}
+.p1{font-size:20px; line-height:26px;}
+.p1 a{color:#2b2b2b;}
+.zy{text-indent:2em; line-height:24px; color:#666; font-size:14px;}
+.zy2{color:#666; font-size:14px;}
+.divlist{padding:12px 0; border-top:1px solid #c9c9c9;}
+.point{font-weight:bold; margin-right:5px; color:#7eb232; font-size:20px;}
+.p2{font-size:16px; width:230px; line-height:1.7em; height:54px; overflow:hidden;}
+/*就食论食*/
+.w312{width:312px;}
+.mt30{margin-top:30px;}
+.black1{padding:20px 15px; background:#f3f8f9;}
+.banner2{position:relative;}
+.more{position:absolute; right:0; top:5px;}
+.jsls_con{margin-top:20px;}
+.w140{width:140px;}
+.p3{margin-bottom:10px; font-size:14px;}
+.p3 a{color:#2b2b2b;}
+.ul_list{list-style:none; margin-top:10px;}
+.zy20{line-height:20px;}
+.ul_list li{line-height:30px;}
+.ul_list li a{color:#2b2b2b;}
+
+/*食品要闻*/
+.wrap2{margin-top:50px;}
+.divlist2{padding:10px 0; border-top:1px dashed #c9c9c9;}
+.divlist2:first-child{border-top:none; margin-top:10px;}
+.mr30{margin-right:30px;}
+.p4{margin-bottom:10px;}
+.p4 a{color:#2b2b2b; font-size:20px; display:block; line-height:26px;}
+.conMsg{color:#999; line-height:26px; text-align:left; margin-top:10px;}
+.conMsg2{margin-top:0;}
+
+/*食品安全大咖谈*/
+.img_list{list-style:none; width:320px; margin-top:20px;}
+.img_list li{float:left; margin:0 10px 10px 0;}
+.title_con{border-bottom:1px dashed #c9c9c9; padding-bottom:10px;}
+.p5 a{font-size:16px; color:#4fa920; display:block; margin-bottom:10px;}
+.p16{margin-bottom:10px; font-size:14px;}
+
+/*吃货公开课*/
+.topborder{border-top:2px solid #7eb232; padding-top:25px; margin-top:35px;}
+.divlist3{margin:25px 0 20px 0;}
+.divlist3 img{margin-right:10px;}
+.divlist3 .zy{text-indent:0; line-height:20px; margin-top:10px; color:#5b5e5b;}
+
+/*横条幅*/
+.tf{margin:20px auto 55px auto;}
+
+/*权威发声*/
+.wrap3{margin:30px auto 30px auto;}
+.banner3{position:relative; margin-bottom:25px; width:276px; height:45px; padding:0 15px; line-height:47px; border:2px solid #d2d2d2; border-bottom-color:#58ac2c;}
+.more2{right:15px;}
+.span2{font-size:22px; padding-left:10px;}
+.ul_list2 li{display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; width:310px;}
+
+/*专题*/
+.topics{background:#ecf2f5;}
+.banner4{width:290px; position:relative; margin:0 auto; border-bottom:2px solid #aeaeae; padding:0 0 0 10px; font-size:22px; line-height:45px;}
+.topic_con{width:282px; margin:35px auto 0 auto;}
+.topic_con img{margin-bottom:35px;}
+
+/*底部*/
+.jiyu {width: 1000px; overflow:hidden; margin: 0 auto; color: #595A52; font-size: 12px;}
+.jiyu span {color: #280000;}
+.jiyu a {float: left; margin:0 40px 20px 0;}
+.h60{height:60px; line-height:60px;}

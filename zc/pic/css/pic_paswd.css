@@ -1,0 +1,63 @@
+/*找回密码*/
+.find_pwdbox {background:#fff;width:450px;margin:0 auto;min-height:250px;_height:auto;padding:50px 0;color:#3b3b3b;}
+.find_pwdbox .hd {height:40px;line-height:40px;padding:0 10px;}
+.find_pwdbox h3 {font-size:16px;color:#3b3b3b;padding-left:20px;}
+.pass_form {width:250px;margin:0 auto;padding:20px 0;}
+.pass_form .pass_text {font-size:16px;padding:10px 0;}
+.pass_form input {width:240px;padding:0 5px;height:28px;line-height:30px;border:1px solid #ccc;}
+.prompt {text-align:center;font-size:12px;color:#ff0000;padding:15px 0 10px;}
+.pass_submit {overflow:hidden;zoom:1;padding:10px;text-align:center;padding-left:36px;}
+.pass_submit button {float:left;width:80px;height:30px;background:#0186CB;font-size:14px;color:#fff;border:none;margin-right:20px;}
+
+/*新密码*/
+.new_pwdbox {width:360px;margin:0 auto;min-height:250px;_height:auto;padding:100px 0;}
+.new_pass span {float:left;line-height:30px;}
+.new_pass input {width:200px;height:28px;border:1px solid #ccc;padding:0 5px;}
+.new_pwdbox .pass_submit {overflow:hidden;zoom:1;padding:30px 20px 0;text-align:center;padding-left:90px;}
+.new_pwdbox .pass_submit button {float:left;width:80px;height:30px;background:#0186CB;font-size:14px;color:#fff;border:none;margin-right:20px;}
+
+/*用户选择*/
+.user_type_box {padding:0 20px;}
+.bread_crumb .idv_home {color:#0186cb;}
+.bread_crumb .hello {padding:0 5px;}
+.select_userbox {background:#0186cb;height:30px;line-height:30px;color:#484848;padding:0 40px;font-size:12px;margin-bottom:10px;font-family:"\5b8b\4f53",Arial;}
+.select_userbox a {color:#484848;padding:0 5px;font-family:"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;}
+.select_userbox b {color:#484848;font-weight:400;padding:0 5px;font-family:"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",Arial;}
+.select_userbox .select_current {color:#fff;}      /*用户设置当前页时所应用的样式*/
+.select_bd {border:1px solid #ccc;background:url(../images/tw_bg.png) 0 0 repeat;padding:38px 0 60px 110px;overflow:hidden;zoom:1;}
+.slt {float:left;margin-right:109px;}
+.sevbox {padding:10px 0;}
+.sevbox p {font-size:12px;color:#666;line-height:24px;}
+
+/*条款*/
+.select_bd .clause p {font-size:12px;line-height:24px;}
+.clause {height:720px;overflow:auto;}
+.clause p {color:#484848;font-size:14px;line-height:28px;}
+
+/*用户信息*/
+.user_basics {padding:15px 20px;}
+.user_basic_input {padding-top:20px;}
+.user_basic_intro {border:1px solid #ccc;border-right:none;border-bottom:none;background:#fff;padding:20px 30px;}
+.user_basic_intro h3 {width:90px;height:30px;text-align:center;line-height:30px;font-size:16px;background:#0186cb;color:#fff;font-weight:400;}
+.user_clause {padding:20px 20px 20px 30px;}
+.item {overflow:hidden;zoom:1;padding-bottom:10px;line-height:24px;}
+.u_i_fl {float:left;width:100px;font-size:14px;color:#484848;}
+.item input {float:left;width:186px;height:24px;line-height:24px;padding:0 5px;border:1px solid #ccc;}
+.u_txt_fr {float:left;width:450px;color:#b5b5b5;font-size:12px;}
+.u_txt_fr span {color:#fd0000;padding:0 5px;font-size:14px;float:left;}
+.shrink_cont,.shrink_cont_more {padding-left:60px;}
+.item .link_adres {width:388px;}
+.item .link_adres_info {width:250px;}
+.item .bank {width:380px;}
+.item .bank_info {float:left;width:700px;padding-left:100px;}
+.sw_star {float:left;width:10px;}
+.item textarea {border:1px solid #ccc;width:500px;height:70px;color:#000;padding:10px;overflow:hidden;margin-bottom:2px;resize:none;}
+
+.icon_show {cursor:pointer;}
+.click_shrink {background-color:#0186cb;padding:10px 0;+padding-bottom:8px;text-align:center;font-size:14px;margin:10px 0;}
+.click_shrink a {display:block;color:#fff;}
+.click_shrink p {padding-top:5px;}
+.info_submit {overflow:hidden;zoom:1;text-align:right;padding:20px 50px 10px 0;}
+.info_submit button {width:106px;height:36px;margin-right:30px;font-size:14px;color:#fff;cursor:pointer;}
+.info_submit .regis {background:#0186cb;}
+.info_submit .back {background:#484848;}

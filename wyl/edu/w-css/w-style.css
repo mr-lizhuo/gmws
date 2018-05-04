@@ -1,0 +1,89 @@
+body{margin:0 auto;padding:0;border:0; font-family:"微软雅黑"; font-size:16px; background:#fff;}
+div,form,img,ul,ol,li,dt,dd,p{margin:0;padding:0;border:0; list-style:none;}
+h1{font-size:22px;color:#000;font-weight:bold;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;color:#000;font-weight:normal;}
+a:link{text-decoration:none; color:#000;}
+a:visited{text-decoration:none; color:#000;}
+a:hover{text-decoration:none; color:#000;}
+h3{ font-size:18px; font-weight:bold;}
+h4{ font-size:18px;}
+/*公用部分*/
+#header{width:1000px;margin:20px auto 12px;}#channelName{width:500px;float:left;height:45px;line-height:45px;color:#048767;font-size:28px;margin:0 10px 0 20px}#channelName span{margin-right:10px}#slogan{font-size:14px;color:#000;padding:0 5px 0 25px;background:url(../images/slogan_ico.jpg) no-repeat}#searchBar{margin-top:12px;width:370px;height:30px;float:right}
+/*导航*/
+.nav{ width:100%; height:48px; background:#006A74; border-bottom:2px solid #FFBD00; margin-bottom:22px;}
+.nav ul{ width:1000px; margin:0 auto;}
+.nav li{ float:left; line-height:48px; margin-left:44px;}
+.nav li a{ color:#fff; font-size:20px;}
+.nav li a:hover,.nav li.hover a{ color:#FFBD00; font-weight:bold;}
+/*焦点图*/
+.mar1000{width:1000px; margin:0 auto; overflow:hidden;}
+.slider{float: left; width:640px; height:380px; position:relative;}
+.pic{ width:100%; height:100%; position:relative;}
+.pic li{ position:absolute; width:100%; height:100%;top:0; left:0; display:none;}
+.pic li img{ width:100%; height:100%;}
+.pic li span{ position:absolute; bottom:0; left:0; height:40px; background:url(../images/shadow_black.png) repeat; width:100%;}
+.pic li span a{ padding:0 12px; color:#fff; line-height:40px;}
+.pad{ position:absolute; bottom:9px; right:12px;}
+.pad li{ width:20px; height:20px; background:#006A74; float:left; margin-left:5px; cursor:pointer; display:block; color:#fff; line-height:20px; text-align:center;}
+.pad li.on{background:#FFBD00;}
+
+.yaowen{ width:330px; height:380px; float:right; overflow:hidden;}
+.yaowen_box{ margin-bottom:16px; padding-bottom:16px; border-bottom:#ADADAD dashed 1px;}
+.yaowen_box p{ line-height:24px; margin-top:9px; color:#777777;}
+.yaowen_box p a{ color:#006A74;}
+/*主要内容*/
+.left{ width:640px; overflow:hidden; float:left;}
+.right{ width:330px; overflow:hidden; float:right;}
+.title1{ width:100%; position:relative;}
+.title1 a{ position:absolute; font-size:14px; color:#fff; right:12px; top:9px;}
+/*要闻*/
+.news{ padding:22px 0; width:100%; overflow:hidden; border-bottom:#ABABAB 1px solid;}
+.news h4{ width:100%; margin-bottom:14px;}
+.news img{ width:180px; height:120px; float:left; margin-right:20px;}
+.news p{line-height:24px; color:#ABABAB;}
+.news p a{color:#006A74;}
+/*权威*/
+.quanwei{ width:100%; height:113px; background:url(../images/quanwei.jpg) no-repeat; margin-top:15px; padding-top:45px; position:relative;}
+.quanwei li{ width:320px; padding-left:320px; float:right; line-height:32px;}
+.quanwei a.quanwei_a{ width:166px; height:75px; display:block; position:absolute; top:53px; left:113px;}
+.tab{ width:100%; height:34px; border-bottom:#FEBF00 2px solid; background:#006A74; margin-top:30px;}
+.tab a{ color:#fff;}
+.tab li{ float:left; padding:0 30px; line-height:34px; color:#fff; cursor:pointer;}
+.tab li.on,.tab li:hover{ background:#FEBF00; color:#006A74;}
+.tab_div{ display:none;}
+.tab_div:last-child{ border-bottom:none;}
+/*右侧部分*/
+.right_div{width:292px;border:#ABABAB 1px solid; position:relative; margin-bottom:30px; padding:18px; padding-top:54px; border-top:none;}
+.title2{ position:absolute; top:-1px; left:-1px; width:330px; height:36px; background:url(../images/title2.jpg) no-repeat;}
+.title2 h3{ float:left; width:100px; text-align:center; line-height:36px; color:#fff;}
+.title2 a{ float:right; margin-right:12px; line-height:36px;}
+
+.news_right{ padding:0 0 15px; border-bottom:#ABABAB 1px dashed; margin-bottom:12px;}
+.news_right h4{ font-size:16px; margin-bottom:10px;}
+.news_right img{ width:130px; height:90px; float:left; margin-right:10px;}
+.news_right p{line-height:22px; font-size:14px;}
+
+.right_div li{ line-height:30px; background:url(../images/arrow.png) no-repeat left 13px; padding-left:12px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+/*友情链接*/
+.friend{ background:#006A74; border-bottom:2px solid #FFBD00; text-align:center; color:#fff; height:34px; line-height:34px; margin-top:30px;}
+.friend_link{ padding:20px 15px 5px; text-align:left; background:#F1F1F1; width:970px; margin-bottom:50px;}
+.friend_link p{ margin-bottom:10px; font-size:14px;}
+.friend_link p a{ padding:0 13px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

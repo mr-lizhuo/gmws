@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>女人频道</title>
+
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script>  
+
+
+<style>
+
+                                                   /*--  李卓  --*/
+   
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+   *{margin: 0 ;}/*设置全局变量*/
+   a{text-decoration:none;color:black;}/*去除超链接的颜色和下划线*/
+   body{background: #f8f8f8;}
+    h3{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;font-weight: bold;}
+
+
+                     /*box1,box2,box3,boxA为固定模式*/
+	
+	#L-box1{width: 1000px;height: 63px;margin:0px auto;}
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+	#L-box3{width: 1000px;height: 50px;margin:5px auto;background: #005894;}
+		#L-box3 li{list-style-type:none;float: left;padding-left: 40px; padding-top: 8px;font-size: 20px;color:white;}
+		#L-box3 a{color: white}
+
+
+  #L-box4{width: 1000px;height: 374px;margin: 5px auto;background: none;}
+    #L-box4-1{width: 660px;height: 374px; background: none; float: left;}
+      #L-box4-1 img{width: 660px;height: 374px;}
+    #L-box4-2{width: 330px;height: 374px; background: none; float: right;}
+
+
+  #L-box5{width: 1000px;height: 842px;margin: 5px auto;background: none;}
+    #L-box5-1{width: 660px;height: 842px; background: none; float: left;}
+      #L-box5-1 ul{padding: 0;border: 0;margin: 5px;}
+      #L-box5-1 img{width: 163px;height: 108px;float: left;margin-bottom: 10px;}
+      #L-box5-1 span{width: 470px;float: right;font-size: 15px;}
+
+    #L-box5-2{width: 330px;height: 842px; background: none; float: right;}
+      #L-box5-2 img{width: 320px;height: 370px;margin-top: 15px;}
+
+   #L-box6{width: 1000px;height: 568px;margin: 5px auto;background: none;}
+    #L-box6-1{width: 660px;height: 568px; background: none; float: left;}
+      #L-box6-1 img{width: 274px;height: 184px;float: left;margin-bottom: 15px;}
+      #L-box6-1 span{  width: 360px;float: right;}
+      #L-box6-1 b{font-size: 23px;}
+      #L-box6-1 p{font-size: 20px;}
+    #L-box6-2{width: 330px;height: 568px; background: none; float: right;}
+       #L-box6-2 img{width: 330px;}
+       #L-box6-2 li{font-size: 15px}
+       #L-box6-2 ul{margin-top: 15px;}
+
+  #L-box7{width: 1000px;height: 594px;margin: 5px auto;background: none;}
+    #L-box7-img{width: 310px;height: 326px;float: left;}
+    #L-box7-img2{width: 298px;height: 476px;}
+   
+
+  #L-box8{width: 1000px;height: 50px;margin: 5px auto;background: none;}
+
+  #L-box9{width: 1000px;height: 50px;margin: 5px auto;background: none;}
+
+
+
+
+
+
+      #L-boxA p{text-align: center;}
+</style>
+
+
+ <script src="./L-public/js/jquery-2.1.1.min.js"></script>
+	<script src="./L-public/js/jquery.liMarquee.js"></script>
+	<script> 
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+</script>  
+</head>
+<body>
+
+						<!-- box1，box2，box3，boxA为固定模式 -->
+
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+		 <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+		
+			                      <!-- end -->
+		
+		</div>
+	</div>
+
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-lady-img/lady.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>高端 时尚 睿智 </p>
+		</div>
+		<div id="L-box2-3">
+			<img src="./L-legal-img/ico_rss.gif">RSS</img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+
+	<div id="L-box3">
+		<ul>
+	<li><a href="http://mil.gmw.cn/node_8986.htm" target="_blank">焦点图</a></li>
+	<li><a href="http://mil.gmw.cn/node_8981.htm" target="_blank">精选</a></li>
+	<li><a href="http://mil.gmw.cn/node_8984.htm" target="_blank">风尚标</a></li>
+	<li><a href="http://mil.gmw.cn/node_8982.htm" target="_blank">明星爱大牌</a></li>
+	<li><a href="http://mil.gmw.cn/node_11178.htm" target="_blank">美容彩妆</a></li>
+	<li><a href="http://mil.gmw.cn/node_8978.htm" target="_blank"> 她对话</a></li>
+	<li><a href="http://mil.gmw.cn/node_8979.htm" target="_blank"> 婚嫁亲子</a></li>
+	<li><a href="http://topics.gmw.cn/node_4979.htm" target="_blank"> 街拍秀</a></li>
+	
+
+		</ul>
+	</div>
+
+	
+<!-- 图片轮播+右边的文字 -->
+	<div id="L-box4">
+		<!-- 图片轮播 -->
+		<div id="L-box4-1">
+
+
+ <!-- 轮播（Carousel）项目 -->  
+   <div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-lady-img/f44d307589631c2d296f01.jpg" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-lady-img/f44d307589631c37c72b01.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-lady-img/f44d307589631c33ce5001.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-lady-img/f44d307589631c3672d201.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+		</div>
+		<!-- 文字 -->
+		<div id="L-box4-2">
+
+			<h3>你的“脑容量”早就定型了？</h3>
+				<br><br>
+				<p>&nbsp&nbsp&nbsp&nbsp搜索“海马神经发生”，百度医学中标题与之精确匹配的论文就有近300篇，</p>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<h3>牛奶致癌、吃素治癌？谣言！</h3>
+				<p>&nbsp&nbsp&nbsp&nbsp所谓“吃素”，一般可分为吃全素和部分吃素，但其共性则是多吃植物性食物。[详细].</p>
+				<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<h3>中国乳腺癌人群突变图谱“面世”</h3>
+				<p>&nbsp&nbsp&nbsp&nbsp该项研究“精准解读”了乳腺癌中基因突变数据，将为临床用药及未来针对这些靶点的药物研发，提供重要理论和数据支持。[详细].</p>
+				
+
+
+		</div>
+	</div>
+
+	<!-- 风尚标+美容彩妆+明星爱打牌 -->
+	<div id="L-box5">
+		<!-- 风尚标+美容彩妆 -->
+		<div id="L-box5-1">
+			<h3>风尚标</h3>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<ul>
+			<a style="font-size: 25px">听说今晚你不洗头？快来选帽子吧</a>
+			</ul>
+			<img src="./L-lady-img/f44d305ea5951c2852cc3c.jpg" alt="">
+			<span>
+				<a>适合自己的帽子可以为我们精心的打扮穿搭锦上添花，但是错误帽子搭配会让你的造型功亏一篑。圆脸星人应该适当地为自己增加”棱角”， 帽子应选择方形、尖形或多边形的，比如复古绅士帽，宽檐鸭舌帽，贝雷帽。</a>
+			</span>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<ul>
+			<a style="font-size: 25px">奚梦瑶、谢依霖保持美丽本真的秘密</a>
+			</ul>
+			<img src="./L-lady-img/f44d305ea5951c23138234.jpg" alt="">
+			<span>
+				<a>由于当今的都市生活节奏越来越快，压力越来越大，不规律作息使得身体长期处于疲劳状态，肌肤中的水分更易流失，过去的光彩盈透一去不复返。</a>
+			</span>
+		
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+				
+			<h3>美容彩妆</h3>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<a style="font-size: 25px">霓虹妹纸爱到不行的BCL到底什么来头？</a>
+			<br>
+			</ul>
+			<img src="./L-lady-img/f44d305ea4881c1d9e5e5e.jpg" alt="">
+			<span>
+				<br>
+				<a>其实甜美的日本MM可是超级无敌颜值控哦~她们选择护肤品，不仅要东西好用，还要样子美！而且对于价格也不一味地认为“贵=好用”</a>
+			</span>
+		
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<a style="font-size: 25px">郭采洁教你打造炫目彩妆</a>
+			<br>
+			</ul>
+			<img src="./L-lady-img/f44d305ea5951be64f6f5e.jpg" alt="">
+			<span>
+				<br>
+				<a>郭采洁是当代清新灵动的实力派人气演员，她是《巴黎假期》俏皮可爱的丁晓敏，更是《小时代》里冷艳睿智、傲慢却又脆弱的顾里。</a>
+			</span>
+		
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+		</div>
+		<!-- 明星爱打牌 -->
+		<div id="L-box5-2">
+			<h3>明星爱大牌</h3>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-lady-img/f44d30758a501a73c9f30e.jpg" alt="">
+			<img src="./L-lady-img/f44d307589811a2c9e0911.jpg" alt="">
+		</div>
+	</div>
+
+	
+	<!-- 他对话+婚嫁亲子 -->
+	<div id="L-box6">
+		<!-- 他对话 -->
+		<div id="L-box6-1">
+			<h3>她对话</h3>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-lady-img/f44d307589991a1e42df14.jpg" alt="">
+			<span>
+				<b>孔媛媛：从俄罗斯文学中读什么？</b>
+				<p>俄罗斯文学在中国有着非常广泛的群众基础，至少影响了一代人，经过观众和专家学者的意见征集后，选出了普希金和列夫托尔斯泰两位大作家来代表整个俄罗斯文学对中国人的影响。</p>
+			</span>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-lady-img/f44d307589991a1e42a513.jpg" alt="">
+			<span>
+				<b>龚琳娜：为什么我不再唱“神曲”</b>
+				<p>人们因《忐忑》认识了龚琳娜，这首 所谓的“神曲”在网络走红后，有人喜欢，有人质疑。这之后，龚琳娜不断推出的新曲《金箍棒》、《法海你不懂爱》 接连走红。</p>
+			</span>
+			
+
+
+
+		</div>
+		<!-- 婚嫁亲子 -->
+		<div id="L-box6-2">
+			<h3>婚子亲嫁</h3>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-lady-img/f44d307589991a1e387859.jpg" alt="">
+
+			<ul>
+				<li>雪梨率个人品牌与动漫IP-SNOOPY跨界合作</li>
+				<li>如何打造一款让“前任”看了后悔分手的新年妆</li>
+				<li>实力接档爸爸去哪儿，孩子说了算12.26优酷综艺暖心</li>
+				<li>孩子创造力黄金期，你却不知道小小思维营？</li>
+				<li>除了无限回购的早安面膜，BCL家族还有哪些必败好物？</li>
+
+			</ul>
+
+		</div>
+	</div>
+ 
+	<!-- 街拍秀 
+
+	<div id="L-box7">
+		<img id="L-box7-img" src="./L-lady-img/f44d305ea1161a1e3fc842.jpg" alt="">
+		<img  id="L-box7-img"  src="./L-lady-img/f44d307589811a2cc29407.jpg" alt="">
+		
+		<img id="L-box7-img"  src="./L-lady-img/f44d305ea1161a1e3dd203.jpg" alt="">
+		<img  id="L-box7-img"  src="./L-lady-img/f44d305ea1161a1e399525.jpg" alt="">
+	</div>-->
+
+	<!-- 联系我们 -->
+	<div id="L-box8">
+		<b>联系我们　　电话：（010）58926259　传真：(010)58928854　投稿邮箱：lady#gmw.cn（请将#改为@）　在线QQ：1614962689</b>
+	</div>
+
+	<!-- 友情链接 -->
+	<div id="L-box9">
+		<b>友情链接：	　新华时尚　　腾讯女性　　时尚新娘　　新浪女性　　妆品网　　中国娱乐网　　自然之宝　　中国时尚网　</b></div>
+
+
+	
+
+
+
+
+
+
+
+
+
+	<!-- 版权部分 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+	<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			  <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img  onclick="myFunction()" class="btn1" src="./L-public/img/left-img7.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game2.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+
+
+	
+</body>
+</html>

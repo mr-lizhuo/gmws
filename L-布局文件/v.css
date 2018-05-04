@@ -1,0 +1,70 @@
+
+ 															/*--  李卓  --*/
+   				
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #f8f8f8;}
+    h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:blue;font-weight: bold;}
+
+    #L-box1{width: 1000px;height: 100px;margin: 5px auto;background: red;}
+
+    #L-box2{width: 1000px;height: 50px;margin: 5px auto;background: red;}
+
+    #L-box3{width: 1000px;height: 700px;margin: 5px auto;background: red;}
+        #L-box3-1{width: 1000px;height: 500px;background: green;}
+        #L-box3-2{width: 1000px;height: 200px;background: black;}
+
+    #L-box4{width: 1000px;height: 420px; margin: 5px auto; background: red;}
+    #L-box4-1{width: 660px;height: 420px;background: green;float: left;}
+        #L-box4-1-1{width: 660px;height: 50px;background: green;}
+        #L-box4-1-2{width: 660px;height: 185px;background: blue;}
+        #L-box4-1-3{width: 660px;height: 185px;background: yellow;}
+    #L-box4-2{width: 330px;height: 420px;background: black;float: right;}
+
+        #L-box5{width: 1000px;height: 420px; margin: 5px auto; background: red;}
+    #L-box5-1{width: 660px;height: 420px;background: green;float: left;}
+        #L-box5-1-1{width: 660px;height: 50px;background: green;}
+        #L-box5-1-2{width: 660px;height: 185px;background: blue;}
+        #L-box5-1-3{width: 660px;height: 185px;background: yellow;}
+    #L-box5-2{width: 330px;height: 420px;background: black;float: right;}
+
+        #L-box6{width: 1000px;height: 420px; margin: 5px auto; background: red;}
+    #L-box6-1{width: 740px;height: 420px;background: green;float: left;}
+        #L-box6-1-1{width: 740px;height: 50px;background: green;}
+        #L-box6-1-2{width: 740px;height: 185px;background: blue;}
+        #L-box6-1-3{width: 740px;height: 185px;background: yellow;}
+    #L-box6-2{width: 250px;height: 420px;background: black;float: right;}
+
+    #L-box7{width: 1000px;height: 420px;margin: 5px auto;background: red;}
+        #L-box7-1{width: 520px;height: 420px;background: green;float: left;}
+        #L-box7-2{width: 480px;height: 420px;background: black;float: left;}
+
+    #L-box8{width: 1000px;height: 540px;margin: 5px auto;background: red;}
+        #L-box8-1{width: 740px;height: 540px;background: green;float: left;}
+            #L-box8-1-1{width: 740px;height: 200px;background: blue;}
+                #L-box8-1-1-1{width: 370px;height: 200px;float: left;background: yellow;}
+                #L-box8-1-1-2{width: 370px;height: 200px;float: left;background: green;}
+            #L-box8-1-2{width: 740px;height: 100px;background: black;}
+            #L-box8-1-3{width: 740px;height: 240px;background: yellow;}
+        #L-box8-2{width: 250px;height: 540px;background: yellow;float: right;}
+
+
+
+
+                                        /*版权页*/
+        
+    #L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+    #L-boxA p{text-align: center;}

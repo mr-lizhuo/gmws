@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>女人频道</title>
+
+
+<!-- 图片轮播所用的JS -->
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>  
+   <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>  
+
+
+   <link rel="stylesheet" href="./lady.css">
+
+
+ <script src="./L-public/js/jquery-2.1.1.min.js"></script>
+	<script src="./L-public/js/jquery.liMarquee.js"></script>
+	<script> 
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+</script>  
+</head>
+<body>
+
+						<!-- box1，box2，box3，boxA为固定模式 -->
+
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+			<li><a href="./politics.html">时政&nbsp |</a></li>
+			<li><a href="http://world.gmw.cn/">国际&nbsp |</a></li>
+			<li><a href="http://guancha.gmw.cn/">时评&nbsp |</a></li>
+			<li><a href="http://theory.gmw.cn/">理论&nbsp |</a></li>
+			<li><a href="http://culture.gmw.cn/">文化&nbsp |</a></li>
+			<li><a href="http://tech.gmw.cn/">科技&nbsp |</a></li>
+			<li><a href="http://edu.gmw.cn/">教育&nbsp |</a></li>
+			<li><a href="http://economy.gmw.cn/">经济&nbsp |</a></li>
+			<li><a href="http://life.gmw.cn/">生活&nbsp |</a></li>
+			<li><a href="http://legal.gmw.cn/">法治&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="http://health.gmw.cn/">卫生&nbsp |</a></li>
+			<li><a href="http://yangsheng.gmw.cn/">养生&nbsp |</a></li>
+			<li><a href="http://lady.gmw.cn/">女人&nbsp |</a></li>
+			<li><a href="http://e.gmw.cn/">文娱&nbsp |</a></li>
+			<li><a href="http://v.gmw.cn/">电视&nbsp |</a></li>
+			<li><a href="http://photo.gmw.cn/">图片&nbsp |</a></li>
+			<li><a href="http://qp.gmw.cn/?from=publicdh">棋牌&nbsp |</a></li>
+			<li><a href="http://epaper.gmw.cn/">光明报系&nbsp |</a></li>
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-legal-img/legal.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>法治中国  平安天下</p>
+		</div>
+		<div id="L-box2-3">
+			<img src="./L-legal-img/ico_rss.gif">RSS</img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+
+	<div id="L-box3">
+		<ul>
+	<li><a href="http://mil.gmw.cn/node_8986.htm" target="_blank">要闻</a></li>
+	<li><a href="http://mil.gmw.cn/node_8981.htm" target="_blank">案件快递</a></li>
+	<li><a href="http://mil.gmw.cn/node_8984.htm" target="_blank">法院动态</a></li>
+	<li><a href="http://mil.gmw.cn/node_8982.htm" target="_blank">反腐倡廉</a></li>
+	<li><a href="http://mil.gmw.cn/node_11178.htm" target="_blank">知识产权</a></li>
+	<li><a href="http://mil.gmw.cn/node_8978.htm" target="_blank">平安中国</a></li>
+	<li><a href="http://mil.gmw.cn/node_8979.htm" target="_blank">法眼观察</a></li>
+	<li><a href="http://topics.gmw.cn/node_4979.htm" target="_blank">图片新闻</a></li>
+	<li><a href="http://mil.gmw.cn/node_8972.htm" target="_blank">小明说法</a></li>
+	<li><a href="http://mil.gmw.cn/node_9664.htm" target="_blank">人物</a></li>
+	<li><a href="http://mil.gmw.cn/node_9664.htm" target="_blank">专题</a></li>
+	<li><a href="http://mil.gmw.cn/node_9664.htm" target="_blank">律师</a></li>
+
+		</ul>
+	</div>
+
+	
+<!-- 图片轮播+右边的文字 -->
+	<div id="L-box4">
+		<!-- 图片轮播 -->
+		<div id="L-box4-1"></div>
+		<!-- 文字 -->
+		<div id="L-box4-2"></div>
+	</div>
+
+	<!-- 风尚标+美容彩妆+明星爱打牌 -->
+	<div id="L-box5">
+		<!-- 风尚标+美容彩妆 -->
+		<div id="L-box5-1"></div>
+		<!-- 明星爱打牌 -->
+		<div id="L-box5-2"></div>
+	</div>
+
+	
+	<!-- 他对话+婚嫁亲子 -->
+	<div id="L-box6">
+		<!-- 他对话 -->
+		<div id="L-box6-1"></div>
+		<!-- 婚嫁亲子 -->
+		<div id="L-box6-2"></div>
+	</div>
+
+	<!-- 街拍秀 -->
+
+	<div id="L-box7"></div>
+
+	<!-- 联系我们 -->
+	<div id="L-box8"></div>
+
+	<!-- 友情链接 -->
+	<div id="L-box9"></div>
+
+
+	
+
+
+
+
+
+
+
+
+
+	<!-- 版权部分 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+	
+</body>
+</html>

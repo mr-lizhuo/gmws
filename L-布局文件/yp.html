@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>医药频道</title>
+<link rel="stylesheet" href="./yp.css">
+
+
+  <!-- 图片轮播所用的JS -->
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>  
+   <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> 
+
+<script> 
+
+    // 图片轮播
+  var i=0;  
+  var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+   </script>
+</head>
+<body>
+
+
+
+
+<!-- /*从box1-box2-boxA为固定模式*/ -->
+
+  <div id="L-box1">
+    <div id="L-box1-1">
+      <img src="./L-military-img/Logo.png" ></img>
+      <a href="index.html" style='color:#bb2737'>English</a>
+
+      <ul class="whereGo">
+        <li style="list-style-type:none;">您想去哪里？
+          <ul class="wgse">
+            <li style="list-style-type:none;">光明图片</li>
+            <li style="list-style-type:none;">我要投稿</li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+      <li><a href="./politics.html">时政&nbsp |</a></li>
+      <li><a href="http://world.gmw.cn/">国际&nbsp |</a></li>
+      <li><a href="http://guancha.gmw.cn/">时评&nbsp |</a></li>
+      <li><a href="http://theory.gmw.cn/">理论&nbsp |</a></li>
+      <li><a href="http://culture.gmw.cn/">文化&nbsp |</a></li>
+      <li><a href="http://tech.gmw.cn/">科技&nbsp |</a></li>
+      <li><a href="http://edu.gmw.cn/">教育&nbsp |</a></li>
+      <li><a href="http://economy.gmw.cn/">经济&nbsp |</a></li>
+      <li><a href="http://life.gmw.cn/">生活&nbsp |</a></li>
+      <li><a href="http://legal.gmw.cn/">法治&nbsp |</a></li>
+      <li><a href="./military.html">军事&nbsp |</a></li>
+      <li><a href="http://health.gmw.cn/">卫生&nbsp |</a></li>
+      <li><a href="http://yangsheng.gmw.cn/">养生&nbsp |</a></li>
+      <li><a href="http://lady.gmw.cn/">女人&nbsp |</a></li>
+      <li><a href="http://e.gmw.cn/">文娱&nbsp |</a></li>
+      <li><a href="http://v.gmw.cn/">电视&nbsp |</a></li>
+      <li><a href="http://photo.gmw.cn/">图片&nbsp |</a></li>
+      <li><a href="http://qp.gmw.cn/?from=publicdh">棋牌&nbsp |</a></li>
+      <li><a href="http://epaper.gmw.cn/">光明报系&nbsp |</a></li>
+      <li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+                            <!-- end -->
+    
+    </div>
+  </div>
+
+  <div id="L-box2">
+    <div id="L-box2-1">
+      <img src="./L-health-img/health.gif"></img>
+    </div>
+    <div id="L-box2-2">
+      <p>权威药监发布<br> 百姓用药指南</p>
+    </div>
+    <div id="L-box2-3">
+      <img src="./L-legal-img/ico_rss.gif">RSS</img>
+      </div>
+    <div id="L-box2-4"></div>
+    <div id="L-box2-5">
+        <input type="text" style="width: 150px;height: 20px;">
+    </div>
+
+    <div id="L-box2-6">
+      <select>
+            <option value="0">站内搜索</option>
+            <option value="1">光明网</option>
+            <option value="2">光明报系</option>
+          </select>
+    </div>
+    <div id="L-box2-7">
+      <input type="submit" value="搜索">
+    </div>
+    <div id="L-box2-8">
+      <img src="./L-military-img/skypelogo.jpg" >
+    </div>
+  </div>
+
+
+
+
+
+<!-- 两排标题 -->
+  <div id="L-box3"></div>
+
+  <!--图片轮播+文字  -->
+  <div id="L-box4">
+    <!-- 图片轮播 -->
+    <div id="L-box4-1"></div>
+    <!-- 文字 -->
+    <div id="L-box4-2"></div>
+  </div>
+  
+  <!-- 产业视野+...+ 活动报告-->
+  <div id="L-box5">
+    <!-- left  -->
+    <div id="L-box5-1">
+   
+    <!-- right -->
+    <div id="L-box5-2"></div>
+  </div>
+
+
+<!-- 专家专栏 -->
+<div id="L-box6"></div>
+
+<!-- 视频新闻+...+健康行 -->
+
+<div id="L-box7">
+  <!-- left   -->
+  <div id="L-box7-1"></div>
+  <!-- right -->
+  <div id="L-box7-2"></div>
+</div>
+
+<!-- 专题荟萃 -->
+<div id="L-box8"></div>
+
+<!-- 展示区（图片轮播） -->
+<div id="L-box9"></div>
+
+<!-- 联系我们 -->
+<div id="L-boxB"></div>
+
+
+
+
+
+  <!-- 版权部分 -->
+  <div id="L-boxA">
+    <p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+    <p>光明网版权所有</p>
+  </div>
+
+  
+</body>
+</html>

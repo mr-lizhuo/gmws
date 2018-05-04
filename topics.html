@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专题频道</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+	<link rel="stylesheet" href="http://imgtopics.gmw.cn/40622.files/css/index.css" />
+    <script src="http://img.gmw.cn/js/jquery.js"></script>
+
+<style>
+ 																			/*--  李卓  --*/
+   				
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #f8f8f8;}
+
+  												 /*从box1-box2-boxA为固定模式*/
+
+ #L-box1{width: 1000px;height: 63px;margin:0px auto;}
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+
+
+
+
+	#L-box3{width: 1000px;height: 54px;margin: 5px auto;background: red;}
+		#L-box3-1{width: 275px;height: 54px;background: green;float: left;}
+			#L-box3-1 img{width: 275px;height: 54px;}
+		#L-box3-2{width: 725px;height: 54px;background: black;float: left;}
+			#L-box3-2 li{float: left;color: white;margin-left: 40px; }
+			#L-box3-2 ul{margin-top: 2px;}
+
+	#L-box4{width: 1000px;height: 500px;margin: 5px auto;background: none;}
+		#L-box4-1{width: 1000px;height: 50px;background: none;float: left;}
+		#L-box4-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+		#L-box4-1 hr{float: right;margin-top: 20px;}
+
+		#L-box4-2{width: 1000px;height: 394px;background: none;float: left;background: none;;}
+
+					/*热点专题调用了光明网的css和js*/
+	
+
+
+	#L-box5{width: 1000px;height: 560px;margin: 5px auto;background: none;}
+		#L-box5-1{width: 1000px;height: 50px;background: none;}
+			#L-box5-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+			#L-box5-1 hr{float: right;margin-top: 20px;}
+		#L-box5-2{width: 1000px;height: 510px;background: blue;}
+			#L-box5-2 img{width: 1000px;height: 510px;}
+
+	#L-box6{width: 1000px;height: 830px;margin: 5px auto;background: none;}
+		#L-box6-1{width: 1000px;height: 50px;background: none;}
+			#L-box6-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+			#L-box6-1 hr{float: right;margin-top: 20px;}
+		#L-box6-2{width: 1000px;height: 780px;background: none;}
+			#L-box6-2 li{list-style-type:disc;margin-top: 20px;margin-left: 30px;}
+			#L-box6-2 span{font-size: 20px;}
+			#L-box6-2-1{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-2{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-3{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-4{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-5{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-6{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-7{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-8{width: 333px;height: 260px;background: none;float: left;}
+			#L-box6-2-9{width: 333px;height: 260px;background: none;float: left;}
+
+	#L-box7{width: 1000px;height: 200px;margin: 5px auto;background: none;}
+			#L-box7-1{width: 1000px;height: 50px;background: none;}
+				#L-box7-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+				#L-box7-1 hr{float: right;margin-top: 20px;}
+			#L-box7-2{width: 1000px;height: 200px;background: none;}
+			
+			/*更多专题*/
+.ban4{background:url(../img/banner4.png) no-repeat; height:34px; position:relative;}
+.ul2{margin-bottom:35px; overflow:hidden; width:1010px;}
+.ul2 li{float:left; width:192px; height:130px; position:relative; margin-right:10px;}
+
+.ih-item.circle.effect6 .img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect6.colored .info {
+    background: #1a4a72;
+}
+
+.ih-item.circle.effect6 .info {
+	visibility:hidden;
+	position:absolute; top:0; left:0; width:192px; height:130px;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect6 .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.circle.effect6 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ih-item.circle.effect6.scale_up .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect6.scale_up a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.ih-item.circle.effect6.scale_up a:hover .info {
+	visibility:visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect6.scale_down .info {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.ih-item.circle.effect6.scale_down a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect6.scale_down a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.ih-item.circle.effect6.scale_down_up .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.2s;
+    -moz-transition: all 0.35s ease-in-out 0.2s;
+    transition: all 0.35s ease-in-out 0.2s;
+}
+
+.ih-item.circle.effect6.scale_down_up a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.ih-item.circle.effect6.scale_down_up a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+										/*版权页*/
+	#L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+	#L-boxA p{text-align: center;}
+
+
+
+</style>
+
+
+</head>
+<body>
+	
+
+
+<!-- 从box1-box2为固定模式 -->
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+		 <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+<!--  
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-legal-img/legal.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>  </p>
+		</div>
+		<div id="L-box2-3">
+			<img ></img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+-->
+
+																	<!-- 2018-4-9-10:03开始 -->
+											<!-- 累死了，这么多页面，别人是一个人做10个，我自己要做20多个，命苦啊 -->
+														<!-- 从昨天开始到现在，已经敲了1500多行代码了 -->
+
+<!-- 光明网专题频道 -->
+ 		<div id="L-box3">
+ 			<!-- 左边图片 -->
+ 			<div id="L-box3-1">
+ 				<img src="./L-topics-img/409103607.jpg" alt="">
+ 			</div>
+			<!-- 右边文字 -->
+ 			<div id="L-box3-2">
+ 				<ul>
+ 					<li>专题集萃</li>
+ 					<li>时政</li>
+ 					<li>国际</li>
+ 					<li>文化</li>
+ 					<li>科技</li>
+ 					<li>理论</li>
+ 					<li>健康</li>
+ 					<li>直播</li>
+ 				</ul>
+ 				<br>
+ 				<ul>
+ 				    <li>品牌活动</li>
+ 					<li>国内</li>
+ 					<li>军事</li>
+ 					<li>教育</li>
+ 					<li>经济</li>
+ 					<li>人物</li>
+ 					<li>体育</li>
+ 					<li>English</li>
+ 				</ul>
+ 			</div>
+ 		</div>
+
+ <!-- 热点专题 -->
+ 		<div id="L-box4">
+ 			<!-- 热点专题的标题 -->
+ 			<div id="L-box4-1">
+
+ 				<h2>热点专题</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" >
+
+ 			</div>
+
+
+
+ 			<!-- 热点专题 -->
+ 			<div id="L-box4-2">
+
+ 			<div class="container w1000 mt35">
+        	<!--左右翻页开始-->
+		    <div class="picScroll-left">
+				<div class="bd">
+				  <ul class="picList">
+						<li>
+						  <!--begin 5076250-9567-1-->
+						  	<div class="li_con">                                    
+						  		<div class="pic">					
+						  			<div>					    <a href="node_117393.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20180404/f44d307589141c2eda6206.jpg" border="0"></a>                                        </div>                                                                        </div>                                <div class="block1">                                    <h3><a href="node_117393.htm" target="_blank">博鳌亚洲论坛2018年年会</a></h3>                                    <p>海南·博鳌<BR>2018年4月8-11日</p>                                    <div class="line"></div>                                </div>                                <div class="hoverBlack black_img"></div>                            </div>                            <div class="li_con">                                <div class="block2">                                    <h3><a href="node_116867.htm" target="_blank">2018全国两会</a></h3>                                    <p><A title="" href="node_116867.htm" target=_blank>人大会议</A>｜<A title="" href="node_116866.htm" target=_blank>政协会议</A>｜<A title="" href="node_116981.htm" target=_blank>通道之声</A><BR><A title="" href="node_117061.htm" target=_blank>携手奋进新时代</A>｜<A title="" href="node_116829.htm" target=_blank>光小明文化茶座</A></p>                                    <div class="line2"></div>                                </div>                               <div class="pic divright">					<div>                                <a href="node_116867.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20180302/f44d305ea8c01c037ed706.jpg" border="0" class="divright"></a>                               </div>                                                                        </div>                                                               <div class="hoverBlack black_img ho2"></div>                            </div><!--end 5076250-9567-1-->
+						</li>
+						<li>
+						  <!--begin 5076251-9567-1--><div class="li_con">                                    <div class="pic">					<div>					    <a href="node_116242.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20180112/f44d305ea48e1bc2896d0a.jpg" border="0"></a>                                        </div>                                                                        </div>                                <div class="block1">                                    <h3><a href="node_116242.htm" target="_blank">新时代新梦想</a></h3>                                    <p>专题通过图文、音视频、微话题等形式全面展示走转改记者的风采。</p>                                    <div class="line"></div>                                </div>                                <div class="hoverBlack black_img"></div>                            </div>                            <!--end 5076251-9567-1-->
+						  <!--begin 5076252-9567-1-->      <div class="li_con">           <div class="block2">                <h3><a href="node_115855.htm" target="_blank">红船初心</a></h3>                <p>弘扬“红船精神” 走在时代前列</p>                <div class="line2"></div>      </div>      <div class="pic divright">	   <div>                <a href="node_115855.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20171223/f44d305ea12e1ba85edf14.jpg" border="0" class="divright"></a>           </div>      </div>      <div class="hoverBlack black_img ho2"></div>    </div>                            <!--end 5076252-9567-1-->
+						</li>
+						<li>
+						  <!--begin 5076253-9567-1--><div class="li_con">                                    <div class="pic">					<div>					    <a href="node_115914.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20171221/f44d305ea48e1ba56abc25.jpg" border="0"></a>                                        </div>                                                                        </div>                                <div class="block1">                                    <h3><a href="node_115914.htm" target="_blank">致敬最美基层干部</a></h3>                                    <p>再现广大基层干部一心为民的公仆情怀和务实进取的敬业精神。</p>                                    <div class="line"></div>                                </div>                                <div class="hoverBlack black_img"></div>                            </div>                            <!--end 5076253-9567-1-->
+						  <!--begin 5076254-9567-1-->      <div class="li_con">           <div class="block2">                <h3><a href="node_115601.htm" target="_blank">新时代新气象新作为</a></h3>                <p>——学习贯彻党的十九大精神大型主题采访活动</p>                <div class="line2"></div>      </div>      <div class="pic divright">	   <div>                <a href="node_115601.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20180202/f44d305ea48e1bde618401.jpg" border="0" class="divright"></a>           </div>      </div>      <div class="hoverBlack black_img ho2"></div>    </div><!--end 5076254-9567-1-->
+						</li>
+						<li>
+						  <!--begin 5076255-9567-1--><div class="li_con">                                    <div class="pic">					<div>					    <a href="node_115034.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20171102/f44d305ea48e1b64febb50.jpg" border="0"></a>                                        </div>                                                                        </div>                                <div class="block1">                                    <h3><a href="node_115034.htm" target="_blank">学习贯彻党的十九大精神</a></h3>                                    <p>全面展示十九大精神的主题和意义</p>                                    <div class="line"></div>                                </div>                                <div class="hoverBlack black_img"></div>                            </div>                            <!--end 5076255-9567-1-->
+						  <!--begin 5076256-9567-1-->      <div class="li_con">           <div class="block2">                <h3><a href="node_115538.htm" target="_blank">第四届世界互联网大会</a></h3>                <p>发展数字经济促进开放共享<BR>——携手共建网络空间命运共同体</p>                <div class="line2"></div>      </div>      <div class="pic divright">	   <div>                <a href="node_115538.htm" target="_blank"><img src="http://imgtopics.gmw.cn/attachement/jpg/site2/20171201/f44d305ea6dd1b8b0ea837.jpg" border="0" class="divright"></a>           </div>      </div>      <div class="hoverBlack black_img ho2"></div>    </div><!--end 5076256-9567-1-->
+						</li>
+				  </ul>
+			  </div>
+               	<div class="hd">
+                    <a class="next"></a>
+                    <a class="prev"></a>
+                </div>
+               <script type="text/javascript" src="http://img.gmw.cn/plugins/superslide/js/jquery.SuperSlide.2.1.1.js"></script>
+				<script>
+                    jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:false,scroll:1,vis:2});
+                </script>
+	        </div> 
+            
+			<!--左右翻页结束-->
+        </div>
+		<!--热点专题 结束-->
+</div>
+ 			
+
+
+
+
+
+ 		</div>
+
+ <!-- 品牌活动 -->
+ 		<div id="L-box5">
+ 			<!-- 标题 -->
+ 			<div id="L-box5-1">
+
+ 				<h2>品牌活动</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" >
+
+ 			</div>
+ 			<!-- 大的图片轮播 -->
+ 			<div id="L-box5-2">
+					<img src="./L-topics-img/09131317.jpg" alt="">
+
+ 			</div>
+ 		</div>
+
+<!-- 新闻专题 -->
+		<div id="L-box6">
+			<!-- 标题 -->
+			<div id="L-box6-1">
+				<h2>新闻专题</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" >
+			</div>
+			<!-- 下面的九个小块 -->
+			<div id="L-box6-2">
+					<div id="L-box6-2-1">
+						<span>时政</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>十三届全国人大一次会议</li>
+							<li>全国政协十三届一次会议</li>
+							<li>两会通道之声</li>
+							<li>携手奋进新时代</li>
+							<li>2018年地方两会</li>
+						</ul>
+					</div>
+					<div id="L-box6-2-2">
+						<span>国内</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>为了民族复兴·英雄烈士谱</li>
+							<li>潮起海之南</li>
+							<li>“新时代·春天里”手机摄影大赛</li>
+							<li>我奋斗 我幸福</li>
+							<li>你有多久没有牵妈妈的手</li>
+						</ul>
+					</div>
+					<div id="L-box6-2-3">
+						<span>国际</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>亚洲媒体高峰会议</li>
+							<li>博鳌亚洲论坛2018年年会</li>
+							<li>俄罗斯客机在莫斯科郊外坠毁</li>
+							<li>李克强出席澜湄合作第二次领导人会议并</li>
+							<li>2017第四届世界互联网大会</li>
+						</ul>
+					</div>
+					<div id="L-box6-2-4">
+						<span>文化</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>网络中国节·清明节</li>
+							<li>光小明的两会文化茶座</li>
+							<li>“美丽中国•地名寻梦”地名文化短视频</li>
+							<li>2018中华文明凝心铸魂之旅</li>
+							<li>网络中国节·元宵</li>
+						</ul>
+					</div>
+					<div id="L-box6-2-5">
+						<span>教育</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>扬师德 筑师魂——优秀教师典型</li>
+							<li>光明日报《归国情·创业梦》专栏</li>
+							<li>上海思政教育：从思政课程到课程思政</li>
+							<li>首届“招办主任光明大直播”</li>
+							<li>2017高考进行时</li>
+						</ul>
+					</div>
+					<div id="L-box6-2-6">	
+						<span>人物</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>奋进新时代 筑梦写忠诚——记中国航天员</li>
+							<li>最美基层干部</li>
+							<li>著名诗人余光中病逝</li>
+							<li>追记王一成：用生命诠释爱国为民高尚情</li>
+							<li>追忆“中国天眼”之父南仁东</li>
+						</ul></div>
+					<div id="L-box6-2-7">
+						<span>科技</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>2017年全国科普日 </li>
+							<li>守护南海珊瑚林</li>
+							<li>2017世界机器人大会</li>
+							<li>第六届库布其国际沙漠论坛</li>
+							<li>国家重点实验室光明行</li>
+						</ul></div>
+					<div id="L-box6-2-8">
+						<span>健康</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>中国光彩事业·扶贫攻坚砥砺行 </li>
+							<li>首届“健康圆梦”杯科普创作大赛</li>
+							<li>世界睡眠日：谁动了你的睡眠</li>
+							<li>2017北京医改</li>
+							<li>“中国青年医生暨十大妇幼天使”新闻发</li>
+						</ul>
+					</div>
+					<div id="L-box6-2-9">
+						<span>直播</span>
+						<HR  style="border:1px solid #b2b2b2" width="90%" >
+						<ul>
+							<li>#中国地名寻游大直播# “上郡咽喉”安塞 </li>
+							<li>春天来了，让我们一起逛博物馆吧 #陕西</li>
+							<li>#中国地名寻游大直播#——诗意杏花村</li>
+							<li>#中国地名寻游大直播#——北京琉璃厂</li>
+							<li>2018电视节目演什么，快来这里先睹为</li>
+						</ul>
+					</div>	
+			</div>
+		</div>
+
+<!-- 更多专题 -->
+		<div id="L-box7">
+			<!-- 标题 -->
+			<div id="L-box7-1">
+				<h2>更多专题</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" >
+			</div>
+			<!-- 下面的5个图片 -->
+			<!-- 图片效果为鼠标放上去就放大+变颜色 -->
+			<div id="L-box7-2">
+
+
+
+        	<div class="banner ban4"></div>
+            <ul class="mt35 ul2">
+            	<li>
+                	<div class="ih-item circle effect6 scale_up">
+                    	<a href="node_5360.htm" target="_blank">
+                            <div class="img"><img src="http://imgtopics.gmw.cn/40622.files/img/jingji.jpg"></div>
+                            <div class="info">
+                                <img src="http://imgtopics.gmw.cn/40622.files/img/hover_jingji.jpg">
+                            </div>
+                    	</a>
+                    </div>
+                </li>
+                
+                <li>
+                	<div class="ih-item circle effect6 scale_up">
+                    	<a href="node_6609.htm" target="_blank">
+                            <div class="img"><img src="http://imgtopics.gmw.cn/40622.files/img/lilun.jpg"></div>
+                            <div class="info">
+                                <img src="http://imgtopics.gmw.cn/40622.files/img/hover_lilun.jpg">
+                            </div>
+                    	</a>
+                    </div>
+                </li>
+                
+                <li>
+                	<div class="ih-item circle effect6 scale_up">
+                    	<a href="node_4979.htm" target="_blank">
+                            <div class="img"><img src="http://imgtopics.gmw.cn/40622.files/img/junshi.jpg"></div>
+                            <div class="info">
+                                <img src="http://imgtopics.gmw.cn/40622.files/img/hover_junshi.jpg">
+                            </div>
+                    	</a>
+                    </div>
+                </li>
+                
+                <li>
+                	<div class="ih-item circle effect6 scale_up">
+                    	<a href="node_4825.htm" target="_blank">
+                            <div class="img"><img src="http://imgtopics.gmw.cn/40622.files/img/tiyu.jpg"></div>
+                            <div class="info">
+                                <img src="http://imgtopics.gmw.cn/40622.files/img/hover_tiyu.jpg">
+                            </div>
+                    	</a>
+                    </div>
+                </li>
+                
+                <li>
+                	<div class="ih-item circle effect6 scale_up">
+                    	<a href="http://en.gmw.cn/node_29528.htm" target="_blank">
+                            <div class="img"><img src="http://imgtopics.gmw.cn/40622.files/img/en.jpg"></div>
+                            <div class="info">
+                                <img src="http://imgtopics.gmw.cn/40622.files/img/hover_en.jpg">
+                            </div>
+                    	</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+
+
+
+
+<!-- 版权页 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+	<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			  <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img  onclick="myFunction()"  class="btn1" src="./L-public/img/left-img6.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+
+
+
+</body>
+</html>

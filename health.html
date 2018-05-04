@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>卫生频道</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+	<style>
+
+	 						
+
+ 																			/*--  李卓  --*/
+   				
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #f8f8f8;}
+    h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:blue;font-weight: bold;}
+
+ 						/*从box1-box2-boxA为固定模式*/
+
+ #L-box1{width: 1000px;height: 63px;margin:0px auto;} 
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+	#L-box3{width: 1000px;height: 38px;margin: 5px auto;background: none;}
+		#L-box3 li{float: left;font-size: 17px;margin-left: 10px;margin-top: 3px;}
+		#L-box3 ul{list-style-type: none;}
+	#L-box4{width: 1000px;height: 330px;margin: 5px auto;background: none;}
+		#L-box4-1{width: 660px;height: 330px;background: none;float: left;}
+		#L-box4-2{width: 330px;height: 330px;background: none;float: right;}
+
+	#L-box5{width: 1000px;height: 620px;margin: 5px auto;background: none;}
+		#L-box5-1{width: 660px;height: 620px;background: none;float: left;}
+			#L-box5-1 img{width: 660px;}
+		#L-box5-2{width: 330px;height: 620px;background: none;float: right;}
+
+	#L-box6{width: 1000px;height: 320px;margin: 5px auto;background: none;}
+		#L-box6-1{width: 1000px;height: 50px;background: none;}
+		#L-box6-2{width: 1000px;height: 270px;background: none;}
+			#L-box6-2 span{width: 160px;float: left;}
+			#L-box6-2  p{padding-left: 50px;}
+
+
+	#L-box7{width: 1000px;height: 320px;margin: 5px auto;background: none;}
+		#L-box7-1{width: 1000px;height: 50px;background: none;}
+		#L-box7-2{width: 330px;height: 270px;background: none;float: left;}
+			#L-box7-2 img{width: 310px;height: 72px;margin: 10px;}
+		#L-box7-3{width: 330px;height: 270px;background: none;margin-left: 5px;float: left;}
+		#L-box7-4{width: 330px;height: 270px;background: none;margin-left: 5px;float: left;}
+
+
+	#L-box8{width: 1000px;height: 320px;margin: 5px auto;background: none;}
+		#L-box8-1{width: 1000px;height: 50px;background: none;}
+		#L-box8-2{width: 330px;height: 270px;background: none;float: left;}
+			#L-box8-2 b{text-align: center;}
+		#L-box8-3{width: 330px;height: 270px;background: none;margin-left: 5px;float: left;}
+		#L-box8-4{width: 330px;height: 270px;background: none;margin-left: 5px;float: left;}
+			#L-box8-4 img{margin-left: 10px;}
+
+	#L-box9{width: 1000px;height: 240px;margin: 5px auto;background: none;}
+		#L-box9-1{width: 1000px;height: 50px;background: none;}
+		#L-box9-2{width: 1000px;height: 95px;background: none;}
+			#L-box9-2 img{margin: 5px;width: 125px;height: 70px;}
+		#L-box9-3{width: 1000px;height: 95px;background: none;}
+			#L-box9-3 img{margin: 5px;width: 125px;height: 70px;}
+
+	#L-boxB{width: 1000px;height: 100px;margin: 5px auto;background: none;}
+		#L-boxB li{float: left;margin-left: 30px;font-size: 15px;margin-top: 30px;}
+		#L-boxB ul{list-style-type: none}
+	
+
+
+
+
+
+
+	
+
+
+	/*版权页*/
+	#L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+	#L-boxA p{text-align: center;}
+</style>
+</head>
+
+<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script>  
+
+
+   <script> 
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+   </script>
+
+<body>
+	
+
+
+
+<!-- /*从box1-box2-boxA为固定模式*/ -->
+
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+		 <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-health-img/health.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>专业医药资讯<br> 多元健康服务</p>
+		</div>
+		<div id="L-box2-3">
+			<img src="./L-legal-img/ico_rss.gif">RSS</img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+
+
+
+<!-- 首页标题 -->
+	<div id="L-box3">
+		<ul>
+			<li>首页</li>
+			<li>要闻时评</li>
+			<li>健康视点</li>
+			<li>咨询速递</li>
+			<li>健康科普</li>
+			<li>名医名院</li>
+			<li>医疗专家</li>
+			<li>疾病护理</li>
+			<li>健康情报局</li>
+			<li>医药前沿</li>
+			<li>品牌活动</li>
+
+		</ul>
+	</div>
+
+<!-- 图片轮播+右边的健康情报局 -->
+
+	<div id="L-box4">
+		<!-- 图片轮播 -->
+		<div id="L-box4-1">
+
+			 <div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-health-img/f44d307589991c35194c0d.jpg" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-health-img/f44d307589991c101b3401.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-health-img/f44d307589991c3515e706.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-health-img/f44d307589991c3518df0c.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+		</div>
+		<!-- 健康情报局 -->
+		<div id="L-box4-2">
+			<h4>健康情报局</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<a href="">光明网独家出品大健康科普节目，被医生们称为“有点萌的医学科普”。</a>
+			<br>
+			<br>
+			<p>三甲医院权威专家解答你关心的话题</p>
+
+			<br>
+			<br>
+			<a href="">为什么头疼呕吐需尽快去做脑部CT？</a>
+			<p>头疼呕吐需尽快做脑部CT</p>
+		</div>
+	</div>
+
+	<!-- 要闻时评+健康视点 -->
+	<div id="L-box5">
+		<!-- 要闻时评 -->
+		<div id="L-box5-1">
+			<h4>要闻·时评</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+
+			<p>新生儿救护车昆明仅一辆 "车荒"、"人荒"待解</p>
+			<a href="">普通救护车缺乏新生儿急救设备，难以救助危重新生儿，新生儿专用救护车全市仅有一辆，这是云南省昆明市新生儿急救系统的尴尬现状。在全面二孩政策背景下，我国高龄高危产妇比例增高导致危重新生儿的数量不断增加，许多城市都存在着缺乏新生儿急救专业人才和设备的问题。[详细]</a>
+
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<p>这几款进口奶粉检出致病菌 死亡率高达50%！</p>
+			<a href="">近日，欧盟食品饲料快速预警系统通报，一批由荷兰企业生产的婴幼儿配方奶粉遭到致病菌阪崎肠杆菌的污染，而且已经销往了中国。[详细]</a>
+
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<p>山东调查问题阿胶涉事企业 部分假阿胶仍在售</p>
+			<a href="">近日有媒体报道称，在山东东阿县发现多家阿胶厂家用牛皮边角料甚至骡马皮做原料生产阿胶。由于我国对阿胶食品并没有阿胶含量的规定标准，最终这些假冒劣质产品通过电商平台流入全国市场。[详细]</a>
+
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-health-img/qnys_banner.jpg" alt="">
+
+
+		</div>
+		<!-- 健康视点 -->
+		<div id="L-box5-2">
+			<h4>健康视点</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-health-img/f44d307589991a1a4c4e31.jpg" alt="">
+			<p >现任杭州市卫生和计划生育委员会党委委员，杭州市第一人民医院院长、党委副书记。[详细]</p>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-health-img/f44d307589991a1a4a7930.jpg" alt="">
+			<p >从医23年来，坚守“对每一位患儿都要认真谨慎”的原则，被誉为小儿“气道门户”的健康卫士。[详细]</p>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-health-img/f44d307589991a1a4cee32.jpg" alt="">
+			<p >现任台湾大学医院副院长，癌症病理学专家。毕业于台湾大学医学院，曾在美国求学工作二十年，期间担任美国国家卫生院研究计划顾问，于1995年回到台湾从事医疗事业至今。[详细]</p>
+
+			
+
+		</div>
+	</div>
+
+	<!-- 医疗专家 -->
+	<div id="L-box6">
+		<div id="L-box6-1">
+			<img src="./L-health-img/title_yiliaozj.jpg" alt="">
+		</div>
+		<div id="L-box6-2">
+
+			<span style="margin-left: 30px;">
+			<img src="./L-health-img/f44d307589991bbfe7aa0c.jpg" alt="">
+			<p>邢岩</p>
+			<a >中国医科大学航空总医院神经内科主任[详细]</a>
+			</span>
+
+			<span>
+			<img src="./L-health-img/f44d307589991a18d0b031.jpg" alt="">
+			<p>邢岩</p>
+			<a >北京肿瘤医院头颈外科副主任医师[详细][详细]</a>
+		</span>
+
+		<span>
+			<img src="./L-health-img/f44d307589991a18d0f233.jpg" alt="">
+			<p>邢岩</p>
+			<a >首都医科大学附属北京妇产医院麻醉科主任[详细]</a>
+		</span>
+
+		<span>
+			<img src="./L-health-img/f44d307589991a18d1a135.jpg" alt="">
+			<p>邢岩</p>
+			<a >北京胸科医院结核一科主任医师[详细]</a>
+		</span>
+
+		<span>
+			<img src="./L-health-img/f44d307589991a18cf612a.jpg" alt="">
+			<p>邢岩</p>
+			<a >北京大学国际医院急诊科副主任医师[详细]</a>
+		</span>
+
+		<span>
+			<img  style="width: 120px;height: 165px;" src="./L-health-img/eca86bd9dc5019c1e67045.jpg" alt="">
+			<p>邢岩</p>
+			<a >中国医科大学航空总医院多学科疼痛医学中心主任[详细]</a>
+		</span>
+		</div>
+
+	</div>
+
+	<!-- 权威解读 -->
+	<div id="L-box7">
+		<!-- 标题 -->
+		<div id="L-box7-1">
+			<img src="./L-health-img/title_quanweijd.jpg" alt="">
+		</div>
+		<!-- 专题策划 -->
+		<div id="L-box7-2">
+			<h4>专题策划</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-health-img/f44d305ea116198293a90e.jpg" alt="">
+			<img src="./L-health-img/f44d307589991a18d4b236.jpg" alt="">
+		</div>
+		<!-- 资讯速递 -->
+		<div id="L-box7-3">
+			<h4>咨询速递</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<ul>
+				<li>春季花粉过敏这把“温柔刀”究竟怎么防?</li>
+				<li>首个口腔基地转化医学中心产业平台发布?</li>
+				<li>2018年手足口病发病高峰年 卫健委提示这样预防最有效?</li>
+				<li>什么是健康城市？国家卫健委发布42项评价指标?</li>
+				<li>中医药西化 如何留住传统文化的魂?</li>
+				<li>关爱中国骨科慢痛管理项目启动?</li>
+			</ul>
+		</div>
+		<!-- 曝光举报 -->
+		<div id="L-box7-4">
+
+			<h4>曝光信息</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+
+			<ul>
+				<li>原料奶价格持续下跌 现代牧业连年亏损?</li>
+				<li>17批次中药饮片登不合格药品榜?</li>
+				<li>人社部曝光"挂证"人员黑名单 涉药品流通领域</li>
+				<li>65批次甘草类中药饮片不合格?</li>
+				<li>8批次人参饮片不合格 </li>
+				<li>老人花17万买“神药” 拒绝上医院溘然离世?</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- 疾病诊疗 -->
+	<div id="L-box8">
+		<!-- 标题 -->
+		<div id="L-box8-1">
+			<img src="./L-health-img/title_jibingzl.jpg" alt="">
+		</div>
+		<!-- 健康科普 -->
+		<div id="L-box8-2">
+			<h4>健康科普</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<b>赖床睡不着容易产生“垃圾睡眠”</b>
+			<p>&nbsp&nbsp&nbsp&nbsp沉迷于电子产品，经常在睡房里玩手机、听音乐、打电脑和电子游戏，造成的睡眠时间不足和睡眠质量差，称之为“垃圾睡眠”。详细>></p>
+			<ul>
+				<li>高龄欲生娃谨记早查生育力</li>
+				<li>抗过敏“药”越用越多该注意什么</li>
+				<li>全球每年有超过1亿人感染沙门氏菌</li>
+			</ul>
+
+		</div>
+		<!-- 疾病护理 -->
+		<div id="L-box8-3">
+			<h4>疾病护理</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<b>包装上带这六个字的零食一定要少吃！</b>
+			<p>&nbsp&nbsp&nbsp&nbsp但带这几个字的零食还是要少吃，不仅可能影响孩子的身高，而且还可能惹上一身疾病。详细>></p>
+			<ul>
+				<li>4岁8个月孩子捐肝 救活两宝宝</li>
+				<li>五类食物“盐值”很高 吃一天够半个月盐摄入量</li>
+				<li>一家假发店见证的抗癌人生：顾客多是化疗患者</li>
+			</ul>
+		</div>
+		<!-- 名医名媛 -->
+		<div id="L-box8-4">
+			<h4>名医名院</h4>
+			<HR  style="border:2px solid #7f6743" width="95%" SIZE=3>
+			<img src="./L-health-img/f44d307589991a18d60439.jpg" alt="">
+			<img src="./L-health-img/f44d307589991a18d5c338.jpg" alt="">
+			<ul>
+				<li>北京医院召开2017年医联体年终总结及表彰大会</li>
+				<li>宣武医院成为亚洲首家WAP中心</li>
+				<li>带你认识“秦泗河矫形外科病例大数据库”</li>
+				<li>医患联欢 筑梦未来</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 医疗前沿 -->
+	<div id="L-box9">
+		<!-- 标题 -->
+		<div id="L-box9-1">
+			<img src="./L-health-img/title_yiliaoqy.jpg" alt="">
+		</div>
+		<!-- 第一行图片 -->
+		<div id="L-box9-2">
+			<img  style="margin-left: 15px;" src="./L-health-img/eca86bd9dc501983a29a40.gif" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a0e73d.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc5019b851ef19.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a0cc3c.gif" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a08a3b.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a23c3e.gif" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a26a3f.jpg" alt="">
+		</div>
+		<!-- 第二行图片 -->
+		<div id="L-box9-3">
+			<img  style="margin-left: 15px;" src="./L-health-img/eca86bd9dc50186323035c.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a35d43.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a0743a.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a30141.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc501983a33742.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc5019839f8f38.jpg" alt="">
+			<img src="./L-health-img/eca86bd9dc5019839fb239.jpg" alt="">
+		</div>
+	</div>
+
+<!-- 联系我们 -->
+
+	<div id="L-boxB">
+		<ul>
+			<li>联系我们</li>
+			<li>电话：(010)58926258 67078390</li>
+			<li>邮箱：weisheng@gmw.cn</li>
+			<li>在线咨询 QQ：1614962689</li>
+			<li>传真：(010)58928854</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+	<!-- 版权部分 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	       <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img onclick="myFunction()" class="btn1" src="./L-public/img/left-img4.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game2.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+	
+
+</body>
+</html>

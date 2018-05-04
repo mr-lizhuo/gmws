@@ -1,0 +1,433 @@
+document.cookie='FTAPI_BLOCK_SLOT=null;expires=0';
+document.cookie='FTAPI_PVC=1009903-2-ilazu0hb;expires=0';
+document.cookie='FTAPI_ST=null;expires=0';
+document.cookie='FTAPI_ASD=null;expires=0';
+document.cookie='FTAPI_Source=null;expires=0';
+
+// --------------------
+if(document.domain.indexOf('gmw.cn') == -1){
+    alert("您访问的是盗版网站，我们将把您带回光明网!");
+    window.location.href = "http://www.gmw.cn/";
+}
+
+// ------------------------------
+// 用JS方式修复正文中楷体的实现
+if($("#contentMain").find("font[face]").length >0){
+    /*$("#contentMain").find("font[face]").css("font-family",$("#contentMain").find("font[face]").attr("face"));*/
+    $("#contentMain").find("font[face]").each(function(i){
+        var _this = $("#contentMain").find("font[face]").eq(i);
+        _this.css("fontFamily",_this.attr("face"));
+    });
+}
+
+
+//文章页面包屑
+var oHome = '<a href="http://www.gmw.cn/" target="_blank">首页</a><font class="">&gt; </font>';
+$(oHome).insertAfter($('#ArticleChannelID').parent());
+
+// ------------------------------
+// 左右键翻页 {left:37, right:39}
+(function (window) {
+    window.onkeydown=function(event){
+        if(event.keyCode==37){
+            var $prev = $(".ptfontpic:contains('上一页')");
+            if($prev.length > 0){
+                ga('send', 'event', 'keyboard', 'keyboardButton', 'left2'); // 统计点击
+                window.location.href = $prev.attr("href");
+            }
+        }else if(event.keyCode==39){
+            var $next = $(".ptfontpic:contains('下一页')");
+            if($next.length > 0){
+                ga('send', 'event', 'keyboard', 'keyboardButton', 'right2'); // 统计点击
+                window.location.href = $next.attr("href");
+            }
+        }
+    }
+}(window));
+// 左右键翻页 {left:37, right:39}
+// ------------------------------
+
+
+
+//翻页总页数B
+var sty;
+function allPage(mpagecount) {
+    var mpagecount = document.getElementById(mpagecount);
+    if (mpagecount){
+        var displaypagenum = document.getElementById("displaypagenum");
+        var pnc = displaypagenum.innerHTML;
+        var apage = mpagecount.innerHTML;
+        var chcon = pnc.indexOf("pagefontpic");
+        if (chcon != -1) {
+            sty = ("ptfontpic'");
+            bg = (" style='background:none;color:#fff;'");
+        } else {
+            sty = ("pagefontcon'");
+            bg = (" style='background:#fff; color:#000;'");
+        }
+        var q = pnc.split("</center>");
+        if (q.length == 1) {
+            q = pnc.split("</CENTER>");
+        }
+        var nq = q[0];
+        var ncon = nq + " <span class='" + sty + bg + ">共" + apage + "页</span>" + "</center></p>";
+        displaypagenum.innerHTML = ncon;
+    }
+}
+allPage("mpagecount");
+//共几页
+if($(window).width()<600){
+    $('#displaypagenum center span:last').css("color",'#333');
+}
+$(window).resize(function(){
+	if($(window).width()<600){
+        $('#displaypagenum center span:last').css("color",'#333');
+    }else{
+        if(sty=="ptfontpic'"){
+            $('#displaypagenum center span:last').css("color",'#fff');
+        }
+    }
+});
+
+//翻页总页数E
+
+// ------------------------------
+// img加翻页按钮 begin
+function addLRbut(){
+    // 获取文章正文内容的DIV
+    var $ArticleContent = $("#ArticleContent");
+    if($ArticleContent.length > 0){
+		// 设置左右箭头的两个a标签
+		var $leftA = $('<a id="left_a" title="上一页"></a>');
+		var $rightA = $('<a id="right_a" title="下一页"></a>');
+		$leftA.css({'position':'absolute','top':0,'left':0,'width':'465px','cursor':'url(http://img.gmw.cn/images/btn_left.cur),auto'});
+		$rightA.css({'position':'absolute','top':0,'right':0,'width':'465px','cursor':'url(http://img.gmw.cn/images/btn_right.cur),auto'});
+		// 获取正文内的图片 正文最后的那个大G标志的图片除外
+		var $articlePic = $ArticleContent.find('img[href!="http://img.gmw.cn/pic/content_logo.png"]');
+		// 左右两个a标签的高度与图片相同
+		var $leftAheight = $articlePic.height();
+		// 正文区的宽度
+		var $ArticleContentWidth = $ArticleContent.width();
+		// 设置左右两个a的宽高
+		$leftA.css("height", $leftAheight + "px");
+		$rightA.css("height", $leftAheight + "px");
+		// 在页面中找到“上一页” 与 “下一页” 的链接
+		var $prev = $(".ptfontpic:contains('上一页')");
+		var $next = $(".ptfontpic:contains('下一页')");
+		// 若找到了“上一页”, 则设置左侧a的链接为“上一页”的链接
+		if ($prev.length > 0) {
+			$leftA.attr("href", $prev.attr("href"));
+		} else {
+			// 若没找到“上一页”, 则将右侧的a的宽度设为正文区的宽度，并将左侧a置空
+			$rightA.css("width", $ArticleContentWidth + "px");
+			$leftA = null;
+		}
+		// 若找到了“下一页”, 则设置右侧a的链接为“下一页”的链接
+		if ($next.length > 0) {
+			$rightA.attr("href", $next.attr("href"));
+		} else {
+			// 若没找到“下一页”, 说明已是最后一页，再查图片上是否有链接
+			$picA = $articlePic.parent("a");
+			// 若有，则将图片上的链接设置为右侧a的链接
+			if ($picA.length > 0) {
+				$rightA.attr("href", $picA.attr("href")).attr("title", "下一篇");
+			} else {
+				// 若没有，则将右侧的a的宽度设为正文区的宽度，并将左侧a置空
+				$leftA.css("width", $ArticleContentWidth + "px");
+				$rightA = null;
+			}
+		}
+		// 将左右箭头插入到正文区的最后
+		$ArticleContent.append($leftA).append($rightA);
+    }
+}
+addLRbut();
+// 统计点击 点击左箭头
+$("#left_a").live("click",function(){
+    ga('send', 'event', 'arrow', 'clickArrow', 'left1');
+});
+// 统计点击 点击右箭头
+$("#right_a").live("click",function(){
+    ga('send', 'event', 'arrow', 'clickArrow', 'right1');
+});
+// 统计点击 点击页码
+$("#displaypagenum a").click(function(){
+    ga('send', 'event', 'mouse', 'mouseClick', 'pageNums');
+});
+// 统计点击 点击图片
+$("#ArticleContent img").click(function(){
+    ga('send', 'event', 'image', 'clickImage', 'img_'+$(this).index());
+});
+// img加翻页按钮 end
+// ----------------------------------------
+
+
+
+//键盘左右翻页B
+function keyd(){}
+//键盘左右翻页E
+
+//鼠标左右翻页B
+function LRmouse() {}
+if (document.getElementById("displaypagenum") != null){}
+//鼠标左右翻页E
+
+//文章页内容a标签target
+function con_target_h(divid) {
+    if (document.getElementById(divid) != null) {
+        var con = document.getElementById(divid);
+        //p begin
+        var conp = con.getElementsByTagName("p");
+        for (var j = 0; j < conp.length; j++) {
+            var conpa = conp[j].getElementsByTagName("a");
+            for (var i = 0; i < conpa.length; i++) {
+                var conpa_target = conpa[i].target;
+                if (conpa_target != "_self") {
+                    conpa[i].target = "_blank";
+                }
+            }
+        }
+        //p end
+        //span begin
+        var conspan = con.getElementsByTagName("span");
+        for (var s = 0; s < conspan.length; s++) {
+            var conspana = conspan[s].getElementsByTagName("a");
+            for (var si = 0; si < conspana.length; si++) {
+                var conspana_target = conspana[si].target;
+                if (conspana_target != "_self") {
+                    conspana[si].target = "_blank";
+                }
+            }
+        }
+        //span end
+    }
+}
+con_target_h('contentMain');
+con_target_h('ArticleContent');
+
+//屏蔽js错误
+function killerrors() {
+    return true;
+}
+//window.onerror = killerrors;
+
+//搜索
+function change(){
+    var searchText='';
+    if (document.getElementById("searchText") != null) {
+        searchText = document.getElementById("searchText").value;
+    }
+    var selectObj = document.getElementById("selectId");
+    // 增加搜索事件统计 2014-07-08
+    //ga('send', 'event', 'search', selectObj.value, searchText);
+
+    if (selectObj.value == 0) {
+        document.forms["form2"].action = "http://bsearch.gmw.cn/cse/search?s=6995449224882484381&q=" + encodeURI(searchText);
+    }
+    if (selectObj.value == 1) {
+        document.forms["form2"].action = "http://search.gmw.cn/search.do?q=" + encodeURI(searchText);
+    }
+    if (selectObj.value == 2) {
+        document.forms["form2"].action = "http://search.gmw.cn/search.do?c=g&q=" + encodeURI(searchText);
+    }
+
+	// 增加搜索事件统计 2014-07-08
+	_gaq('send', 'event', 'search', selectObj.value, searchText);
+    return true;
+};
+//邮箱
+g_domainname = "@gmw.cn";
+function init(){
+    var domain_name = GetDomain();
+    if (domain_name == null) document.all.default_domain.innerHTML = g_domainname;
+    else
+    document.all.default_domain.innerHTML = "@" + domain_name;
+    document.logon.password.value = "";
+    document.logon.name.value = "";
+    document.logon.name.focus();
+}
+
+function GetDomain() {
+    return document.logon.domainname.value;
+}
+
+function checkform() {
+    var domain_name;
+    username = document.logon.name.value;
+    if (username.indexOf('@') <= 0) {
+        domain_name = GetDomain();
+        if (domain_name == null) username += g_domainname;
+        else
+        username += "@" + domain_name;
+    }
+    document.logon.username.value = username;
+    return true;
+}
+
+//时间
+function initArray() {
+    this.length = initArray.arguments.length;
+    for (var i = 0; i < this.length; i++)
+    this[i + 1] = initArray.arguments[i];
+}
+
+function getCurrentDate() {
+    today = new Date();
+    var d = new initArray("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+    var mon = today.getMonth() + 1;
+    return today.getFullYear() + "年" + mon + "月" + today.getDate() + "日　" + d[today.getDay() + 1];
+}
+var fm = document.getElementById('nowtime');
+if(fm){
+    document.getElementById('nowtime').innerHTML = getCurrentDate();
+}
+
+//字体
+function ContentSize(size) {
+    var artibody = document.getElementById('ArticleContent');
+    if (!artibody) {
+        return;
+    }
+    ArticleContent.style.fontSize = size + 'px';
+}
+
+//复制链接
+function copyLink(){
+    try{
+        var cText = document.location.toString();
+        if (window.clipboardData){
+            window.clipboardData.setData("Text", cText);
+            alert("复制完成!");
+        }else if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("您的浏览器设置为不允许复制！\n如果需要此操作，请在浏览器地址栏输入'about:config'并回车\n然后将'signed.applets.codebase_principal_support'设置为'true',再重试复制操作!");
+                return false;
+            }
+            var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+            if(!clip) return;
+            var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+            if(!trans){
+                return;
+            }
+            trans.addDataFlavor('text/unicode');
+            var str = new Object();
+            var len = new Object();
+            var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+            str.data = cText;
+            trans.setTransferData("text/unicode", str, cText.length * 2);
+            var clipid = Components.interfaces.nsIClipboard;
+            if (!clip) return false;
+            clip.setData(trans, null, clipid.kGlobalClipboard);
+            alert("复制完成!");
+        }
+    }catch(e){}
+};
+
+//SSO登录begin
+//获得指定名称的cookie值
+/* 20170710 delete 登录
+function getCookie(c_name) {
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) c_end = document.cookie.length;
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return ""
+}
+
+function gotoLogin(backurl){
+	window.location.href = 'http://home.gmw.cn/index.php?callback='+encodeURIComponent(backurl);
+}
+
+//退出通信 头部
+function login_in(y) {
+    $("#login").hide();
+    var loginbar_new_html = $('#loginbar_new').html();
+    $('#loginbar_new').html("&nbsp;<img border=0 height=20 src=\"http://home.gmw.cn/wait.gif\" />&nbsp;加载中..." + loginbar_new_html);
+    var iframe = document.createElement("iframe");
+    iframe.id = "login_id";
+    iframe.style.display = "none";
+    var login_url = "http://home.gmw.cn/www_login.php?do=logout";
+    /////畅言退出
+    var img = new Image();
+    img.src = 'http://changyan.sohu.com/api/2/logout?client_id=cyr45LmB4';
+    /////
+    iframe.src = login_url;
+    if (iframe.attachEvent) {
+        iframe.attachEvent("onload", function() {
+            location.reload();
+            //if_login();
+            document.body.removeChild(iframe);
+        });
+    } else {
+        iframe.onload = function() {
+            location.reload();
+            //if_login();
+            document.body.removeChild(iframe);
+        };
+    }
+    document.body.appendChild(iframe);
+}
+var cookie_name = decodeURIComponent(getCookie('Example_auth_username'));
+
+
+
+var gotoLoginBackUrl =  document.location.protocol + '//' + document.domain + window.location.pathname;
+if ($('#loginbar_new').length > 0) {
+    var if_loginbar_new = 1;
+}
+if (if_loginbar_new == 1) {
+    if (cookie_name.length > 0) {
+        $('#loginbar_new').html("<div id='login'>" + cookie_name + "&nbsp;&nbsp;您好!&nbsp;&nbsp;<a style='color:#FDCF48;' href='http://blog.gmw.cn/' target='_blank'>光明博客</a>&nbsp;&nbsp;<a href='http://home.gmw.cn' style='color:#FDCF48;' target='_blank'>用户统一登录平台</a>&nbsp;&nbsp;<a href='#' onclick=\"login_in();\" target='_self'>安全退出</a></div>");
+    } else {
+        $('#loginbar_new').html('<input class="headSubLog" type="submit" value="登录" onclick="gotoLogin(\''+gotoLoginBackUrl+'\')"><input class="headSubLog" name="login" type="button" value="注册" onclick="document.location.href=\'http://home.gmw.cn/register.php?callback='+encodeURIComponent(gotoLoginBackUrl)+'\'">');
+    }
+}
+
+*/
+//end login
+
+//控制头部 搜索 文本框的长度
+/*if(document.form2 != null){
+    document.form2.searchText.size = '16';
+}*/
+
+/* 为豆子棋牌推广做的临时中奖公告 2015-11-19 by wam | lastedit:2015-12-03 16:52
+$(function(){
+	$.getScript("http://douzi.com/static/gmw/exchange_gift_data.js", function(){
+		var dataList = exchange_gift_data();
+		var aUrl = 'http://qp.gmw.cn/gmw/index_piccrumbs.do?from=pic_crumbs';
+		var qpggStr = '<div style="float:right;width:550px;line-height:50px;font-size:12px;color:#CD7912;"><div style="float:left;width:135px;"><img src="http://img.gmw.cn/images/public/boxs.png" width="24"/><strong>光明棋牌兑奖公告：</strong></div><ul style="float:right;width:410px;height:50px;overflow:hidden;color:#000;">';
+
+		for (var i = 0; i < dataList.length; i++) {
+			var data = dataList[i];
+			var userName = data.user_name;
+			var timeStr = data.exchange_time.split(" ");
+			var tStr = timeStr[0];
+			var giftName = data.gift_name;
+			var message = ['太棒啦！','真棒！','棒棒哒~~','么么哒~~','羡慕呀~~','恭喜Ta!'];
+			var msg = message[Math.floor(Math.random()*6)];
+			qpggStr += '<li style="line-height:50px;height:50px;"><a target="_blank" href="'+aUrl+'">'+tStr+' 玩家<span style="color:#CD7912">'+userName+'</span>兑换了<span style="font-weight:bold;color:#CD7912">'+giftName+'</span>。 '+msg+'</a></li>';
+
+		}
+		qpggStr += '</ul></div><div class="clear"></div>';
+
+		$(".picContent-breadCrumbs2").append(qpggStr);
+		setInterval(function(){
+			var ulTop = $(".picContent-breadCrumbs2 ul").scrollTop();
+			$(".picContent-breadCrumbs2 ul").animate({"scrollTop":ulTop+50}, 400, function(){
+				var li = $(".picContent-breadCrumbs2 ul li").eq(0);
+				li.remove();
+				$(".picContent-breadCrumbs2 ul").scrollTop(0);
+				li.appendTo(".picContent-breadCrumbs2 ul");
+			});
+		}, 3500);
+	});
+
+}); */

@@ -1,0 +1,874 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>医药频道</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+
+
+
+  <!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script> 
+
+   <style>
+
+   
+  /*--  李卓  --*/
+          
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #f8f8f8;}
+    h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:#d39508;font-weight: bold;}
+
+            /*从box1-box2-boxA为固定模式*/
+
+ #L-box1{width: 1000px;height: 63px;margin:0px auto;} 
+    #L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+        /*实现下拉菜单栏*/
+        .whereGo {position: relative;display: inline-block;float: right;}
+      .wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+      .whereGo:hover .wgse {display: block;}
+      /*end*/
+
+    #L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+  #L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+    #L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+    #L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+      #L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+    #L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+      #L-box2-3 img{float: left;}
+    
+    #L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+    #L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+    #L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+      #L-box2-6 select{width: 102px;height: 25px;}
+    #L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+      #L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+    #L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+        #L-box3{width: 1000px;height: 60px;margin: 5px auto;background: green;}
+            #L-box3 ul{list-style-type: none;float: left;}
+            #L-box3 li{float: left;margin-left: 40px;font-size: 15px;color:white;}
+
+        #L-box4{width: 1000px;height: 400px;margin: 5px auto;background: none;}
+            #L-box4-1{width: 660px;height: 400px;background: none;float: left;}
+                  #L-box4 img{width: 660px;height: 400px;}
+            #L-box4-2{width: 330px;height: 400px;background: none;float: right;}
+                #L-box4-2 ul{padding-left: 20px;font-size: 15px}
+
+        #L-box5{width: 1000px;height: 838px;margin: 5px auto;background: none;}
+            #L-box5-1{width: 660px;height: 838px;background: none;float: left;}
+                #L-box5-1 ul{float: left;}
+                #L-box5-1 form{width: 253px;float: left;}
+                #L-box5-1 img{width: 253px;}
+                #L-box5-1 span{ width: 397px;float: right;}
+            #L-box5-2{width: 330px;height: 838px;background: none;float: right;}
+                #L-box5-2 img{width: 160px;float: left;margin-bottom: 20px;}
+                #L-box5-2 span{width: 160px;float: right;}
+
+        #L-box6{width: 1000px;height: 540px;margin: 5px auto;background: none;}
+            .zj_slider,.zj_slider ul li.zj_box { width:1000px; height:420px; background:#DEEBE2; overflow:hidden; position:relative;}
+            .zj_slider ul li.zj_box li{ width:190px; height:100px; background:#fff; float:left; margin:10px 2px 0;}
+            .zj_slider .one{ width:1000px; height:40px; background:#098C2E; text-align:center; line-height:40px; color:#fff; display:block; font-size:16px; margin:0;}
+            .zj_slider .two{ width:1000px; height:40px; background:#098C2E; text-align:center; line-height:40px; color:#fff; display:block; font-size:16px; margin:0; position:absolute; bottom:0; left:0;}
+            .zj_slider li img{ width:80px; height:80px; float:left; margin:10px 8px 0 10px;}
+            .zj_slider li b{margin:10px 0 5px 0; float:left; font-size:14px; width:90px;}
+            .zj_slider li a{ color:#000;}
+            .zj_slider li p{ color:#4C4C4C; float:left; width:90px; font-size:12px;}
+            .zj_box ul {height:340px;overflow-y:auto;list-style:none;padding-left:10px;}
+
+    #L-box7{width: 1000px;height: 722px;margin: 5px auto;background: none;}
+        #L-box7-1{width: 660px;height: 722px;background: none;float: left;}
+        #L-box7-1 form{width: 325px;height: 255px;float: left;}
+        #L-box7-1 span{width: 325px;float: right;}
+        #L-box7-1 ul{float: left;}
+        #L-box7-2{width: 330px;height: 722px;background: none;float: right;}
+
+    #L-box8{width: 1000px;height: 176px;margin: 5px auto;background: none;}
+        #L-box8 img{width: 215px;height: 80px;float: left;margin-left: 20px;}
+
+    #L-box9{width: 1000px;height: 523px;margin: 5px auto;background: none;}
+        #L-box9 img{width: 1000px;height: 523px;}
+    #L-boxB{width: 1000px;height: 150px;margin: 5px auto;background: none;}
+
+
+
+
+        /*版权页*/
+    #L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+    #L-boxA p{text-align: center;}
+ </style>
+
+<script> 
+
+    // 图片轮播
+  var i=0;  
+  var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+   </script>
+
+   <script> 
+
+    // 图片轮播
+  var n=0;  
+  var m = null;  
+    m = setTimeout(carousels,1000);//开始执行  
+    function carousels()  
+    {  
+          
+       clearTimeout(m);//清除定时器  
+        
+      $("#pic-"+n).removeClass("active");  
+      $("#pic-"+(n+1)).addClass("active");  
+      n++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+n+")").addClass("active");  
+        
+      if(n>3){  
+        $("#pic-"+(n-1)).removeClass("active");  
+        $("#pic-0").addClass("active");  
+        n=0;  
+        $("ol li:eq("+n+")").addClass("active");  
+        
+      }  
+       m = setTimeout(carousels,2500); //设定定时器，循环执行               
+    }   
+
+      </script>
+      
+       <script> 
+
+    // 图片轮播
+  var l=0;  
+  var f = null;  
+    f = setTimeout(carouselss,1000);//开始执行  
+    function carouselss()  
+    {  
+          
+       clearTimeout(f);//清除定时器  
+        
+      $("#picq"+l).removeClass("active");  
+      $("#picq"+(l+1)).addClass("active");  
+      l++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+l+")").addClass("active");  
+        
+      if(l>3){  
+        $("#picq"+(l-1)).removeClass("active");  
+        $("#picq0").addClass("active");  
+        l=0;  
+        $("ol li:eq("+l+")").addClass("active");  
+        
+      }  
+       f = setTimeout(carouselss,2000); //设定定时器，循环执行               
+    }   
+
+      </script>
+
+
+
+</head>
+<body>
+
+
+
+
+<!-- /*从box1-box2-boxA为固定模式*/ -->
+
+  <div id="L-box1">
+    <div id="L-box1-1">
+      <img src="./L-military-img/Logo.png" ></img>
+      <a href="index.html" style='color:#bb2737'>English</a>
+
+      <!-- 日期输出 -->
+
+      <span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+      <ul class="whereGo">
+        <li style="list-style-type:none;">您想去哪里？
+          <ul class="wgse">
+            <li style="list-style-type:none;">光明图片</li>
+            <li style="list-style-type:none;">我要投稿</li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+     <li><a href="./index1.html">首页&nbsp |</a></li>
+      <li><a href="./military.html">军事&nbsp |</a></li>
+      <li><a href="./legal.html">法制&nbsp |</a></li>
+      <li><a href="./photo.html">读书&nbsp |</a></li>
+      <li><a href="./topics.html">专题&nbsp |</a></li>
+      <li><a href="./xueshu.html">学术&nbsp |</a></li>
+      <li><a href="./history.html">历史&nbsp |</a></li>
+      <li><a href="./guoxue.html">国学&nbsp |</a></li>
+      <li><a href="./health.html">卫生&nbsp |</a></li>
+      <li><a href="./kepu.html">科普&nbsp |</a></li>
+      <li><a href="./v.html">电视&nbsp |</a></li>
+      <li><a href="./lady.html">女人&nbsp |</a></li>
+      <li><a href="./e.html">文娱&nbsp |</a></li>
+      <li><a href="./sports.html">体育&nbsp |</a></li>
+      <li><a href="./run.html">乐跑&nbsp |</a></li>
+      <li><a href="./shuhua.html">书画&nbsp |</a></li>
+      <li><a href="./meiwen.html">文萃&nbsp |</a></li>
+      <li><a href="./yp.html">药品&nbsp |</a></li>
+      <li><a href="./em.html">中医&nbsp |</a></li>
+      
+      <li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+                            <!-- end -->
+    
+    </div>
+  </div>
+
+  <div id="L-box2">
+    <div id="L-box2-1">
+      <img src="./L-yp-img/yp.gif"></img>
+    </div>
+    <div id="L-box2-2">
+      <p>权威药监发布<br> 百姓用药指南</p>
+    </div>
+    <div id="L-box2-3">
+      <img src="./L-legal-img/ico_rss.gif">RSS</img>
+      </div>
+    <div id="L-box2-4"></div>
+    <div id="L-box2-5">
+        <input type="text" style="width: 150px;height: 20px;">
+    </div>
+
+    <div id="L-box2-6">
+      <select>
+            <option value="0">站内搜索</option>
+            <option value="1">光明网</option>
+            <option value="2">光明报系</option>
+          </select>
+    </div>
+    <div id="L-box2-7">
+      <input type="submit" value="搜索">
+    </div>
+    <div id="L-box2-8">
+      <img src="./L-military-img/skypelogo.jpg" >
+    </div>
+  </div>
+
+
+
+
+
+<!-- 两排标题 -->
+  <div id="L-box3">
+    <ul>
+      <li>云端药信</li>
+      <li>国医馆&nbsp&nbsp&nbsp&nbsp</li>
+      <li>新闻聚焦</li>
+      <li>产业视野</li>
+      <li>人道公益</li>
+      <li>食药舆情</li>
+      <li>光明药评</li>
+      <li>曝光台&nbsp&nbsp&nbsp&nbsp</li>
+      <li>活动报道</li>
+    </ul>
+
+       <ul>
+      <li>权威发布</li>
+      <li>药店频道</li>
+      <li>用药指南</li>
+      <li>专家专栏</li>
+      <li>上市药企</li>
+      <li>科技科普</li>
+      <li>视频新闻</li>
+      <li>专题播报</li>
+      <li>展示区</li>
+    </ul>
+
+
+  </div>
+
+  <!--图片轮播+文字  -->
+  <div id="L-box4">
+    <!-- 图片轮播 -->
+    <div id="L-box4-1">
+      <div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-yp-img/f44d30758a021c3968ae11.png" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-yp-img/f44d30758a021c33b06101.png" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-yp-img/f44d30758a021c1dac0402.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-yp-img/f44d30758a021c140faa03.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+    </div>
+    <!-- 文字 -->
+    <div id="L-box4-2">
+      <b>北京医改一周年 就医有了三大变化</b>
+      <p>海淀区域药品供应链平台承担了海淀区医联体三级医院和基层机构药品目录对接任务，为落实分级诊疗提供支撑。</p>
+      <b>大型设备配置许可管理目录确定</b>
+      <p>4月9日，国家卫生健康委员会官方网站发布《大型医用设备配置许可管理目录（2018年）》，对需经许可配置的甲类、乙类大型医用设备加以规范。</p>
+
+      <ul>
+        <li>营养价值不如1块钱鸡蛋的即食燕窝 为什么能卖几</li>
+        <li>41人死亡 江西通报3月传染病疫情 </li>
+        <li>中国4.35亿人处于高血压前期！ </li>
+        <li>邵志敏团队绘制出中国乳腺癌人群突变图谱 </li>
+        <li>取消门诊输液为何仍“吊瓶林立”</li>
+
+      </ul>
+
+    </div>
+  </div>
+  
+  <!-- 产业视野+...+ 活动报告-->
+  <div id="L-box5">
+    <!-- left  -->
+    <div id="L-box5-1">
+      <h4>产业视野</h4>
+      <HR  style="border:1px solid green" width="95%" SIZE=3>
+      <b>翁思春谈金百合药店联盟创办13年来的经验</b>
+       <HR  style="border:1px dashed green" width="95%" SIZE=3>
+         <ul>
+              <li>华农团队发现新型冠状病毒与SARS源头均为</li>
+              <li>李沛桥和她的“小乔”机器人</li>
+              <li>北京市医院将开儿童营养门诊</li>
+              <li>全国人大代表肖伟亮相“代表通道” 他都说</li>
+              <li>浙江丽水市委书记张兵：弘扬艰苦奋斗精神 </li>
+           </ul>
+          <ul>
+             <li>复方苦参注射液上市后再评价临床研究成果</li>
+             <li>为了 350 万护士 她建议制定《执业护士</li>
+             <li>真实世界数据大爆发：药企巨头争相投入，</li>
+             <li>金鸿药业： 中西并举攻克患者“痛点” 他都说</li>
+            <li>湖北宜昌市委书记新春调研贝因美 鼓励企业 </li>
+           </ul>
+
+           <ul>
+              <h4>食药舆情</h4>
+              <HR  style="border:1px solid green" width="95%" SIZE=3>
+              <li>买药时 药盒上有这10个字慎买 赶快告诉</li>
+              <li>国家药物滥用监测年度报告（2016年）</li>
+              <li>光明网2017年上半年医药行业发展报告</li>
+              <li>光明网2017年上半年医药行业发展报告</li>
+           </ul>
+
+            <ul>
+              <h4>人道公益</h4>
+              <HR  style="border:1px solid green" width="95%" SIZE=3>
+              <li> 海南省红十字会与金汇通航全面启动战略</li>
+              <li>历史上的今天：中国红十字会诞生</li>
+              <li>当年获移植的患者再度病危小伙二次捐献</li>
+              <li>讲好红十字故事 “红十字运动知识丛</li>
+
+           </ul>
+            <HR  style="border:1px solid none" width="95%" SIZE=3>
+
+        <br>
+        <br><br>
+           <h4>上市药企</h4>
+           <HR  style="border:1px solid green" width="95%" SIZE=3>
+          <form>
+           <img src="./L-yp-img/f44d307589461ac99ec72c.jpg" alt="">
+           <b>《中国中医药上市公司发展报告》发布</b>
+         </form>
+           
+
+           <span>
+              <b>中医药产业发展应借社会资本“东风”</b>
+              <p>目前中医诊疗服务的医疗资源主要集中在公立医院，市场化程度不高。</p>
+              <ul>
+                <li>海南一心堂事件最新追踪：对内从严从重</li>
+                <li>一心堂快速回应媒体报道：彻底整改 坚决</li>
+                <li>振东集团业绩逆势增长 凭什么？</li>
+              </ul>
+           </span>
+    </div>
+   
+    <!-- right -->
+    <div id="L-box5-2">
+      <h4>权威发布</h4>
+       <HR  style="border:1px solid green" width="95%" SIZE=3>
+       <b>李克强上海考察为何特意来看这家抗癌制药外企？</b>
+       <img src="./L-yp-img/f44d30758a021c37f2450f.jpg" alt="">
+       <span>
+          <p>展示柜里摆放着治疗乳腺癌、肺癌、前列腺癌、胃癌等多种癌症药物，车间里源源不断分装出供全球患者使用的抗癌药物。</p>
+       </span>
+
+
+<HR  style="border:1px solid none" width="95%" SIZE=3>
+       <ul>
+
+        <li>国务院关于落实《政府工作报告》重点工作部门分工的</li>
+        <li>市场监督管理总局：食品、药品审批制度暂不更改</li>
+        <li>李克强上海考察为何特意来看这家抗癌制药外企？</li>
+        <li>2017年度食品药品监管统计年报</li>
+       </ul>
+
+      <h4>光明药评</h4>
+       <HR  style="border:1px solid green" width="95%" SIZE=3>
+       <ul>
+        <li>川贝枇杷膏红了 中医药会“飘红”吗？</li>
+        <li>政务公开：帮领导记日记还是为群众解疑难？ </li>
+        <li>莎普爱思引发风波：医企上亿元广告费支出是否合理？ </li>
+        <li>莫以西方科学观评判针灸 </li>
+       
+       </ul>
+
+       <h4>活动报道</h4>
+       <HR  style="border:1px solid green" width="95%" SIZE=3>
+
+        <div class="carousel-inner">  
+      <div id="pic-0" class="item active">  
+         <img  style="width: 330px ;height:150px"  src="./L-yp-img/6448510.png" alt="First slide">  
+      </div>  
+      <div id="pic-1" class="item">  
+         <img  style="width: 330px;height:150px" src="./L-yp-img/f44d30758a021a56bd7d36.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic-2" class="item">  
+         <img  style="width: 330px;height:150px" src="./L-yp-img/f44d30758a021b5aa6da26.png" alt="Third slide">  
+      </div>  
+      <div id="pic-3" class="item">  
+         <img style="width: 330px;height:150px" src="./L-yp-img/f44d30758a021c3968ae11.png" alt="fourth slide">  
+      </div>   
+   </div>  
+
+
+
+
+    </div>
+  </div>
+
+
+<!-- 专家专栏 -->
+<div id="L-box6">
+  <h4>专家专栏</h4>
+  <HR  style="border:1px solid green" width="95%" SIZE=3>
+   <div class="zj_slider">
+        <ul>
+            
+            <li class="zj_box"><div class="one">国医大师</div>    
+              <ul>
+                <li>    
+                  <a><img src="./L-yp-img/f44d307589461a8f47300d.jpg" border="0"></a>   
+                    <a><b>李振华</b></a>   
+                    <p>全国著名中医学家</p>   
+                </li>   
+                <li><a><img src="./L-yp-img/d02788d8df981930c32f05.jpg" border="0"></a>   
+                  <a><b>唐祖宣</b></a>   
+                  <p>中华中医药学会常务理事</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df36185b00f454.jpg" border="0"></a>   
+                  <a><b>干祖望</b></a>   
+                  <p>南京中医药大学教授</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df3618ca16f729.jpg" border="0"></a>   
+                  <a><b>王琦</b></a>    
+                  <p>北京中医药大学博导</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df36185487291f.jpg" border="0"></a>   
+                  <a><b>李士懋</b></a>   
+                  <p>河北医科大学、北京中医药大学博导</p>   
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df36184b148f1a.jpg" border="0"></a>   
+                  <a><b>夏桂成</b></a>   
+                  <p>江苏省中医院妇科主任医师</p>   
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849fe3a46.jpg" border="0"></a>   
+                  <a ><b>刘柏龄</b></a>    
+                  <p>长春中医药大学教授</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849fd7845.jpg" border="0"></a>   
+                  <a><b>陈可冀</b></a>   
+                  <p>中国科学院院士</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df3618ca172e2d.jpg" border="0"></a>   
+                  <a><b>刘敏如</b></a>   
+                  <p>成都中医药大学博导</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849fb9543.jpg" border="0"></a>   
+                  <a><b>占堆</b></a>    
+                  <p>西藏自治区藏医院院长</p>   
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849fa703f.jpg" border="0"></a>   
+                  <a><b>吕景山</b></a>   
+                  <p>山西省中医管理局高级顾问<br></p>   
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df3618ca181a31.jpg" border="0"></a>  
+                  <a><b>晁恩祥</b></a>   
+                  <p>中日友好医院主任医师</p>   
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849f6da37.jpg" border="0"></a>   
+                  <a><b>尚德俊</b></a>   
+                  <p>全国名老中医药专家学术经验继承导师</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849d2f335.jpg" border="0"></a>   
+                  <a><b>刘祖贻</b></a>   
+                  <p>首批中国著名中医药专家</p>    
+                </li>   
+                <li>    
+                  <a><img src="./L-yp-img/d02788d8df361849d19134.jpg" border="0"></a>   
+                  <a><b>郭诚杰</b></a>   
+                  <p>陕西中医学院教授</p>   
+                </li>       
+                  </ul>   
+                  <div class="two">国医大师
+                  </div>
+                </li>   
+  </div>
+
+
+
+</div>
+
+<!-- 视频新闻+...+健康行 -->
+
+<div id="L-box7">
+  <!-- left   -->
+  <div id="L-box7-1">
+
+      <form>
+        <embed src="http://player.youku.com/player.php/sid/XNjMwOTAxNzcy/v.swf" width="325" height="245" type="application/x-shockwave-flash">
+         </embed>
+         <b>走进国家重点实验室 新药从何来（上）</b>
+
+      </form>
+
+      <span>
+        <br><br>
+        <p>王国强：给出中医药法的中国方案</p>
+        <p>糖尿病和吃糖有关系吗？</p>
+        <p>引起糖尿病的原因有哪些？</p>
+        <p>糖尿病患者的血糖为什么会增高？</p>
+        <p>王国强：给出中医药糖尿病到底是怎么回事？法的中国方案</p>
+      </span>
+
+       <HR  style="border:1px solid none" width="95%" SIZE=3>
+       <br>
+       <br>
+       <br>
+
+       <h4>曝光台</h4>
+
+      <HR  style="border:1px solid green" width="95%" SIZE=3>
+
+      <b>北京多个餐厅餐具检出大肠菌群</b>
+      <p>近日，北京市食品药品监管局组织抽检餐饮食品253批次样品，其中合格样品235批次，不合格样品18批次。</p>
+      
+        <HR  style="border:1px dashed green" width="95%" SIZE=3>
+        <br><br><br>
+
+        <ul>
+          <li>注意 雅贝儿童用品儿童推车因缺陷正被召回</li>
+          <li>燕之屋燕窝被指97％为糖水和增稠剂</li>
+          <li>阿胶糕查出牛源性成分 消费者诉10倍赔偿获</li>
+          <li>山东曝光10大违法广告案例 宜信 鲁南眼科</li>
+          <li>康美药业在内的4家药企卷入“传销风波”</li>
+        </ul>
+
+         <ul>
+          <li>韩国13批化妆品重金属超标!</li>
+          <li>总局发布安徽广印堂中药涉嫌违法违规生产</li>
+          <li>广东食药监局查处修正药业 云南腾药等药企</li>
+          <li>上海市食药监局 市公安局联合破获生产 销售</li>
+          <li>关于提供非法社会组织活动线索的公告</li>
+        </ul>
+
+
+
+  </div>
+  <!-- right -->
+  <div id="L-box7-2">
+    <h4>专家观点</h4>
+    <HR  style="border:1px solid green" width="95%" SIZE=3>
+    <ul>
+      <li>李克强：让有意愿的群众尽早 就近用上最新HPV等防癌</li>
+      <li>阮鸿献：迎接时代变革 拥抱医药新零售</li>
+      <li>陈新光：加强儿童医疗卫生服务改革促进儿童用药安全</li>
+      <li>宋仙水会长解读铁皮石斛药用历史</li>
+    </ul>
+
+     <h4>科技科普</h4>
+    <HR  style="border:1px solid green" width="95%" SIZE=3>
+    <ul>
+      <li>零售业各环节如何各司其职 商品条码来帮忙</li>
+      <li>电商平台“码到成功” 商品条码立大功</li>
+      <li>CNICG“国物标识”上榜“中科院技术成果转移转化亮</li>
+      <li>GS1全球追溯标准给我们带来哪些好处？</li>
+    </ul>
+
+     <h4>用药指南</h4>
+    <HR  style="border:1px solid green" width="95%" SIZE=3>
+    <ul>
+      <li>可怕 男子肺部烂成“棉花状” 竟因反复咳嗽时老吃它</li>
+      <li> 因过敏抢救“不及时” 医院被判决赔偿166万</li>
+      <li>夏季防中暑药物</li>
+    </ul>
+
+      <h4>健康行</h4>
+    <HR  style="border:1px solid green" width="95%" SIZE=3>
+    <ul>
+      <li>中国医药物资协会精神心理健康专业委员会成立</li>
+      <li>中国医药物资协会精神心理健康专业委员会成立</li>
+      <li>郭洪伟：精神疾病应三分治七分养 关爱与尊重并举</li>
+      <li>郭洪伟：呼吁给予精神患者更多的关爱和尊重</li>
+    </ul>
+
+
+
+
+
+  </div>
+</div>
+
+<!-- 专题荟萃 -->
+<div id="L-box8">
+
+  <h4>专题荟萃</h4>
+  <HR  style="border:1px solid green" width="95%" SIZE=3>
+  <img src="./L-yp-img/d02788d8df36189503bf11.jpg" alt="">
+  <img src="./L-yp-img/f44d307589461ac9309301.jpg" alt="">
+  <img src="./L-yp-img/f44d30758a0219d5a1965a.jpg" alt="">
+  <img src="./L-yp-img/f44d3075894619c329420c.jpg" alt="">
+
+
+</div>
+
+<!-- 展示区（图片轮播） -->
+<div id="L-box9">
+    <div class="carousel-inner">  
+      <div id="picq0" class="item active">  
+         <img src="./L-yp-img/f44d30758a021b7cda5950.jpg" alt="First slide">  
+      </div>  
+      <div id="picq1" class="item">  
+         <img src="./L-yp-img/f44d30758a021bdcf1e844.jpg" alt="Second slide">  
+      </div>  
+      <div id="picq2" class="item">  
+         <img src="./L-yp-img/f44d30758a021c37b9c055.jpg" alt="Third slide">  
+      </div>  
+      <div id="picq3" class="item">  
+         <img src="./L-yp-img/f44d30758a021adbee5f1d.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+</div>
+
+<!-- 联系我们 -->
+<div id="L-boxB">
+  <HR  style="border:1px solid green" width="95%" SIZE=3>
+  <b>联系我们：010-58926484 邮箱：zhangmengfan@gmw.cn 传真： 010-67078000 在线咨询 QQ：3295888268 请注明：战略合作部 欢迎合作、来稿、提出宝贵意见</b>
+   <HR  style="border:1px solid green" width="95%" SIZE=3>
+   <b>指导单位：国家食品药品监督管理总局 </b>
+   <br>
+   <b>合作协会：中国医药物资协会</b>
+
+
+</div>
+
+
+
+
+
+  <!-- 版权部分 -->
+  <div id="L-boxA">
+    <p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+    <p>光明网版权所有</p>
+  </div>
+
+                                          <!-- 2018-4-18日下午2点40，赶在下课前完成了自己的网页任务，
+                                          下周的任务就是重新把这些网页的细节特效重新添加一下
+                                          超链接修改回来 -->
+
+                                          <!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+                          <!-- 待修改超链接 -->
+      <li><a href="./index1.html">首页&nbsp </a></li>
+      <li><a href="./military.html">军事&nbsp </a></li>
+      <li><a href="./legal.html">法制&nbsp </a></li>
+      <li><a href="./photo.html">读书&nbsp </a></li>
+      <li><a href="./topics.html">专题&nbsp </a></li>
+      <li><a href="./xueshu.html">学术&nbsp </a></li>
+      <li><a href="./history.html">历史&nbsp </a></li>
+      <li><a href="./guoxue.html">国学&nbsp </a></li>
+      <li><a href="./health.html">卫生&nbsp </a></li>
+      <li><a href="./kepu.html">科普&nbsp </a></li>
+      <li><a href="./v.html">电视&nbsp </a></li>
+      <li><a href="./lady.html">女人&nbsp </a></li>
+      <li><a href="./e.html">文娱&nbsp </a></li>
+      <li><a href="./sports.html">体育&nbsp </a></li>
+      <li><a href="./run.html">乐跑&nbsp </a></li>
+      <li><a href="./shuhua.html">书画&nbsp </a></li>
+      <li><a href="./meiwen.html">文萃&nbsp </a></li>
+      <li><a href="./yp.html">药品&nbsp </a></li>
+      <li><a href="./em.html">中医&nbsp </a></li>
+      
+      <li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+  <img  onclick="myFunction()"  class="btn1" src="./L-public/img/left-imgA.png" alt="">
+
+  <button onclick="myFunction2()">请点击5次呦</button>
+
+  
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+  x++;
+  if(x==5){
+  window.location.href='game.html';
+    }
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,759 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>光明乐跑</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+	
+	
+
+	<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script>  
+
+
+
+
+<style>
+
+
+    /*--  李卓  --*/
+   
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+   *{margin: 0 ;}/*设置全局变量*/
+   
+
+
+   body{background: #f8f8f8;}
+
+   #L-box1{width: 1000px;height: 30px; margin: 5px auto; background: #333333;}
+    #L-box1 li{float: left;margin-left: 5px;}
+    #L-box1 ul{list-style-type: none;color:#CCCCCC;font-size: 15px;padding-top: 3px;}
+
+   #L-box2{width: 1000px;height: 100px;margin: 5px auto;background: #02b3aa;}
+
+   #L-box3{width: 1000px;height: 35px;margin: 5px auto;background: #016661;}
+    #L-box3 ul{list-style-type: none;padding-top: 5px;}
+    #L-box3 li{float: left;margin-left: 35px;color: white}
+
+   #L-box4{width: 1000px;height: 50px;margin: 5px auto;background: #e8eff5;}
+    .L-box4-button{background-image: url(./L-run-img/413090953.jpg);width: 21px;height: 21px; margin-top: 2px;}
+    #L-box4 li{float: left;margin-left: 1px;}
+    #L-box4 ul{list-style-type: none;padding-top: 5px;}
+    #L-box4 select{height: 21px;margin-top: 2px;}
+  
+   #L-box5{width: 1000px;height: 300px;margin: 5px auto;background: white;}
+    #L-box5 img{width: 1000px;height: 300px;}
+
+   #L-box6{width: 1000px;height: 20px;margin: 5px auto;background: white;}
+    #L-box6 ul{list-style-type: none}
+    #L-box6 li{float: left;margin-left: 5px;}
+
+   #L-box7{width: 1000px;height: 300px;margin: 5px auto;background: white;}
+    #L-box7-1{width: 330px;height: 300px;float: left;background: none;}
+      #L-box7-1 img{width: 330px;height: 300px;}
+    #L-box7-2{width: 330px;height: 300px;float: left;margin-left: 5px;background: none;}
+      #L-box7-2 ol{margin-left: 0;padding-left: 30px;border-left: 0;}
+      #L-box7-2 li{font-size: 17px}
+    #L-box7-3{width: 330px;height: 300px;float: left;margin-left: 5px;background: none;}
+      #L-box7-3 ul{margin-left: 0;padding-left: 20px;border-left: 0;list-style-type: none}
+      #L-box7-3 li{font-size: 17px}
+
+   #L-box8{width: 1000px;height: 354px;margin: 5px auto;background: white;}
+    #L-box8-1{width: 1000px;height: 30px;background: #F2F2F2;}
+    #L-box8-2{width: 490px;height: 324px;background: none;float: left;}
+      #L-box8-2 img{width: 140px;height: 104px;float: left;margin-bottom: 30px;}
+      #L-box8-2 span{width: 340px;float: right;}
+    #L-box8-3{width: 490px;height: 324px;background: none;float: right;}
+      #L-box8-3 img{width: 140px;height: 104px;float: left;margin-bottom: 30px;}
+      #L-box8-3 span{width: 340px;float: right;}
+
+  #L-box9{width: 1000px;height: 120px;margin: 5px auto;background: white;}
+    #L-box9 img{width: 120px;height: 70px;float: left;}
+    #L-box9 span{width: 200px;height: 90px;float: right;}
+    #L-box9-1{width: 1000px;height: 30px;background: none;}
+    #L-box9-2{width: 330px;height: 90px;float: left;background: none;}
+    #L-box9-3{width: 330px;height: 90px;float: left;margin-left: 5px;background: none;}
+    #L-box9-4{width: 330px;height: 90px;float: left;margin-left: 5px;background: none;}
+
+      #L-boxA{width: 1000px;height: 120px;margin: 5px auto;background: white;}
+         #L-boxA img{width: 120px;height: 70px;float: left;}
+          #L-boxA span{width: 200px;height: 90px;float: right;}
+    #L-boxA-1{width: 1000px;height: 30px;background: none;}
+    #L-boxA-2{width: 330px;height: 90px;float: left;background: none;}
+    #L-boxA-3{width: 330px;height: 90px;float: left;margin-left: 5px;background: none;}
+    #L-boxA-4{width: 330px;height: 90px;float: left;margin-left: 5px;background: none;}
+
+       #L-boxB{width: 1000px;height: 630px;margin: 5px auto;background: white;}
+         #L-boxB img{width: 120px;height: 70px;float: left;}
+         #L-boxB span{width: 350PX;float: right;}
+    #L-boxB-1{width: 1000px;height: 30px;background: none;}
+    #L-boxB-2{width: 490px;height: 600px;background: none;float: left;}
+    #L-boxB-3{width: 490px;height: 600px;background: none;float: right;}
+
+     #L-boxC{width: 1000px;height: 230PX;margin: 5px auto;background: white;}
+         #L-boxC img{width: 120px;height: 70px;float: left;}
+         #L-boxC span{width: 350PX;float: right;}
+    #L-boxC-1{width: 1000px;height: 30px;background: none;}
+    #L-boxC-2{width: 490px;height: 200PX;background: none;float: left;}
+    #L-boxC-3{width: 490px;height: 200PX;background: none;float: right;}
+
+    #L-boxD{width: 1000px;height: 340px;margin: 5px auto;background: white;}
+      #L-boxD img{width: 176px;height: 132px;float: left;margin-left: 20px;}
+        #L-boxD-1{width: 1000px;height: 30px;background: none;}
+        #L-boxD-2{width: 1000px;height: 150px;background: none;}
+        #L-boxD-3{width: 1000px;height: 150px;background: none;margin-top: 10px;}
+
+    #L-boxE{width: 1000px;height: 30px;margin: 5px auto;background: white;}
+    #L-boxF{width: 1000px;height: 60px;margin: 5px auto;background: white;}
+
+
+
+
+
+</style>
+
+    <script src="./L-public/js/jquery-2.1.1.min.js"></script>
+	<script src="./L-public/js/jquery.liMarquee.js"></script>
+	<script> 
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>4){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+    	</script>
+
+    <script> 
+
+		// 图片轮播
+	var n=0;  
+	var m = null;  
+    m = setTimeout(carousels,1000);//开始执行  
+    function carousels()  
+    {  
+          
+       clearTimeout(m);//清除定时器  
+        
+      $("#pic-"+n).removeClass("active");  
+      $("#pic-"+(n+1)).addClass("active");  
+      n++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+n+")").addClass("active");  
+        
+      if(n>4){  
+        $("#pic-"+(n-1)).removeClass("active");  
+        $("#pic-0").addClass("active");  
+        n=0;  
+        $("ol li:eq("+n+")").addClass("active");  
+        
+      }  
+       m = setTimeout(carousels,2500); //设定定时器，循环执行               
+    }   
+
+    	</script>
+</head>
+<body>
+
+<!-- 最上面的标题栏 -->
+	<div id="L-box1">
+		<ul>
+			<li>收藏本站</li>
+			<li>|</li>
+			<li>跑步计算机</li>
+			<li>
+			<img src="./L-run-img/qq_login.gif" alt="">
+			<img src="./L-run-img/wechat_login.png" alt="">
+			</li>
+			<li>用户名<input type="text"></li>
+			<li>密码<input type="text"><button>登陆</button></li>
+			<li>立即注册</li>
+			<li>找回密码</li>
+		</ul>
+	</div>
+
+<!-- 光明乐跑论坛logo -->
+	<div id="L-box2">
+		<img src="./L-run-img/logo.png" alt="">
+	</div>
+
+<!-- logo下面的9个标题栏 -->
+	<div id="L-box3">
+		<ul>
+			<li>首页</li>
+			<li>论坛</li>
+			<li>乐跑训练营</li>
+			<li>活动</li>
+			<li>赛事报名</li>
+			<li>积分商场</li>
+			<li>相册</li>
+			<li>签到</li>
+			<li>更多</li>
+			<li>光明网|乐跑微博</li>
+		</ul>
+	</div>
+<!-- 标题栏下面的搜索框 -->
+	<div id="L-box4">
+		<ul>
+			<li>
+				<input type="text" placeholder="请输入搜索内容" >
+			</li>
+			<li>
+				<select>
+						<option value="0">帖子</option>
+						<option value="1">用户</option>
+				</select>
+			</li>
+			<li>
+				<button class="L-box4-button"></button>
+			</li>
+		</ul>
+	</div>
+
+
+<!-- 图片轮播 -->
+	<div id="L-box5">
+	
+
+			<div class="carousel-inner">  
+      <div id="pic-0" class="item active">  
+         <img src="./L-run-img/b1.gif" alt="First slide">  
+      </div>  
+      <div id="pic-1" class="item">  
+         <img src="./L-run-img/b2.gif" alt="Second slide">  
+      </div>  
+      <div id="pic-2" class="item">  
+         <img src="./L-run-img/b3.gif" alt="Third slide">  
+      </div>  
+      <div id="pic-3" class="item">  
+         <img src="./L-run-img/b4.gif" alt="fourth slide">  
+      </div>
+      <div id="pic-4" class="item">  
+         <img src="./L-run-img/b5.gif" alt="fif slide">  
+      </div>   
+   </div> 
+	</div>
+
+<!-- 论坛标题 -->
+	<div id="L-box6">
+		<ul>
+			<li>
+				论坛   |
+			</li>
+			<li>
+				今日：2&nbsp|
+			</li>
+			<li>
+				昨日：16&nbsp|
+			</li>
+			<li>
+				帖子：366666|
+			</li>
+			<li>
+				新会员：214563&nbsp|
+			</li>
+			<li>
+				欢迎新会员:CHY123456
+			</li>
+
+		</ul>
+	</div>
+
+<!-- 标题下面的三个div框 -->
+	<div id="L-box7">
+		<!-- left -->
+		<div id="L-box7-1">
+				<div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-run-img/6f462113e0d595cdd9e843fb9858fe7f.jpg" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-run-img/9af9a66b2cd55abac43ad5355a71afd0.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-run-img/164924e1z1jayr35ayzapl.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-run-img/172341rjgglmm5x9xlbp91.jpg" alt="fourth slide">  
+      </div>
+      <div id="pic4" class="item">  
+         <img src="./L-run-img/173024lm99mpem9zeltvne.jpg" alt="fif slide">  
+      </div>   
+   </div>  
+	
+		</div>
+		<!-- center -->
+		<div id="L-box7-2">
+				<button>最热帖</button>
+				<button>热门贴</button>
+				<button>精华帖</button>
+				<br><br>
+
+				<ol>
+					<li>光明乐跑，你咋的了？？？</li>
+					<li>500元以内求推荐性价比高的蓝</li>
+					<li>2015 春节跑量秀-笨鸟</li>
+					<li>跑步日志</li>
+					<li>坚持-做最好的自己！我的点</li>
+					<li>长跑者的跑步训练日</li>
+					<li>蓝牙耳机哪个牌子好？2018最实用</li>
+					<li>最近打算跑步，有推荐的无</li>
+					<li>记录奥林匹克森林公园的奔</li>
+				</ol>
+			
+		</div>
+		<!-- right -->
+		<div id="L-box7-3">
+			<button>版主推荐</button>
+			<button>今日关注</button>
+			<br><br>
+
+			<ul>
+				<li>2017北京马拉松光明乐跑军团报名序号</li>
+				<li style="color:blue">记录奥林匹克森林公园的奔跑，时间从</li>
+				<li style="color:red">乐享壹柒，更快一步!——2016光明</li>
+				<li>光明乐跑&HiRun专家答疑与产品免费</li>
+				<li style="color:red">申请发帖免申权限</li>
+				<li>光明乐跑参与赛事成绩汇总</li>
+				<li>在38K处守候亲人是一种怎样的体会？</li>
+				<li>光明乐跑签约精英康保马拉松成绩</li>
+				<li>光明乐跑志愿者印章兑换礼品开始啦</li>
+			</ul>
+
+		</div>
+	</div>
+
+<!-- 最新活动 -->
+	<div id="L-box8">
+		<!-- 标题 -->
+		<div id="L-box8-1">
+			<h3>最新活动</h3>
+		</div>
+		<!-- left -->
+		<div id="L-box8-2">
+			<img src="./L-run-img/092424tc73vusf7nqs3kbz.jpg" alt="">
+			<span>
+				<b>AUX RUN一跑倾城盛夏来袭</b>
+				<p>2017-6-11 16:30 - 2017-6-11 20:30 奥森</p>
+				<p>已有 100 人报名</p>
+				<button>我要报名</button>
+			</span>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/e7ba760f88e94e606bbd93ef2300ca9d.jpg" alt="">
+			<span>
+				<b>欢度六一•争做健康小牙医，火爆报名中！</b>
+				<p>2017-6-1 14:00 - 2017-6-1 16:00 北京拜博口腔医院</p>
+				<p>已有 20 人报名</p>
+				<button>我要报名</button>
+			</span>
+
+
+
+		</div>
+		<!-- right -->
+		<div id="L-box8-3">
+			<img src="./L-run-img/36a925c62309b49e5569642d077d5b30.jpg" alt="">
+			<span>
+				<b>2017光明乐跑马拉松精英训练营第39期报名帖</b>
+				<p>2017-6-1 15:00 - 2017-6-1 18:00 化工大学田径场</p>
+				<p>已有 12 人报名</p>
+				<button>我要报名</button>
+			</span>
+
+			<HR  style="border:1px solid #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/867d61f947bee0500477ce9f3768464a.jpg" alt="">
+			<span>
+				<b>光明乐跑夜跑团第140期训练报名：跑坡训练</b>
+				<p>2017-3-28 18:20 奥森公园宣言广场东侧跑步服务站</p>
+				<p>已有 3 人报名</p>
+				<button>我要报名</button>
+			</span>
+
+
+		</div>
+	</div>
+
+<!-- 乐跑活动 -->
+	<div id="L-box9">
+		<!-- 标题 -->
+		<div id="L-box9-1">
+			<h3>乐跑活动</h3>
+		</div>
+		<!-- left -->
+		<div id="L-box9-2">
+			<img src="./L-run-img/common_161_icon.jpg" alt="">
+			<span>
+				<b>跑者故事</b>
+				<p>主题: 22, 帖数: 64</p>
+				<p>最后发表: 2018-1-26 18:10</p>
+			</span>
+
+		</div>
+		<!-- center -->
+		<div id="L-box9-3">
+			<img src="./L-run-img/common_154_icon.png" alt="">
+			<span>
+				<b>乐跑赛事</b>
+				<p>主题: 210, 帖数: 2670</p>
+				<p>从未</p>
+			</span>
+		</div>
+		<!-- right -->
+		<div id="L-box9-4">
+			<img src="./L-run-img/common_148_icon.png" alt="">
+			<span>
+				<b>全国赛事</b>
+				<p>主题: 1630, 帖数: 3万</p>
+				<p>最后发表: 2017-11-27 15:25</p>
+			</span>
+		</div>
+	</div>
+
+<!-- 乐跑训练 -->
+	<div id="L-boxA">
+		<!-- 标题 -->
+		<div id="L-boxA-1">
+			<h3>乐跑训练</h3>
+		</div>
+		<!-- left -->
+		<div id="L-boxA-2">
+			<img src="./L-run-img/common_150_icon.jpg" alt="">
+			<span>
+				<b>光明乐跑马拉松训练营</b>
+				<p>主题: 959, 帖数: 3万</p>
+				<p>最后发表: 2017-9-25 14:42</p>
+			</span></div>
+		<!-- center -->
+		<div id="L-boxA-3">
+			<img src="./L-run-img/common_152_icon.jpg" alt="">
+			<span>
+				<b>光明乐跑精英训练营</b>
+				<p>主题: 1630, 帖数: 3万</p>
+				<p>最后发表: 2017-11-27 15:25</p>
+			</span></div>
+		<!-- right -->
+		<div id="L-boxA-4">
+			<img src="./L-run-img/common_151_icon.jpg" alt="">
+			<span>
+				<b>光明乐跑夜跑团</b>
+				<p>主题: 1630, 帖数: 3万</p>
+				<p>最后发表: 2017-11-27 15:25</p>
+			</span></div>
+	</div>
+
+<!-- 乐跑之家 -->
+	<div id="L-boxB">
+		<!--标题  -->
+		<div id="L-boxB-1">
+			<h3>乐跑之家</h3>
+		</div>
+		<!-- left -->
+		<div id="L-boxB-2">
+			<img src="./L-run-img/common_63_icon.gif" alt="">
+			<span>
+				<b>最新活动</b>
+				<p>主题: 801, 帖数: 1万</p>
+				<p>你不会独行！光明乐跑马拉松冬训 ... </p>
+			</span>
+
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_75_icon.gif" alt="">
+			<span>
+				<b>跑友掠影</b>
+				<p>主题: 837, 帖数: 1万</p>
+				<p>2017北马光明乐跑军团照片来袭 ... ... </p>
+			</span>
+			
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_64_icon.jpg" alt="">
+			<span>
+				<b>心情感想</b>
+				<p>主题: 553, 帖数: 4103</p>
+				<p>光明乐跑，你咋的了？？？   ... </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_79_icon.gif" alt="">
+			<span>
+				<b>马拉松、越野专版</b>
+				<p>主题: 815, 帖数: 9998</p>
+				<p>2018北京三峰连穿国际越野赛赛事  ... </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_136_icon.png" alt="">
+			<span>
+				<b>装备交换</b>
+				<p>主题: 54, 帖数: 330</p>
+				<p>入了铁三门 只好砸锅卖铁-出二手  ... </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_73_icon.gif" alt="">
+			<span>
+				<b>技术与提高</b>
+				<p>主题: 553, 帖数: 4103</p>
+				<p>你真的了解“心率”吗 </p>
+			</span>
+
+
+
+		</div>
+		<!-- right -->
+		<div id="L-boxB-3">
+
+
+			<img src="./L-run-img/common_151_icon.jpg" alt="">
+			<span>
+				<b>跑步日志</b>
+				<p>主题: 1454, 帖数: 3万</p>
+				<p>2015 春节跑量秀-笨鸟慢慢跑 ... </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_59_icon.gif" alt="">
+			<span>
+				<b>跑步装备</b>
+				<p>主题: 369, 帖数: 9365</p>
+				<p>500元以内求推荐性价比高的蓝牙 </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_78_icon.gif" alt="">
+			<span>
+				<b>跑步入门</b>
+				<p>主题: 1339, 帖数: 6140</p>
+				<p>能量胶，你必须了解的  </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_57_icon.gif" alt="">
+			<span>
+				<b>运动损伤与预防</b>
+				<p>主题: 4334, 帖数: 6274</p>
+				<p>冷身不做七分祸，莫让身体“急刹 </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_67_icon.gif" alt="">
+			<span>
+				<b>乐跑公益</b>
+				<p>主题: 190, 帖数: 1171</p>
+				<p>关于北京市登山运动协会授予相关 .. </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_61_icon.gif" alt="">
+			<span>
+				<b>灌水乐园</b>
+				<p>主题: 2378, 帖数: 2万</p>
+				<p>风烟云泪的跑步帖子 </p>
+			</span>
+		</div>
+	</div>
+
+<!-- 乐跑服务 -->
+
+	<div id="L-boxC">
+		<!--标题  -->
+		<div id="L-boxC-1">
+			<h3>乐跑服务</h3>
+		</div>
+		<!-- left -->
+		<div id="L-boxC-2">
+			<img src="./L-run-img/common_133_icon.PNG" alt="">
+			<span>
+				<b>志愿者专区</b>
+				<p>主题: 59, 帖数: 682</p>
+				<p>光明乐跑马拉松训练营第63期志愿  </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+
+			<img src="./L-run-img/common_135_icon.png" alt="">
+			<span>
+				<b>失物招领</b>
+				<p>主题: 9, 帖数: 87</p>
+				<p>2015年5月10日马拉松训练营队员 .. </p>
+			</span>
+		</div>
+		<!-- right -->
+		<div id="L-boxC-3">
+			<img src="./L-run-img/common_65_icon.gif" alt="">
+			<span>
+				<b>积分商城</b>
+				<p>主题: 159, 帖数: 1874</p>
+				<p>史上最强的跑步音乐《RUN BABY R  </p>
+			</span>
+
+			<HR  style="border:1px dashed #7f6743" width="95%" SIZE=3>
+			
+			<img src="./L-run-img/common_68_icon.gif" alt="">
+			<span>
+				<b>公告/签到/调查/投诉/建议 (2</b>
+				<p>主题: 2540, 帖数: 13万</p>
+				<p>2018年4月13日签到记录帖  .. </p>
+			</span>
+		</div>
+	</div>
+
+<!-- 乐跑会员 -->
+
+	<div id="L-boxD">
+		<!-- 标题 -->
+		<div id="L-boxD-1">
+				<h3>乐跑会员</h3>
+		</div>
+		<!-- first line -->
+		<div id="L-boxD-2">
+			<img src="./L-run-img/ea825610bbedfeacfb672765abe9d732.jpg" alt="">
+			<img src="./L-run-img/444c3f630d3ddf120174f2669e07ab61.jpg" alt="">
+			<img src="./L-run-img/082343lq7yxwox93svvs8c.jpg" alt="">
+			<img src="./L-run-img/231233wmhfj43131prf5fz.jpg" alt="">
+			<img src="./L-run-img/328cbbcd455a9b2830192f0e0a43af97.jpg" alt="">
+		</div>
+		<!-- second line -->
+		<div id="L-boxD-3">
+		
+			<img src="./L-run-img/152731kp17zd6zq6o6oz4r.jpg" alt="">
+			<img src="./L-run-img/122804me0g7zm1jy6w1jw7.jpg" alt="">
+			<img src="./L-run-img/132715q49211wr2n2zx4xg.jpg" alt="">
+			<img src="./L-run-img/231207xqnaaoa11ajbkn0e.jpg" alt="">
+			<img src="./L-run-img/150011k0q6b9qcdltbnhtn.jpg" alt="">
+
+		</div>
+	</div>
+
+<!-- 在线会员 -->
+	<div id="L-boxE">
+		<b>在线会员 - 总计 139 人在线 - 最高记录是 2706 于 2016-8-31.</b>
+	</div>
+<!-- 友情链接 -->
+	<div id="L-boxF">
+		<img src="./L-run-img/173450e7xxx1zex6te016z.png" alt="">
+		<img src="./L-run-img/121043fvo7dzp8qc62pqv6.jpeg" alt="">
+		<img src="./L-run-img/100503aad4d7fsantfabfa.jpg" alt="">
+		<img src="./L-run-img/131323yxw8rir8mxzjg5z8.jpg" alt="">
+		<img src="./L-run-img/132526njtt9t2pp21xc51p.jpg" alt="">
+		<img src="./L-run-img/142304tj1lg0404yggli88.jpg" alt="">
+	</div>
+	
+<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			   <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+</div>
+<div class="L-left">
+	<img  onclick="myFunction()" class="btn1" src="./L-public/img/left-img2.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+
+
+</body>
+</html>

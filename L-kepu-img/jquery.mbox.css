@@ -1,0 +1,28 @@
+/* Mbox jQuery 插件 CSS  作者：王爱民 */
+#Mbox_main{position:fixed;}
+#Mbox_main{display:none;position:absolute;border-radius:8px;-webkit-box-shadow:8px 10px 16px rgba(0,0,0,.8);-moz-box-shadow:8px 10px 16px rgba(0,0,0,.8);-ms-box-shadow:8px 10px 16px rgba(0,0,0,.8);-o-box-shadow:8px 10px 16px rgba(0,0,0,.8);box-shadow:8px 10px 16px rgba(0,0,0,.8);}
+#Mbox_header{border-radius:8px 8px 0 0;background-color:#CB2E25;height:26px;line-height:30px;}
+#Mbox_title{float:left;height:40px;line-height:40px;font-size:18px;font-weight:bold;color:#FFF;padding-left:12px;}
+#Mbox_close{margin:8px 8px 0 0;float:right;height:20px;width:20px;text-align:center;line-height:20px;font-size:19px;font-weight:bold;color:#FFF;cursor:pointer;/*border:2px solid #F66;border-radius:12px;*/}
+#Mbox_close:hover{color:#F00;box-shadow:#F00 0px 0px 7px;}
+#Mbox_body{background-color:#FFF;min-width:380px;min-height:80px;padding:10px;}
+#Mbox_footer{background-color:#fff;height:8px;border-radius:0 0 8px 8px;}
+#Mbox_background{filter:alpha(opacity=20);background-color:#000;opacity:0.2;position:absolute;float:left;top:0;bottom:0;left:0;right:0;display:none;}
+.Mbox_btn{padding:0 2em;height:36px;margin:0 15px;border-radius:4px;font-weight:bold;font-size:14px;width:100px;}
+#Mbox_enter_btn{background-color:#E0F1FA;color:#2F77B2;border:2px solid #49C0FE;}
+#Mbox_enter_btn:hover{box-shadow:#49C0FE 0px 0px 7px;color:#3A81C0;}
+#Mbox_cancle_btn{background-color:#DFDFDF;color:#333;border:2px solid #666;}
+#Mbox_cancle_btn:hover{box-shadow:#888 0px 0px 7px;color:#000;}
+.Mbox_o_main{line-height:51px;margin:30px auto;text-align:right;}
+.Mbox_o_content{font-size:16px;font-weight:bold;margin:0 auto;text-align:center;color:#000;}
+#Mbox_ok{color:#008000;}
+#Mbox_fail{color:#B00;}
+#Mbox_confirm{color:#2F7BD9;}
+#Mbox_warning{color:#000;}
+.Mbox_o_header{font-size:36px;font-weight:bold;font-family:"微软雅黑","黑体","宋体";width:220px;margin:20px auto;height:51px;line-height:51px;text-align:right;}
+#Mbox_ok_header{background:url(http://img.gmw.cn/images/mbox/ok.png) no-repeat left; }
+#Mbox_fail_header{background:url(http://img.gmw.cn/images/mbox/fail.png) no-repeat left;}
+#Mbox_confirm_header{background:url(http://img.gmw.cn/images/mbox/confirm.png) no-repeat left;}
+#Mbox_warning_header{background:url(http://img.gmw.cn/images/mbox/warning.png) no-repeat left;}
+.Mbox_o_footer{height:30px;line-height:30px;text-align:center;margin:20px auto;}
+#Mbox_loading{margin:12px auto;text-align:center;line-height:2em;height:64px;background:url(http://img.gmw.cn/images/mbox/loading.gif) center no-repeat;}

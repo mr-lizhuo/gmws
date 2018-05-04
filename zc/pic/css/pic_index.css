@@ -1,0 +1,76 @@
+/*首页内容*/
+.left_part {float:left;width:630px;}
+.left_part .hd {padding:10px 20px;}
+.left_part .hd h2 {background:url(../images/spr_bg.png) -256px -308px no-repeat;_background-position:-256px -312px;padding-left:25px;font-size:18px;font-weight:400;}
+.left_part .hd h2 a {color:#484848;}
+.left_part .bd {overflow:hidden;zoom:1;padding-right:1px;}
+.left_part .bd .pic_bd {width:653px;margin-right:-23px;}
+.pic_bd li {float:left;width:140px;margin-right:23px;margin-bottom:10px;}
+.pic_bd li p {text-align:center;padding-top:2px;font-size:12px;}
+.pic_bd li p a {color:#484848;}
+
+/*焦点图*/
+.focus {width:630px;height:410px;position:relative;}
+#bimg{filter:progid:DXImageTransform.Microsoft.Fade ( duration=0.5,overlap=1.0 );width:630px;height:410px;margin:0 auto;}
+#pic_scroll_title_box{width:630px;height:92px;margin:0 auto;position:absolute;left:0;top:254px;}
+#info{width:630px;font-size:12px;color:#fff;}
+#info span {display:block;padding:6px 30px 14px;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);*zoom:1;background:rgba(0,0,0,0.5);}
+#info .tit{font-size:18px;line-height:36px;font-weight:400;width:570px;white-space:nowrap;overflow:hidden;}
+#info p{line-height:22px;text-indent:2em;width:570px;height:44px;overflow:hidden;}
+#info .tit a:hover {text-decoration:none;}
+#info .tit a{color:#fff;}
+#simg{height:17px;position:absolute;top:114px;right:10px;z-index:10;}
+#simg ul li{float:left;list-style-type:none;margin-right:12px;}
+.xbigon,.xbigoff{font-size:12px;cursor:pointer;color:#fff;text-align:center;width:17px;height:17px;}
+#simg div{font-size:12px;background:url(../images/num_bg.png) no-repeat right center;float:left;width:17px;cursor:pointer;color:#fff;line-height:17px;height:17px;text-align:center;}
+#simg .f1{background:url(../images/num_bg.png) no-repeat left center;color:#484848;}
+.dis{display:block;}
+.undis{display:none;}
+.labtn{background:url(../images/lrta.png) no-repeat left center;width:52px;height:52px;position:absolute;top:164px;cursor:pointer;}
+.rabtn{background:url(../images/lrta.png) no-repeat right center;width:52px;height:52px;position:absolute;top:164px;right:0px;cursor:pointer;}
+
+.rig_part {float:right;width:315px;}
+.rig_box {padding:10px;border:1px solid #ccc;_padding-bottom:6px;margin-bottom:20px;}
+.rig_box .bd {overflow:hidden;zoom:1;}/*border-bottom:1px dotted #ccc; padding-bottom:10px;margin-bottom:5px;*/
+.rig_box .bd .img_area {float:left;width:80px;height:80px;overflow:hidden;}
+.txt_area {float:right;width:200px;height:80px;overflow:hidden;}
+.txt_area dt {font-size:14px;line-height:24px;}
+.txt_area dt a {color:#32373c;}
+.txt_area dd {color:#b5b7b7;font-size:12px;line-height:20px;}
+.ban_box {padding:0 0 10px 0;}
+
+.news_list li {overflow:hidden;zoom:1;font-size:12px;line-height:24px;+line-height:20px;}
+.news_list li .news_tit {float:left;width:240px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#484848;}
+.news_list li span.news_time {float:right;width:36px;white-space:nowrap;overflow:hidden;color:#b3b6b6;}
+.news_list li.hard_news a {color:#0186cb;}
+
+/*选用记录*/
+.hd_recom {margin-bottom:10px;}
+.roll_listbox {height:164px;overflow:hidden;}
+.roll_list li {font-size:12px;line-height:28px;}
+.roll_list li a {color:#484848;}
+
+/*图片管理系统介绍*/
+.ban_box_l {float:left;width:190px;padding-top:10px;}
+.intro_box {float:right;width:750px;}
+.intro_box .hd {border-bottom:3px solid #edebe8;position:relative;height:14px;margin-bottom:15px;}
+.intro_box .hd h2 {font-size:14px;height:14px;color:#0186cb;padding:0 10px 0 0;position:absolute;top:5px;background-color:#fff;}
+.intro_box .intro {float:left;width:420px;color:#393939;font-size:12px;line-height:24px;text-indent:2em;}
+.intro_box .com_pro {float:right;}
+.intro_box .com_pro a img {padding-left:10px;}
+
+.foot_bortop {border-top:3px solid #0186cb;padding-top:10px;background:#fff;margin:0 auto;}
+
+.jutitle a{color:#000;}
+.none{display:none;}
+.jujiao{background-color:#f5f5f5;overflow:hidden;}
+.jujiao h2{float: left;}
+.jujiaoa{line-height:24px; text-decoration:none;}
+.clearfloat{clear:both;}
+.jutitlewrap{padding-top:5px;}
+.jtitle2{padding:5px 0;}
+
+.rig_login_box {overflow:hidden;height:90px;line-height:90px;background:#0186cb url(http://pic.gmw.cn/../images/ico_login_sw.png) center no-repeat;}
+.rig_login_box li {float:left;width:135px;font-size:20px;font-weight:700;background:url(http://pic.gmw.cn/../images/ico_sign_rig.png) 43px center no-repeat;text-align:center;padding-left:22px;}
+.rig_login_box .rig_btn_register {background:url(http://pic.gmw.cn/../images/ico_register_rig.png) 43px center no-repeat;}
+.rig_login_box a {color:#fff;}

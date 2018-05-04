@@ -1,0 +1,375 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+li{
+	list-style-type:none;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.pull-left{ float:left;}
+.pull-right{ float:right;}
+.text-center{ text-align:center;}
+.text-red{ color:#f00;}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+    font-size: 0;
+}
+.font18{font-size:18px;}
+.yahei { font-family: "Microsoft Yahei"; }
+.clearfix {
+    clear: both;
+}
+.nav{
+	width:100%;
+	min-width:1004px;
+	height:60px;
+	background-color: #2D3237;
+}
+.h_nav{
+	width:1004px;
+	margin:0 auto;
+}
+.h_nav img{
+	vertical-align:middle;
+}
+.head_txt{
+	font-size:14px;
+	color:white;
+	margin-left:20px;
+}
+.border_style{
+	border:1px solid #4156b8;
+	margin-bottom:20px;
+}
+.head{
+	width:100%;
+	min-width:1004px;
+	position:relative;
+}
+.lingjiang_box{
+	height:330px;
+	width:271px;
+	background:url(../images/dwBox_bg.png) no-repeat;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:200px;
+	padding:20px;
+}
+.vipfuli{
+	color:white;
+	font-size:15px;
+}
+.f_c{
+	color:#fff29a;
+}
+.xuhao{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	background:#77a0f3;
+	text-align:center;
+	line-height:25px;
+	border-radius:3px;
+	margin-right:10px;
+}
+.huoqu_btn{
+	width:231px;
+	height:50px;
+	background:#27ade0;
+	border-radius:3px;
+	text-align:center;
+	line-height:50px;
+	border:1px solid #00568d ;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	margin:0 auto;
+	display:block;
+}
+.xiazai_btn{
+	width:231px;
+	height:50px;
+	background:#91be2b;
+	border-radius:3px;
+	text-align:center;
+	line-height:50px;
+	border:1px solid #5c8d00;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	margin:0 auto;
+	display:block;
+}
+.bg_box{
+	min-width:1004px;
+	height:370px;
+	width:100%;
+}
+.bg_list{
+	min-width:1004px;
+	height:370px;
+	position:relative;
+}
+.bg_list li{
+	width:100%;
+	height:370px;
+	float:left;
+}
+.bg_list li a{
+	height: 370px;
+    margin: 0 auto;
+    max-width: 1240px;
+    min-width: 1004px;
+	display:block;
+}
+.qiehuan_btn{
+	position:absolute;
+	width:100px;
+	height:30px;
+	bottom:0;
+	left:40%;
+}
+.qiehuan_btn li{
+	float:left;
+	width:20px;
+	height:20px;
+	margin-right:5px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+    -moz-border-radius:20px;
+	
+}
+.main{
+	width:100%;
+	min-width:1004px;
+	/*height:1250px;*/
+}
+.liucheng{
+	width:960px;
+	height:260px;
+	margin:0 auto;
+}
+.liucheng_head{
+	width:100%;
+	height:50px;
+	margin:20px 0px;
+}
+.liucheng_bottom{
+	width:100%;
+	height:140px;
+	overflow:hidden;
+}
+.liucheng_bottom li{
+	float:left;
+}
+.m_10{
+	margin:0 4.5px;
+}
+.main_bottom{
+	width:100%;
+	/*height:990px;*/
+	background:#eeeeee;
+	overflow:hidden;
+}
+.jiangli{
+	width:960px;
+	height:270px;
+	margin:0px auto;
+}
+.jiangli_head{
+	margin-top:40px;
+}
+.jiangli_bottom{
+	height:220px;
+	width:960px;
+}
+.jiangpin_info{
+	width:186px;
+	height:220px;
+	background:white;
+	float:left;
+	margin-left:6px;
+}
+.jiangpin_info p{
+	color:white;
+	font-size:18px;
+	color:#7d7d7d;
+	text-align:center;
+}
+.youxizhongxin{
+	width:960px;
+	/*height:59px;*/
+	margin:0px auto;
+}
+.game_head{
+	margin-top:40px;
+}
+.game_bottom{
+	width:960px;
+	/*height:520px;*/
+}
+.game_bottom_left{
+	width:550px;
+	/*height:500px;*/
+	margin:10px 0;
+	float:left;
+}
+.game_bottom_right{
+	width:400px;
+	height:500px;
+	margin:10px 0;
+	float:right;
+	background:#e9e9e9;
+	border:1px solid #cfcecf;
+}
+.gbr_head{
+	width:400px;
+	height:60px;
+	border-bottom:1px solid #cfcecf;
+	text-align:center;
+	font-size:24px;
+	color:#496daf;
+	line-height:60px;
+}
+.gbr_bottom{
+	width:400px;
+	height:439px;
+	text-align:center;
+	font-size:14px;
+	color:black;
+	overflow:hidden;
+}
+.gbr_bottom li{
+	margin:20px 0;
+}
+.game_list0{
+	width:550px;
+	height:500px;
+}
+.game_list1{
+	width:550px;
+	height:465px;
+}
+.game_list2{
+	width:550px;
+	height:465px;
+}
+.game_info{
+	width:120px;
+	height:180px;
+	float:left;
+}
+.game_info p{
+	font-size:12px;
+	color:black;
+	text-align:center;
+	margin-top:10px;
+}
+.fanye{
+	width:550px;
+	height:15px;
+	margin-top:12.5px;
+}
+.fanye_btn{
+	float:left;
+	margin-right:15px;
+}
+.fanye_btn li{
+	width:15px;
+	height:15px;
+	border-radius:15px;
+	float:left;
+}
+.m_r10{
+	margin-right:10px;
+}
+.bg_b{
+	background:#7daf0a;
+}
+.bg_h{
+	background:#b5c0cb;
+}
+.bottom{
+	width:100%;
+	height:173px;
+	background:#1f2229;
+	text-align:center;
+	color:#767676;
+	font-size:12px;
+	overflow:hidden;
+}
+.m_t10{
+	margin-top:10px;
+}
+.m_t20{
+	margin-top:20px;
+}
+.m_t40{
+	margin-top:40px;
+}
+.none{
+	display:none;
+}
+.code_ma{
+	position: fixed;
+	text-align: center;
+	width: 163px;
+	height: 128px;
+	padding-top: 40px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1000;
+	background: url(../images/code_ma.jpg) no-repeat;
+}
+.code_ma img {
+width: 115px;
+height: 115px;
+}
+.code_ma_small{
+display: none;
+position: fixed;
+text-align: center;
+width: 50px;
+height: 168px;
+bottom: 0px;
+right: 0px;
+z-index: 1000;
+background: url(../images/code_ma_small.jpg) no-repeat;
+}
+
+/* 注册弹框*/
+.bg {
+    background: #fff none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 97;
+}
+.regBox{ position:absolute;display:none;font-size:14px; left:50%; top:10px; margin-left:-286px; z-index:99; width:573px; height:516px; background-color:#fff;}
+.regBox .title{ width:563px; padding:0px 5px; line-height:37px; font-size:18px; color:#fff; height:37px; background:url(../images/reg_title.gif) no-repeat;}
+.regBox .regClose{ float:right; margin-top:2px; width:30px; height:30px;}
+.regBox .top{ margin:0px 15px; width:543px; color:#162b56; line-height:35px; height:35px; margin-top:20px; border-bottom:1px solid #abadb3}
+.regBox .form{ margin-top:20px;}
+.regBox .form p{ margin-bottom:20px;}
+.regBox .form-group1{ margin-bottom:10px; clear:both;}
+.regBox .form-group1 .lable{ display:inline-block; color:#000; width:145px; text-align:right; margin-right:5px;}
+.regBox .form-group1 .inputTxt{ width:164px; height:24px; padding:0px 3px; line-height:24px; border:1px solid #abadb3; margin-right:5px;}
+.regBox .btn_blue1{ width:123px; vertical-align:middle; height:23px; line-height:23px; color:#fff; display:inline-block; text-align:center; font-size:14px; background-color:#0099ff; border-bottom:3px solid #446e89}
+.regBox .btn_orage{ width:64px;vertical-align:middle;  height:23px; line-height:23px; color:#fff; display:inline-block; text-align:center; font-size:14px; background-color:#ff6600; border-bottom:3px solid #ab5645}
+.regBox .btn_green{ width:180px;vertical-align:middle;  height:40px; line-height:40px; color:#fff; display:inline-block; text-align:center; font-size:20px; background-color:#26aa11; border-bottom:3px solid #4a8041}
+.regBox .btn_blue2{ width:250px;vertical-align:middle;  height:40px; line-height:40px; color:#fff; display:inline-block; text-align:center; font-size:20px; background-color:#317edd; border-bottom:3px solid #455c77}
+.regSucess{ padding-top:50px;}
+.regSucess p{ margin-top:30px; font-size:14px;}
+.regSucess p img{vertical-align:middle}
+

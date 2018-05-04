@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学术频道</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+
+<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script>  
+   <script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+
+<style>
+
+ 															/*--  李卓  --*/
+   				
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+    *{margin: 0 ;}
+    body{background: #f8f8f8;}
+
+	 h4{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;color:red;}
+     hr{float: right;margin-top: 10px;}
+     ul{float: left;}
+	 li{padding-top: 8px;}
+ 										      			/*从box1-box2-boxA为固定模式*/
+
+ #L-box1{width: 1000px;height: 63px;margin:0px auto;}
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{padding:  10px ; background:none;font-size: 15px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+	#L-box3{width: 1000px;height: 183px;margin: 5px auto;background: none;}
+		#L-box3-1{width: 1000px;height: 133px;background: none;}
+			#L-box3-1 img{width: 1000px;}
+
+		#L-box3-2{width: 1000px;height: 50px;background: none;}
+			#L-box3-2 input{width: 517px;height: 40px;margin-left:200px; }
+
+
+
+	#L-box4{width: 1000px;height: 45px;margin: 5px auto;background: #c51a31;}
+		#L-box4 li{float: left;padding-left: 20px;list-style-type:none;padding-top: 10px;font-weight:bold; }
+
+	#L-box5{width: 1000px;height: 400px;margin: 5px auto;background: none;}
+		#L-box5-1{width: 660px;height: 400px;background: none; float: left;}
+			#L-box5-1-1{width: 660px;height: 300px;background: none;}
+				#L-box5-1-1 img{width: 660px;height: 300px;}
+			#L-box5-1-2{width: 660px;height: 100px;background: none;}
+				#L-box5-1-2 img{width: 150px;height: 90px;padding: 5px;margin: 5px;}
+		#L-box5-2{width: 300px;height: 400px;background: none;float: right;}
+			#L-box5-2-1{width: 300px;height: 200px;background: none;}
+				#L-box5-2-1 h4{color:red;}
+				#L-box5-2-1 ul{float: left;}
+				#L-box5-2-1 li{padding-top: 8px;}
+			#L-box5-2-2{width: 300px;height: 200px;background: none;}
+				#L-box5-2-2 h4{color:red;}
+				#L-box5-2-2 ul{float: left;}
+				#L-box5-2-2 li{padding-top: 8px;}
+
+	#L-box6{width: 1000px;height: 360px;margin: 5px auto;background: none;}
+		#L-box6-1{width: 660px;height: 360px;background: none;float: left;}
+			#L-box6-1-A{width: 660px;height: 50px;background: none;}
+
+			#L-box6-1-1{width: 660px;height: 150px;background: none;}
+				
+			#L-box6-1-2{width: 660px;height: 160px;background: none;}
+				#L-box6-1-2 ul{float: left;}
+				#L-box6-1-2 li{padding-top: 8px;}
+
+		#L-box6-2{width: 300px;height: 360px;background: none;float: right;}
+			#L-box6-2-1{width: 300px;height: 50px;background: none;}
+			#L-box6-2-2{width: 300px;height: 150px;background: none;}
+			#L-box6-2-3{width: 300px;height: 160px;background: none;}
+				#L-box6-2-3 ul{float: left;}
+				#L-box6-2-3 li{padding-top: 8px;}
+	#L-box7{width: 1000px;height: 220px;margin: 5px auto; background: none;}
+		#L-box7-1{width: 330px;height: 220px;background: none;float: left;}
+			#L-box7-1-1{width: 330px;height: 50px;background: none;}
+			#L-box7-1-2{width: 330px;height: 170px;background: none;}
+
+		#L-box7-2{width: 330px;height: 220px;background: none;float: left;}
+			#L-box7-2-1{width: 330px;height: 50px;background: none;}
+			#L-box7-2-2{width: 330px;height: 170px;background: none;}
+
+		#L-box7-3{width: 300px;height: 220px;background: none;float: right;}
+			#L-box7-3-1{width: 300px;height: 50px;background: none;}
+			#L-box7-3-2{width: 300px;height: 170px;background: none;}
+				#L-box7-3-2 img{width: 300px;height: 170px;}
+
+
+
+	#L-box8{width: 1000px;height: 180px;margin: 5px auto;background: none;}
+		#L-box8 img{width: 1000px;height: 180px;}
+		#L-box8-1{width: 1000px;height: 30px;background: green;}
+		#L-box8-2{width: 1000px;height: 150px;background: blue;}
+
+
+	#L-box9{width: 1000px;height: 220px;margin: 5px auto; background: none;}
+		#L-box9-1{width: 330px;height: 220px;background: none;float: left;}
+			#L-box9-1-1{width: 330px;height: 50px;background: none;}
+			#L-box9-1-2{width: 330px;height: 170px;background: none;}
+
+		#L-box9-2{width: 330px;height: 220px;background: none;float: left;}
+			#L-box9-2-1{width: 330px;height: 50px;background: none;}
+			#L-box9-2-2{width: 330px;height: 170px;background: none;}
+				#L-box9-2-2 img{padding-left: 15px;}
+
+		#L-box9-3{width: 300px;height: 220px;background: none;float: right;}
+			#L-box9-3-1{width: 300px;height: 50px;background: none;}
+			#L-box9-3-2{width: 300px;height: 170px;background: none;}
+				#L-box9-3-2 img{float: left;width: 110px;height: 150px;}
+				#L-box9-3-2 ul{float: left;}
+
+
+
+	#L-boxB{width: 1000px;height: 168px;margin: 5px auto;background:none;}
+		#L-boxB-1{width: 1000px;height: 50px;background: none;}
+		#L-boxB-2{width: 1000px;height: 118px;background: none;}
+			#L-boxB-2 img{float: left;padding-left: 15px;}
+
+	#L-boxC{width: 1000px;height: 60px;margin: 5px auto;background: none;}
+		#L-boxC-1{width: 1000px;height: 30px;background: none;}
+		#L-boxC-2{width: 1000px;height: 30px;background: none;}
+			#L-boxC-2 li{float: left;padding-left: 25px;}
+			#L-boxC-2 ul{list-style-type:none;}
+
+										/*版权页*/
+		
+	#L-boxA{width: 1000px;height: 80px;margin: 10px auto;background: none;}
+	#L-boxA p{text-align: center;}
+
+
+</style>
+
+<script>
+
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+</script>
+
+</head>
+<body>
+	
+
+<!-- 从box1-box2为固定模式 -->
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+			 <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+<!--  
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-legal-img/legal.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p>法治中国  平安天下</p>
+		</div>
+		<div id="L-box2-3">
+			<img src="./L-legal-img/ico_rss.gif">RSS</img>
+			</div>
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+-->
+
+<!-- 光明学术 -->
+		<div id="L-box3">
+			<!-- 三个图片 -->
+			<div id="L-box3-1">
+				<img  class="box3-1-imgl" src="./L-xueshu-img/180410080809.jpg" alt="" >
+				
+			</div>
+			<!-- 搜索框 -->
+			<div id="L-box3-2">
+				<input type="text" style="float: left;">
+				<img  src="./L-xueshu-img/0410081642.jpg" alt="" style="float: left;height: 45px;" >
+				<b >高级搜索</b>
+			</div>
+		</div>
+<!-- 标题栏 -->
+		<div id="L-box4">
+			<ul>
+				<li>首页</li>
+				<li>最新动态</li>
+				<li>论文下载</li>
+				<li>期刊下载</li>
+				<li>学术争鸣</li>
+				<li>学人风采</li>
+				<li>论文推荐</li>
+				<li>学术打假</li>
+				<li>机构推荐</li>
+				<li>学术会议</li>
+				<li>理论学术版</li>
+			</ul>
+		</div>
+<!-- 图片+文字 -->
+		<div id="L-box5">
+			<!-- 左边的图片 -->
+			<div id="L-box5-1">
+				<!-- 上边的图片轮播 -->
+				<div id="L-box5-1-1">
+					<!-- 轮播（Carousel）项目 -->  
+   <div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-xueshu-img/f44d305ea1ac1c2743210d.jpg" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-xueshu-img/f44d305ea1ac1c27415663.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-xueshu-img/f44d30758a711c27f2a305.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-xueshu-img/f44d30758a711c27f90506.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+
+
+				</div>
+				<!-- 下边的四个小图片 -->
+				<div id="L-box5-1-2">
+					<img src="./L-xueshu-img/f44d305ea1ac1c2743210d.jpg" alt="">
+					<img src="./L-xueshu-img/f44d305ea1ac1c27415663.jpg" alt="">
+					<img src="./L-xueshu-img/f44d30758a711c27f2a305.jpg" alt="">
+					<img src="./L-xueshu-img/f44d30758a711c27f90506.jpg" alt="">
+				</div>
+			</div>
+			<!-- 右边的文字 -->
+			<div id="L-box5-2">
+				<!-- 最新动态 -->
+				<div id="L-box5-2-1">
+					<h4>最新动态></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="60%" SIZE=3>
+
+				<ul>
+					<li>郭英德：中国趣味是中华文化的名片</li>
+					<li>宋　伟：以实力求和平，亮明中国决心</li>
+					<li>李敦球：习金会晤彰显中朝友谊历久弥坚</li>
+					<li>张菀洺：企业提质增效的基础与途径</li>
+				</ul>
+				</div>
+				<!-- 每周下载排行 -->
+				<div id="L-box5-2-2">
+						<h4>每周下载排行></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="50%" SIZE=3>
+
+				<ul>
+					<li>期刊下载排行第148期（07.24-07.30）</li>
+					<li>期刊下载排行第147期（07.24-07.30）</li>
+					<li>期刊下载排行第146期（07.24-07.30）</li>
+					<li>期刊下载排行第145期（07.24-07.30）</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+<!-- 学术争鸣+雪人风采 -->
+<div id="L-box6">
+	<!-- 学术争鸣 -->
+	<div id="L-box6-1">
+		<!-- 学术争鸣标题 -->
+		<div id="L-box6-1-A">
+			<h4>学术争鸣></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="80%" SIZE=3>
+		</div>
+		<!-- 标题+导读 -->
+		<div id="L-box6-1-1">
+
+			<b>孙壮志：上合组织对新型国际关系的典范意义</b>
+				<br>
+				<br>
+				<br>
+			<p>&nbsp&nbsp&nbsp&nbsp年轻的上合组织已经步入稳定发展的新阶段，启动了30余个不同级别的会晤机制，签署了上百个合作文件，日益成为有威望、有影响的新型国际组织。上合组织的快速成型，和富有特色的机制建设，或可成为今后世界建立国际国际关系的典范参考。</p>
+		
+		</div>
+		<!-- 两排ul -->
+		<div id="L-box6-1-2">
+			<ul>
+				<li>陆忠伟：美国贸易战守城，产业战攻坚</li>
+				<li>廖冰清：俄罗斯与西方互有多少牌可打？</li>
+				<li>柯　锐：西湖大学的探索值得期待</li>
+				<li>科扎诺夫：俄罗斯为何更深介入中东事务</li>
+				<li>李菊丹：“人工智能创作物”有没有著作权</li>
+			</ul>
+			<ul>
+				<li>刘宝莱：塞西第二任期面临三大挑战</li>
+				<li>特内瓦：保加利亚的欧洲化或将更进一步</li>
+				<li>陈鸿斌：安倍的修宪理由站得住脚吗？</li>
+				<li>帕加尼尼：西式政治体制的失败</li>
+				<li>张继焦：民族学研究应关注重大现实问题</li>
+			</ul>
+
+		</div>
+	</div>
+	<!-- 雪人风采 -->
+	<div id="L-box6-2">
+	<!-- 标题 -->
+		<div id="L-box6-2-1">
+			<h4>学人风采></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="60%" SIZE=3>
+		</div>
+	<!-- 人物简介 -->
+		<div id="L-box6-2-2">
+
+			<b>何炳棣的气派</b>	
+			<br><br><br>
+			<p>&nbsp&nbsp&nbsp&nbsp林家翘对何炳棣说：我们这样的人，不能做第二等的学问。</p>
+		</div>
+		<!-- 一排文字 -->
+		<div id="L-box6-2-3">
+				<ul>
+				<li>陈子展：傲骨见精神 文章百世名</li>
+				<li>钱念孙：君子文化的传统魅力与当代张力</li>
+				<li>陈来:《论语》为何以"学而时习之"开篇</li>
+				<li>帕加尼尼：西式政治体制的失败</li>
+				<li>孔子《春秋》为“经”的意义</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<!-- 论文推荐+学术打假+机构推荐 -->
+<div id="L-box7">
+	<!-- 论文 -->
+	<div id="L-box7-1">
+		<!-- 标题 -->
+		<div id="L-box7-1-1">
+			<h4>论文推荐></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="70%" SIZE=3>
+		</div>
+		<!-- 文字 -->
+		<div id="L-box7-1-2">
+			<ul>
+				<li>赵　琳：民国时期的中小学书法教育</li>
+				<li>崔　凡：中国违规？这盆脏水我们不接</li>
+				<li>何立胜：怎样降低制度性交易成本</li>
+				<li>杨圣敏：在方法论上超越西方民族学</li>
+				<li>郑功成：为慈善创造更完备政策环境</li>
+			</ul>
+
+		</div>	
+	</div>
+	<div id="L-box7-2">
+		<!-- 标题 -->
+		<div id="L-box7-2-1">
+			<h4>学术打假></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="70%" SIZE=3>
+		</div>
+		<!-- 文字 -->
+		<div id="L-box7-2-2">
+				<ul>
+				<li>章　开：澄清一个学术研究误区</li>
+				<li>段崇轩：学术性是文学评论的硬指标</li>
+				<li>黄春宇：科学术语的规范化与中国化</li>
+				<li>李　侠:"弯道超车"还是"马赫带效应"</li>
+				<li>尹汉宁：以程序与规则为题论科学方法</li>
+			</ul>
+
+		</div>	
+	</div>
+	<div id="L-box7-3">
+		<!-- 标题 -->
+		<div id="L-box7-3-1">
+			<h4>机构推荐></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="60%" SIZE=3>
+		</div>
+		<!-- 图片 -->
+		<div id="L-box7-3-2">
+			<img src="./L-xueshu-img/80410091053.jpg" alt="">
+		</div>
+	</div>
+
+</div>	
+
+<!-- 期刊导读 -->
+<div id="L-box8">
+	<img src="./L-xueshu-img/410091333.jpg" alt="">
+	<!-- 标题 -->
+
+</div>
+
+<!-- 学术会议+图书推荐+理论学术版 -->
+<div id="L-box9">
+	<!-- 学术会议 -->
+	<div id="L-box9-1">
+		<!-- 标题 -->
+		<div id="L-box9-1-1">
+			<h4>学术会议></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="60%" SIZE=3>
+		</div>
+		<!-- 文字 -->
+		<div id="L-box9-1-2">
+			<ul>
+				<li>中国理论海外传播研讨会在京召开</li>
+				<li>国发院举行宏观经济月度数据分析会</li>
+				<li>扎紧制度的笼子：实践需求与理论供给</li>
+				<li>推动中美关系稳定向前发展</li>
+				<li>2017年度学术委员会奖发布</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 图书推荐 -->
+	<div id="L-box9-2">
+		<!-- 标题 -->
+		<div id="L-box9-2-1">
+			<h4>图书推荐></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="60%" SIZE=3>
+		</div>
+		<!-- 图片 -->
+		<div id="L-box9-2-2">
+			<img src="./L-xueshu-img/f44d30758a711bede07207.jpg" alt="">
+
+			<img src="./L-xueshu-img/f44d30758a711bec8f8e01.jpg" alt="">
+			<img src="./L-xueshu-img/4487fcd447e11c1c1a2901.jpg" alt="">
+		</div>
+	</div>
+	<!-- 理论学术版 -->
+	<div id="L-box9-3">
+		<!-- 标题 -->
+		<div id="L-box9-3-1">
+			<h4>理论图书版系列></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="40%" SIZE=3>
+		</div>
+		<!-- 文字 -->
+		<div id="L-box9-3-2">
+			<img src="./L-xueshu-img/f44d30758a711c0c81e319.gif" alt="">
+			<ul>
+				<li>2018年03月02日第05版</li>
+				<li>2018年03月02日第04版</li>
+				<li>2018年03月02日第03版</li>
+				<li>2018年03月02日第02版</li>
+				<li>2018年03月02日第01版</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- 学术专题 -->
+<div id="L-boxB">
+	<!-- 标题 -->
+	<div id="L-boxB-1">
+		<h4>学术专题></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="90%" SIZE=3>
+	</div>
+	<!-- 三个图片 -->
+	<div id="L-boxB-2">
+		<div id="L-boxB-2-1">
+			<img src="./L-xueshu-img/f44d30758a7119b9fd5262.jpg" alt="">
+		</div>
+		<div id="L-boxB-2-2">
+			<img src="./L-xueshu-img/f44d30758a7119b9fdf301.jpg" alt="">
+		</div>
+		<div id="L-boxB-2-3">
+			<img src="./L-xueshu-img/f44d30758a7119b9fe0604.jpg" alt="">
+		</div>
+	</div>
+</div>
+
+<!-- 友情链接 -->
+<div id="L-boxC">
+	<!-- 标题 -->
+	<div id="L-boxC-1">
+		<h4>友情链接></h4>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:3px solid #b2b2b2" width="90%" SIZE=3>
+	</div>
+		<!-- 文字 -->
+	<div id="L-boxC-2">
+		<ul>
+				<li style="padding-left: 0;">北京大学</li>
+				<li>清华大学</li>
+				<li>中国社会科学网</li>
+				<li>中共中央党校</li>
+				<li>人民网论坛</li>
+				<li>中国知网</li>
+				<li>中国人民大学书报资料中心</li>
+				<li>维普网</li>
+			</ul>
+	</div>
+</div>
+
+
+
+
+
+<!-- 版权页 -->
+	<div id="L-boxA">
+		<br>
+		<br>
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+
+	<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			  <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img  onclick="myFunction()"  class="btn1" src="./L-public/img/left-img8.png" alt="">
+
+  	<button onclick="myFunction2()">请点击5次呦</button>
+
+  
+</div>
+
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+  x++;
+  if(x==5){
+  window.location.href='game.html';
+    }
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+</body>
+</html>

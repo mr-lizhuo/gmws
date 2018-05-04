@@ -1,0 +1,73 @@
+@charset "utf-8";
+ul,ol,dl {list-style:none;}
+img {vertical-align:middle;}
+a {color:#000;}
+.fc {zoom:1}
+.fc:after {content:"";display:block;clear:both}
+#header{width:1000px;margin:0 auto;padding:0 0 20px 0}
+#channelName{width:500px;float:left;height:45px;line-height:45px;color:#df5203;font-size:28px;margin:0 10px 0 20px}
+#slogan{font-size:14px;color:#000;padding:0 5px 0 25px;background:url(../images/slogan_ico.jpg) no-repeat}
+#channelName span{margin-right:10px}
+#searchBar{padding-top:15px;width:370px;height:24px;line-height:24px;float:right}
+
+/*导航*/
+.nav {height:50px;line-height: 50px;margin-bottom: 40px;background: #ba8f61;}
+.nav ul {width: 1000px;margin:0 auto;overflow: hidden;}
+.nav ul li {float: left;font-size: 22px;color: #666;padding:0 45px;background: url(../images/ico_xian.png) 0 center no-repeat;}
+.nav ul li a {display:inline-block;color: #fff;}
+.nav ul li a:hover {color: #fde5bb;text-decoration: none;}
+.nav ul li.first {background: 0;}
+
+/*焦点图*/
+.layout {width: 1000px;margin:0 auto 50px;}
+.picFocus{float:left; width:660px;  position:relative;  overflow:hidden;  zoom:1;   }
+.picFocus .hd{ width:100%; padding-top:5px;  overflow:hidden; }
+.picFocus .hd ul{ margin-right:-4px;  overflow:hidden; zoom:1; }
+.picFocus .hd ul li{ padding-top:5px; float:left;  text-align:center; position:relative;}
+.p_title{background:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000); width:100%; padding:10px 0; margin-top:-40px; z-index:5; position:relative;}
+.p_title a{color:#fff; padding-left:20px;}
+.picFocus .hd ul li img{ width:142px; height:86px; border:1px solid #ddd; cursor:pointer; margin-right:4px;}
+.picFocus .hd ul li.on img{ border-color:#ba8f61;}
+.picFocus .bd li{ vertical-align:middle; width:660px;height:400px;overflow:hidden;}
+.picFocus .bd img{ width:660px; height:400px; display:block;}
+.more_pic {width:68px;height:88px;position:absolute;right:0;bottom:0;background: #cfa972 url(../images/more_focus.png) center no-repeat;}
+
+.focus_news {float: right;width: 320px;height:496px;background: #f3f3f3;}
+.news {padding: 10px 20px;height: 145px;}
+.news:hover {background: #e8d4b5;}
+.news h3 {font-size: 18px;line-height: 36px;}
+.news h3 a {color: #6f3a01;}
+.news p {font-size: 14px;line-height: 28px;text-indent: 2em;}
+.bor {border-bottom: 1px solid #b3987a;}
+
+/*今日热点*/
+.left_area {float: left;width: 660px;}
+.subtit {height: 30px;overflow: hidden;margin-bottom: 10px;}
+.subtit h2 {float:left;text-indent: -9999px;}
+.subtit span {float: right;font-size: 14px;padding-top: 5px;}
+.subtit span a {color: #b3987a;}
+.subtit_hotnews {background: url(../images/tit_hotnews.png) 0 0 no-repeat;}
+.news_list li {padding: 25px 0;border-top:1px solid #c9c9c9;overflow: hidden;}
+.news_list li h3 {font-size: 26px;font-weight: 400;padding-bottom:5px;}
+.news_list li .pic {float: left;width: 236px;height: 140px;overflow:hidden;margin-right: 10px;}
+.news_list li .pic img {width: 236px;height: 140px;}
+.news_list li img:hover {transform:scale(1.4);}
+.news_list li p {font-size: 16px;line-height: 30px;color: #666;text-indent: 2em;font-family:"\5b8b\4f53","\5fae\8f6f\96c5\9ed1",Arial;}
+.news_list li:hover {background: #e8d4b5;}
+.nobor {border:0!important;}
+
+/*非遗名人坊*/
+.rig_area {float: right;width: 310px;}
+.subtit_celebrities {background: url(../images/tit_celebrities.png) 0 0 no-repeat;}
+.imgarea img {width: 310px;height: 218px;}
+.imgarea p {background:#cfa972;height:30px;line-height:30px;font-size: 16px;padding-left: 10px;margin-bottom: 10px;font-family:"\5b8b\4f53","\5fae\8f6f\96c5\9ed1",Arial;}
+.imgarea p a {color: #fff;}
+.list li {font-size: 14px;line-height: 30px;background: url(../images/ico_point.png) 0 center no-repeat;padding-left: 15px;font-family:"\5b8b\4f53","\5fae\8f6f\96c5\9ed1",Arial;}
+.list li strong {font-size: 16px;}
+.mb20 {margin-bottom: 20px;}
+
+/*传承动态*/
+.subtit_inherit {background: url(../images/tit_inherit.png) 0 0 no-repeat;}
+
+/*光明集粹*/
+.subtit_picks {background: url(../images/tit_picks.png) 0 0 no-repeat;}

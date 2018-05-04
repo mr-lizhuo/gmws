@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>读书</title>
+
+<!-- 浏览器顶部的图片 -->
+	<link rel="shortcut icon" href="./L-public/img/title.ico">
+<link rel="stylesheet" href="./L-public/css/lizhuo.css">
+
+
+<!-- 图片轮播所用的JS -->
+   <link href="./L-public/css/bootstrap.min.css" rel="stylesheet">  
+   <script src="./L-public/js/jquery.min.js"></script>  
+   <script src="./L-public/js/bootstrap.min.js"></script>  
+
+
+
+	<style>
+	                                       /*--  李卓  --*/
+   
+    /*                                            //
+         \\         //
+          \\       //
+    ##DDDDDDDDDDDDDDDDDDDDDD##
+    ## DDDDDDDDDDDDDDDDDDDD ##   ________   ___   ___        ___   ________   ___   ___        ___
+    ## hh                hh ##   |\   __  \ |\  \ |\  \      |\  \ |\   __  \ |\  \ |\  \      |\  \
+    ## hh    //    \\    hh ##   \ \  \|\ /_\ \  \\ \  \     \ \  \\ \  \|\ /_\ \  \\ \  \     \ \  \
+    ## hh   //      \\   hh ##    \ \   __  \\ \  \\ \  \     \ \  \\ \   __  \\ \  \\ \  \     \ \  \
+    ## hh                hh ##     \ \  \|\  \\ \  \\ \  \____ \ \  \\ \  \|\  \\ \  \\ \  \____ \ \  \
+    ## hh      李卓      hh ##      \ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\\ \_______\\ \__\
+    ## hh                hh ##       \|_______| \|__| \|_______| \|__| \|_______| \|__| \|_______| \|__|
+    ## MMMMMMMMMMMMMMMMMMMM ##
+    ##MMMMMMMMMMMMMMMMMMMMMM##   
+    */
+
+
+ *{margin: 0 ;}
+ body{background: #f8f8f8;}
+											/*从box1-box3为固定模式*/
+
+ #L-box1{width: 1000px;height: 63px;margin:0px auto;}
+		#L-box1-1{width: 1000px;height: 30px;background: #F1F1F1F1;}
+
+    		/*实现下拉菜单栏*/
+    		.whereGo {position: relative;display: inline-block;float: right;}
+			.wgse {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;}
+			.whereGo:hover .wgse {display: block;}
+			/*end*/
+
+		#L-box1-2{width: 1000px;height: 33px;background: #fff;}
+        #L-box1-2 li{list-style-type:none;float: left;padding-left: 8px; }/*实现去除li前面的点，排列，*/
+       /* #L-box1-2 li{ border-bottom-style: solid; border-width: 1px}      定义边框*/
+        #L-box1-2  a{font-size: 14px;}
+       
+
+	#L-box2{width: 1000px;height: 55px;margin:5px auto;background:red;}
+		#L-box2-1{width: 100px;height: 55px;background: white; float: left;}
+		#L-box2-2{width: 152px;height: 55px;background: white; float: left;}
+			#L-box2-2 p{ background:none;font-size: 10px;}
+		#L-box2-3{width: 42px; height: 55px;background: white;float: left;}
+ 			#L-box2-3 img{float: left;}
+ 		
+		#L-box2-4{width: 330px;height: 55px;background: white; float: left;}
+		#L-box2-5{width: 159px;height: 55px;background: white;float: left;}
+		#L-box2-6{width: 102px;height: 55px;background: white; float: left;}
+			#L-box2-6 select{width: 102px;height: 25px;}
+		#L-box2-7{width: 55px; height: 55px;background: white; float: left;}
+			#L-box2-7 input{height: 25px;margin-left: 3px;background: blue;color: white}
+		#L-box2-8{width: 60px; height: 55px;background: white;  float: left;}
+
+
+	#L-box3{width: 1000px;height: 420px;margin: 5px auto;	background: red;}	
+	
+	#L-box4{width: 1000px;height: 236px;margin: 5px auto;background: none;}
+		#L-box4-1{width: 540px;height: 236px;background: none;float: left; border-style: solid; border-width: 1px;border-color:#cccccc;}
+			#L-box4-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" }
+			#L-box4-1 span{padding: 0;border: 0;margin: 5px;float: right;}
+			#L-box4-1 ul{padding-left: 25px ;border: 0;margin-top: 5px;clear: both;float: left;}
+			#L-box4-1 li{font-size: 20px;}
+
+
+		#L-box4-2{width: 420px;height: 236px;background: none;float: right;border-style: solid; border-width: 1px;border-color:#cccccc;}
+			#L-box4-2 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" }
+			#L-box4-2 span{padding: 0;border: 0;margin: 5px;float: right;}
+			#L-box4-2 ol{padding-left: 25px ;border: 0;margin-top: 5px;clear: both;float: left;}
+			#L-box4-2 li{font-size: 20px;}
+
+	#L-box5{width: 1000px;height: 440px;margin: 5px auto;background: white;}
+		#L-box5-1{width: 1000px;height: 50px;background: none;float: left;}
+		#L-box5-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+		
+
+		#L-box5-2{width: 1000px;height: 390px;background: none;float: left;}
+			#L-box5-2-1{width: 120px;height: 390px;background: #f8f8f8f8;float: left;border-style: solid; border-width: 1px;border-color:#cccccc;}
+				#L-box5-2-1 img{ margin: 35px;  float: left;}
+
+			#L-box5-2-2{width: 880px;height: 390px;background: none;float: left;}
+				#L-box5-2-2-1{width: 440px;height: 390px;background: none;float: left;}
+					#L-box5-2-2-1 img{margin-left: 1px; width: 439px;height: 390px;border-style: solid; border-width: 1px;border-color:#cccccc;}
+				#L-box5-2-2-2{width: 440px;height: 390px;background: none;float: left;}
+
+					#L-box5-2-2-2 img{margin: 0 5px 5px 5px; width: 210px;height: 190px;float: left;border-style: solid; border-width: 1px;border-color:#cccccc;}
+
+
+	#L-box6{width: 1000px;height: 634px;margin: 5px auto;background: none;}
+		#L-box6-1{width: 1000px;height: 50px;background: none;float: left;}
+			#L-box6-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+		#L-box6-2{width: 1000px;height: 565px;background: none;float: left;}
+			#L-box6-2-1{width:690px;height: 565px;background: none;float: left;}
+				#L-box6-2-1 img{margin: 0 5px 5px 5px; width: 330px;height: 280px;float: left;border-style: solid; border-width: 1px;border-color:#cccccc;}
+			#L-box6-2-2{width: 310px;height: 565px;background: none;float: left;}
+
+				#L-box6-2-2 p{width: 310px;height: 200px;border-style: solid; border-width: 1px;border-color:#cccccc;}
+				#L-box6-2-2 ul{width: 310px;height: 200px;border-style: solid; border-width: 1px;border-color:#cccccc;padding-left: 30px;margin-top: 30px;}
+				#L-box6-2-2 li{padding: 5px; }
+	#L-box7{width: 1000px;height: 353px;margin: 5px auto;background: none;}
+		#L-box7-1{width: 1000px;height: 50px;background: none;float: left;}
+			#L-box7-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+		#L-box7-2{width: 1000px;height: 150px;background: none;float: left;}
+			#L-box7-2 img{margin-left: 20px;}
+		#L-box7-3{width: 1000px;height: 150px;background: none;float: left;}
+			#L-box7-3 img{margin-left: 20px;}
+	#L-box8{width: 1000px;height: 107px;margin: 5px auto;background: none;}
+		#L-box8-1{width: 1000px;height: 50px;background: none;float: left;}
+			#L-box8-1 h2{padding: 0;border: 0;margin: 5px;float: left;font-family:"Arial" ;}
+		#L-box8-2{width: 1000px;height: 57px;background: none;float: left;}
+
+
+
+							/*版权页*/
+	#L-boxA{width: 1000px;height: 60px;margin: 10px auto;background: none;}
+	#L-boxA p{text-align: center;}
+
+
+	
+</style>
+
+
+
+<script>
+
+		// 图片轮播
+	var i=0;  
+	var c = null;  
+    c = setTimeout(carousel,1000);//开始执行  
+    function carousel()  
+    {  
+          
+       clearTimeout(c);//清除定时器  
+        
+      $("#pic"+i).removeClass("active");  
+      $("#pic"+(i+1)).addClass("active");  
+      i++;  
+      $("ol li").removeClass("active");  
+      $("ol li:eq("+i+")").addClass("active");  
+        
+      if(i>3){  
+        $("#pic"+(i-1)).removeClass("active");  
+        $("#pic0").addClass("active");  
+        i=0;  
+        $("ol li:eq("+i+")").addClass("active");  
+        
+      }  
+       c = setTimeout(carousel,2000); //设定定时器，循环执行               
+    }   
+
+
+
+
+</script>
+</head>
+<body>
+   									<!-- 从box1-box2为固定模式 -->
+	<div id="L-box1">
+		<div id="L-box1-1">
+			<img src="./L-military-img/Logo.png" ></img>
+			<a href="index.html" style='color:#bb2737'>English</a>
+
+			<!-- 日期输出 -->
+
+			<span style="font-size: 15px">今天是：
+
+  <script language="Javascript"> 
+var datelocalweek=new Array("星期日", "星期一", "星期二","星期三","星期四", "星期五","星期六"); 
+var datelocalnow=new Date(); 
+var datelocalyear=datelocalnow.getFullYear(); 
+var datelocalmonth=(datelocalmonth="0"+(datelocalnow.getMonth()+1)).substr(datelocalmonth.length-2,2); 
+var datelocalday=(datelocalday="0"+datelocalnow.getDate()).substr(datelocalday.length-2,2); 
+var datelocalweekday=datelocalweek[datelocalnow.getDay()]; 
+document.write(datelocalyear+"年"+datelocalmonth+"月"+datelocalday+"日"); 
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 星期输出
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD= "<font>"+d[today.getDay()]+"</font>";
+document.write(DDDD);
+}
+RunGLNL();
+</script>
+
+
+<script language="javascript" type="text/javascript">
+// JavaScript Document 农历输出
+ function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+ var webUrl = webUrl; 
+document.write('<span id="CalendarClockFreeCode" > ');
+
+if (webUrl != 'netflower'){ 
+   } 
+document.write('</span>'); 
+document.write('<font id="calendarClock4"></font>');
+setInterval('refreshCalendarClock()',1000);
+function RunGLNL(){
+
+document.write(DDDDn);
+document.write(DDDDa);
+document.write(DDDDc);
+}
+RunGLNL();
+</script>
+</span>
+<!-- end -->
+
+
+			<ul class="whereGo">
+				<li style="list-style-type:none;">您想去哪里？
+					<ul class="wgse">
+						<li style="list-style-type:none;">光明图片</li>
+						<li style="list-style-type:none;">我要投稿</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<div id="L-box1-2">
+                                <!-- 待修改超链接 -->
+			 <li><a href="./index1.html">首页&nbsp |</a></li>
+			<li><a href="./military.html">军事&nbsp |</a></li>
+			<li><a href="./legal.html">法制&nbsp |</a></li>
+			<li><a href="./photo.html">读书&nbsp |</a></li>
+			<li><a href="./topics.html">专题&nbsp |</a></li>
+			<li><a href="./xueshu.html">学术&nbsp |</a></li>
+			<li><a href="./history.html">历史&nbsp |</a></li>
+			<li><a href="./guoxue.html">国学&nbsp |</a></li>
+			<li><a href="./health.html">卫生&nbsp |</a></li>
+			<li><a href="./kepu.html">科普&nbsp |</a></li>
+			<li><a href="./v.html">电视&nbsp |</a></li>
+			<li><a href="./lady.html">女人&nbsp |</a></li>
+			<li><a href="./e.html">文娱&nbsp |</a></li>
+			<li><a href="./sports.html">体育&nbsp |</a></li>
+			<li><a href="./run.html">乐跑&nbsp |</a></li>
+			<li><a href="./shuhua.html">书画&nbsp |</a></li>
+			<li><a href="./meiwen.html">文萃&nbsp |</a></li>
+			<li><a href="./yp.html">药品&nbsp |</a></li>
+			<li><a href="./em.html">中医&nbsp |</a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+			                      <!-- end -->
+		
+		</div>
+	</div>
+
+	<div id="L-box2">
+		<div id="L-box2-1">
+			<img src="./L-photo-img/photo.gif"></img>
+		</div>
+		<div id="L-box2-2">
+			<p style="padding-top:5px">行摄自然之绚</p>
+			<p>影记社会之美</p>
+		</div>
+		
+		<div id="L-box2-3">
+			<!-- <img src="./L-legal-img/ico_rss.gif">RSS</img> -->
+			</div>
+
+		<div id="L-box2-4"></div>
+		<div id="L-box2-5">
+				<input type="text" style="width: 150px;height: 20px;">
+		</div>
+
+		<div id="L-box2-6">
+			<select>
+						<option value="0">站内搜索</option>
+						<option value="1">光明网</option>
+						<option value="2">光明报系</option>
+					</select>
+		</div>
+		<div id="L-box2-7">
+			<input type="submit" value="搜索">
+		</div>
+		<div id="L-box2-8">
+			<img src="./L-military-img/skypelogo.jpg" >
+		</div>
+	</div>
+			<!-- box3为一个图片轮播 -->
+	<div id="L-box3">
+
+<!-- 轮播（Carousel）项目 -->  
+   <div class="carousel-inner">  
+      <div id="pic0" class="item active">  
+         <img src="./L-photo-img/f44d307589931c2c2b4c53.jpg" alt="First slide">  
+      </div>  
+      <div id="pic1" class="item">  
+         <img src="./L-photo-img/f44d307589931c2c2b685d.jpg" alt="Second slide">  
+      </div>  
+      <div id="pic2" class="item">  
+         <img src="./L-photo-img/f44d307589931c2c2bc909.jpg" alt="Third slide">  
+      </div>  
+      <div id="pic3" class="item">  
+         <img src="./L-photo-img/f44d307589931c2c2be516.jpg" alt="fourth slide">  
+      </div>   
+   </div>  
+
+
+
+	</div>
+			<!-- box4包含推荐阅读和点击排行 -->
+	<div id="L-box4">
+			<!-- 左边 -->
+		<div id="L-box4-1">
+			<h2>推荐阅读</h2>
+
+			<span>更多>></span>
+
+			<ul>
+				<li>科技筑梦 培养学生创新成长</li>
+				<li>江苏泰州：溱潼会船甲天下</li>
+				<li>高幼军漫画展亮相苏州</li>
+				<li>河北威县打造乡村旅游结合全民健身发展新模式</li>
+				<li>湖北宜昌：莲沱段航道整治加紧施工</li>
+			</ul>
+		</div>
+			<!-- 右边 -->
+		<div id="L-box4-2">
+			<h2>点击排行</h2>
+		
+			<span>更多>></span>
+			
+
+			<ol>
+				<li>万人涌入中国科大“樱花大道”赏花</li>
+				<li>安徽当涂创意油菜花田引人入胜</li>
+				<li>《八十七神仙卷》真迹首次全卷展出</li>
+				<li> 广西龙胜瑶族欢庆花炮节 民众徒手抓鱼</li>
+				<li>健身“集装箱”现身成都 24小时为民众开放</li>
+			</ol>
+		</div>
+	</div>
+
+	<!-- 频道精选（图片轮播） -->
+	<div id="L-box5">
+
+		<!-- 标题 -->
+		<div id="L-box5-1">
+			<h2>频道精选</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" SIZE=3>
+
+		</div>
+	
+		<div id="L-box5-2">
+			<!-- 最左边的四个图片 -->
+			<div id="L-box5-2-1">
+				<img src="./L-photo-img/hq_icon.png" alt="">
+				<img src="./L-photo-img/sh_icon.png" alt="">
+				<img src="./L-photo-img/mt_icon.png" alt="">
+				<img src="./L-photo-img/mh_icon.png" alt="">
+
+
+			</div>
+			<!-- 要轮播的内容 -->
+			<div id="L-box5-2-2">
+				<div id="L-box5-2-2-1">
+					<img src="./L-photo-img/d8cb8a4d09fc1c2e8a113a.jpg" alt="">
+				</div>
+				<div id="L-box5-2-2-2">
+					<img src="./L-photo-img/d8cb8a4d09fc1c2ea80d42.jpg" alt="">
+					<img src="./L-photo-img/d8cb8a4d09fc1c33ae2b0b.jpg" alt="">
+					<img src="./L-photo-img/d8cb8a4d09fc1c33b4c314.jpg" alt="">
+					<img src="./L-photo-img/d8cb8a4d09fc1c33b8171b.jpg" alt="">
+ </div>
+			
+		</div>
+	</div>
+	</div>
+<!-- 光明图片 -->
+	<div id="L-box6">
+		<!-- 最上面的标题 -->
+		<div id="L-box6-1">
+			<h2>光明图片</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" SIZE=3>
+		</div>
+		<!-- 图片+文字 -->
+		<div id="L-box6-2">
+			<!-- 图片 -->
+			<div id="L-box6-2-1">
+				<img src="./L-photo-img/f44d307589931c33a56c30.jpg" alt="">
+				<img src="./L-photo-img/f44d307589931c33a59e56.jpg" alt="">
+				<img src="./L-photo-img/f44d307589931c33a5021b.jpg" alt="">
+				<img src="./L-photo-img/f44d307589931c33a8501c.jpg" alt="">
+			</div>
+			<!-- 文字 -->
+			<div id="L-box6-2-2">
+				<div id="L-box6-2-2-1">
+					<p>&nbsp&nbsp&nbsp&nbsp光明图片（pic.gmw.cn）由光明日报社光明网承建，致力于为全球媒体及摄影爱好者提供丰富而优质的图片内容产品及专业服务。2012年1月开始运营，每天实时发布各类新闻图片、创意图片等。
+							<br>
+							<br>
+&nbsp&nbsp&nbsp&nbsp光明图片 （pic.gmw.cn）将秉承合作共赢的原则，为全球商业客户及摄影师提供更宽广的图片电子商务平台为全球商业客户及摄影师提供更宽广的图片电子商务平台，共创中国图片传播事业的美好未来。</p>
+
+				
+					<ul>
+						<li>辽宁营口旅游摄影大展征稿启事</li>
+						<li>军事科技展厦门站招募摄影志愿者</li>
+						<li>这个春天 ，全国媒体为紫砂村点赞！</li>
+						<li>全国主流媒体聚焦改革开放40周年邀请函</li>
+						<li>拜年啦！光明图片新年贺岁视频出炉</li>
+						<li>2018“全国两会”图片征集</li>
+					</ul>
+
+				</div>
+				<div id="L-box6-2-2-2"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 精彩推荐 -->
+	<div id="L-box7">
+		<!-- 最上面的标题 -->
+		<div id="L-box7-1">
+			<h2>精彩推荐</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" SIZE=3>
+		</div>
+		<!-- 下面的图片 -->
+		<div id="L-box7-2">
+			<img src="./L-photo-img/94c69122e34f1c2eb9d001.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c2eba9002.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c2ebba203.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c2ebc5d04.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23ee7014.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23f6e619.jpg" alt="">
+		</div>
+		<div id="L-box7-3">
+			<img src="./L-photo-img/94c69122e34f1c23f7d61a.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23f8c01b.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23f53a17.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23f32215.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23f45316.jpg" alt="">
+			<img src="./L-photo-img/94c69122e34f1c23f62718.jpg" alt="">
+		</div>
+	</div>
+
+	<!-- 友情链接 -->
+	<div id="L-box8">
+		<!-- 标题 -->
+		<div id="L-box8-1">
+			<h2>友情链接</h2>
+			<!-- 加一条线的方法 -->
+				<HR  style="border:5px solid #b2b2b2" width="85%" SIZE=3>
+		</div>
+		<!-- 文字 -->
+		<div id="L-box8-2">
+			<p>&nbsp&nbsp&nbsp&nbsp中国新闻&nbsp&nbsp&nbsp&nbsp摄影网&nbsp&nbsp&nbsp&nbsp新华网图片&nbsp&nbsp&nbsp&nbsp中新网图片&nbsp&nbsp&nbsp&nbsp中青网图片&nbsp&nbsp&nbsp&nbsp中国航拍网&nbsp&nbsp&nbsp&nbsp蜂鸟网</p>
+		</div>
+	</div>
+	
+
+	<!-- 版权页 -->
+	<div id="L-boxA">
+		<p>光明日报社概况 | 关于光明网 | 报网动态 | 联系我们 | 法律声明 | 光明员工 | 光明网邮箱 | 网站地图</p>
+		<p>光明网版权所有</p>
+	</div>
+
+	<!--  漂浮-->
+
+<div class="L-right">
+   <ul>
+   	                      <!-- 待修改超链接 -->
+			  <li><a href="./index1.html">首页&nbsp </a></li>
+			<li><a href="./military.html">军事&nbsp </a></li>
+			<li><a href="./legal.html">法制&nbsp </a></li>
+			<li><a href="./photo.html">读书&nbsp </a></li>
+			<li><a href="./topics.html">专题&nbsp </a></li>
+			<li><a href="./xueshu.html">学术&nbsp </a></li>
+			<li><a href="./history.html">历史&nbsp </a></li>
+			<li><a href="./guoxue.html">国学&nbsp </a></li>
+			<li><a href="./health.html">卫生&nbsp </a></li>
+			<li><a href="./kepu.html">科普&nbsp </a></li>
+			<li><a href="./v.html">电视&nbsp </a></li>
+			<li><a href="./lady.html">女人&nbsp </a></li>
+			<li><a href="./e.html">文娱&nbsp </a></li>
+			<li><a href="./sports.html">体育&nbsp </a></li>
+			<li><a href="./run.html">乐跑&nbsp </a></li>
+			<li><a href="./shuhua.html">书画&nbsp </a></li>
+			<li><a href="./meiwen.html">文萃&nbsp </a></li>
+			<li><a href="./yp.html">药品&nbsp </a></li>
+			<li><a href="./em.html">中医&nbsp </a></li>
+			
+			<li style="border:none;"><a href="http://www.gmw.cn/map.htm">更多&gt;&gt;</a></li>
+   </ul>
+</div>
+<div class="L-left">
+	<img   onclick="myFunction()"  class="btn1" src="./L-public/img/left-img.png" alt="">
+	<button onclick="myFunction2()">请点击5次呦</button>
+
+	
+</div>
+<script type="text/javascript" src="./L-public/js/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+ function myFunction(){
+alert("欢迎您观看第七组的演示")
+alert("图片都是李卓ps的呦")
+
+}
+
+</script>
+
+<script>
+  var x=0;
+ function myFunction2(){
+ 	x++;
+ 	if(x==5){
+	window.location.href='game.html';
+		}
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").hide();
+  $(".btn1").click(function(){
+  $("button").show();
+  });
+});
+
+</script>
+
+</body>
+</html>
